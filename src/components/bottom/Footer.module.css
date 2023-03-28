@@ -1,0 +1,22 @@
+.zona_bot .redsocial {
+    margin: auto;
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+}
+
+.zona_bot img {
+    height: 5.1vh;
+    min-height: 25px;
+}
+
+.redsocial span {
+    margin-left: 0.25rem;
+
+}
+
+@media (max-width: 600px) {
+    .redsocial span {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+.carruselDiv {
+margin: auto;
+display: flex;
+justify-content: center;
+border: 1px solid black; 
+} 
+
+.carruselItem {
+    height: 30vw;
+}
