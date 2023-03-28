@@ -37,12 +37,15 @@ function Navbar() {
 				<Link to='/'>
 					<img
 						className={mstyle.logo_img}
-						// src='/logotipo16.png'
-						src={require(`../../assets/img/logotipo16`).default}
+						src='/img/logotipo16.png'
 						title='Home'
 						alt='Home'
 					/>
-					<img className={mstyle.logo_letras} src='nombre-sin-fondo.png' />
+					<img
+						className={mstyle.logo_letras}
+						src='/img/nombre-sin-fondo.png'
+						alt='logo_nombre'
+					/>
 				</Link>
 			</div>
 

@@ -14,7 +14,7 @@
 }
 
 .top_logo img {
-    height: 5vw;
+    height: 60px;
     min-height: 45px;
     ;
 }
@@ -103,7 +103,7 @@
 .opened {
     height: auto;
     width: auto;
-    padding-inline: 15px;
+    padding-inline: 5px;
     padding-bottom: 10px;
     ;
 }
@@ -133,9 +133,9 @@
         align-items: flex-start;
         justify-content: flex-start;
 
-        width: 40vw;
+        width: 37vw;
         position: fixed;
-        top: 10dvh;
+        top: 65px;
         right: -100%;
         min-height: max-content;
         background-color: var(--cPaleta2);

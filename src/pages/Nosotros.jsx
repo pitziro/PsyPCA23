@@ -1,9 +1,10 @@
-import Carrusel from '../components/main/Carrusel';
+import MyCarousel from '../components/main/MyCarousel';
 
 export default function Nosotros() {
 	return (
 		<div id='nosotrosdiv'>
-			<Carrusel />
+			{/* <Carrusel /> */}
+			<MyCarousel />
 
 			<div className='grupo_index d-inline-flex align-items-center'>
 				<div className='card-body'>

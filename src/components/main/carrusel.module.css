@@ -1,10 +1,72 @@
-.carruselDiv {
-margin: auto;
-display: flex;
-justify-content: center;
-border: 1px solid black; 
-} 
+.carouselContainer {
+    width: 60vw;
+    min-width: 250px;
+    height: 40vw;
+    min-height: 150px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
 
-.carruselItem {
-    height: 30vw;
+.carouselSlider {
+/* border: 1px solid red;  */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+} 
+    
+
+.carouselSlideItem {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.leftArrowSlide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    left: 10px
+}
+
+
+
+.rightArrowSlide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    right: 10px
+}
+
+
+
+.dotContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.dotIndicator {
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .carruselDiv img {
+        height: 70vw;
+        min-height: 250px;
+        margin-left: 10vw;
+    }
+     
+    
+
 }
