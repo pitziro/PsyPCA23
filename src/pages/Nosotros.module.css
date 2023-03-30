@@ -15,6 +15,7 @@
         padding: 10px;
         display: flex;
         width: 60%;
+        color: white;
     }
 
     .main_somos_desc_img {
@@ -83,13 +84,15 @@ align-content: center;
         padding-right: 5px;
     }
     .valorx svg {
-    font-size: 5.5rem;
+        font-size: 5.5rem;
+        color: var(--cPaleta1);
     }
 
 
     @media screen and (max-width: 700px) {
 
         .main_somos_desc{
+            width: 100vw;
             display: flex;
             flex-direction: column-reverse;
             padding-top: 20px;
@@ -109,6 +112,7 @@ align-content: center;
             }
     
         .main_somos_obj {
+            width: 100vw;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -121,17 +125,20 @@ align-content: center;
                 .obj_mision{
                     display: flex;
                     flex-direction: column;
-                    /* width: 75%; */
-                    width: 75dvw;
+                    width: 100dvw;
+                    padding: 0 30px 0 30px;
                 }
     
                 .obj_vision {
                     display: flex;
                     flex-direction: column;
-                    width: 75%;
-                    width: 75dvw;
+                    width: 100dvw;
+                    /* padding: 0 30px 0 30px; */
                 }
     
+        .valores{
+            width: 100vw;
+        }        
     
         .valorx {
             display: flex;

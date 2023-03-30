@@ -28,6 +28,7 @@
     /* border: 1px solid red; */
     width: 75%;
     margin-right: 5vw;
+    color: white;
 }
 
 
@@ -43,7 +44,7 @@
 
 .categoryitem a {
     text-decoration: none;
-    color: var(--cLetra);
+    color: white;
     position: relative;
     transition: 0.5s ease-in-out;
     /* border: 1px solid black; */
@@ -54,15 +55,15 @@
 }
 
 .categoryitem a:hover {
-    color: var(--cFondo);
+    color: var(--cPaleta1);
     scale: 1.1;
 }
 
 .categoryitem a:hover::after {
     content: "";
     width: 55%;
-    height: 3px;
-    background: var(--cFondo);
+    height: 1.5px;
+    background: var(--cPaleta1);
     position: absolute;
     bottom: -3px;
     left: 2px;
@@ -71,6 +72,7 @@
 .mobileMenu {
     display: none;
     width: 0;
+    color: white;
 }
 
 

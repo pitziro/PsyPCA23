@@ -25,14 +25,13 @@ export default function Footer() {
 				<p>
 					Atención de consultas: <br />
 					+99 433 4455
-				</p>
-				<p>
+					<br />
 					<br />
 					Siguenos en redes: <br />
+					<FacebookTwoTone />
+					<Instagram />
+					<LinkedIn />
 				</p>
-				<FacebookTwoTone />
-				<Instagram />
-				<LinkedIn />
 			</div>
 		</div>
 	);

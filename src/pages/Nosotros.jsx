@@ -1,10 +1,10 @@
 import MyCarousel from '../components/main/MyCarousel';
 import {
-	HandshakeTwoTone,
-	Diversity3TwoTone,
-	HealthAndSafetyTwoTone,
-	GppGoodTwoTone,
-	SpaTwoTone,
+	Handshake,
+	Diversity3,
+	HealthAndSafety,
+	GppGood,
+	Spa,
 } from '@mui/icons-material';
 
 import aStyle from '../App.module.css';
@@ -60,6 +60,8 @@ export default function Nosotros() {
 						Cuidar y valorar la salud mental a nivel nacional e internacional,
 						convirtiéndonos en referentes de la atención, calidad y
 						profesionalismo.
+						<br />
+						<br />
 					</p>
 				</div>
 			</div>
@@ -70,7 +72,7 @@ export default function Nosotros() {
 
 			<div className={nStyle.valores}>
 				<div className={nStyle.valorx}>
-					<HandshakeTwoTone />
+					<Handshake />
 					<p>
 						Respeto: por lo que hacemos, por nuestros pacientes, por nuestra
 						sociedad y las personas que la componen
@@ -78,7 +80,7 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<HealthAndSafetyTwoTone />
+					<HealthAndSafety />
 					<p>
 						Vocación de servicio: mostrarnos siempre dispuestos a atender tus
 						necesidades y de tus seres queridos.
@@ -86,7 +88,7 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<GppGoodTwoTone />
+					<GppGood />
 					<p>
 						Responsabilidad: brindarte una atención de calidad, profesionalismo
 						y mejoría en tu bienestar.
@@ -94,7 +96,7 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<Diversity3TwoTone />
+					<Diversity3 />
 					<p>
 						Empatía: entender tus emociones, pensamientos y perspectivas de
 						vida.
@@ -102,7 +104,7 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<SpaTwoTone />
+					<Spa />
 					<p>Integridad: Honestidad y ética en cada atención que brindamos. </p>
 				</div>
 			</div>
