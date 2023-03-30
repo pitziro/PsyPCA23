@@ -1,14 +1,21 @@
 import React, { useEffect, useState } from 'react';
+
+import {
+	ArrowBackIos,
+	ArrowForwardIos,
+	CircleOutlined,
+	CircleRounded,
+} from '@mui/icons-material';
 import cStyle from './carrusel.module.css';
 
 function MyCarousel() {
 	const [currIndex, setcurrIndex] = useState(0);
 
 	const imagenes = [
-		{ name: '01_kids_smile.png', desc: 'img kids' },
-		{ name: '02_pareja_joven.jpg', desc: 'img pareja' },
-		{ name: '03_familia_sonriendo.png', desc: 'img familia' },
-		{ name: '04_grupo_gente_joven.png', desc: 'img jovenes' },
+		{ name: '01_kids_smile_r.png', desc: 'img kids' },
+		{ name: '02_pareja_joven_r.jpg', desc: 'img pareja' },
+		{ name: '03_familia_sonriendo_r.png', desc: 'img familia' },
+		{ name: '04_grupo_gente_joven_r.png', desc: 'img jovenes' },
 	];
 
 	useEffect(() => {
@@ -37,16 +44,18 @@ function MyCarousel() {
 	return (
 		<div className={cStyle.carouselContainer}>
 			<div className={cStyle.carouselSlider}>
-				<div className={cStyle.leftArrowSlide} onClick={clickSlideLeft}>
-					⮜
-				</div>
+				<ArrowBackIos
+					className={cStyle.leftArrowSlide}
+					onClick={clickSlideLeft}
+				/>
 				<div
 					className={cStyle.carouselSlideItem}
 					style={{ backgroundImage: `url(/img/${imagenes[currIndex].name})` }}
 				></div>
-				<div className={cStyle.rightArrowSlide} onClick={clickSlideRight}>
-					⮞
-				</div>
+				<ArrowForwardIos
+					className={cStyle.rightArrowSlide}
+					onClick={clickSlideRight}
+				/>
 				<div className={cStyle.dotContainer}>
 					{imagenes.map((imagen, index) => (
 						<div
@@ -54,7 +63,7 @@ function MyCarousel() {
 							className={cStyle.dotIndicator}
 							onClick={() => goToSlide(index)}
 						>
-							○
+							{index === currIndex ? <CircleRounded /> : <CircleOutlined />}
 						</div>
 					))}
 				</div>

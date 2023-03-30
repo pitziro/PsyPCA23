@@ -1,8 +1,7 @@
 import React from 'react';
 import mStyles from './Navbar.module.css';
 
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
+import { Menu, Close } from '@mui/icons-material';
 
 function Mobile({ fClick }) {
 	let { barOpened, handleClick } = fClick;
@@ -10,9 +9,9 @@ function Mobile({ fClick }) {
 	return (
 		<div className={mStyles.mobileMenu}>
 			{!barOpened ? (
-				<MenuIcon className={mStyles.mobileIcon} onClick={handleClick} />
+				<Menu className={mStyles.mobileIcon} onClick={handleClick} />
 			) : (
-				<CloseIcon onClick={handleClick} />
+				<Close onClick={handleClick} />
 			)}
 		</div>
 	);

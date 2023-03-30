@@ -17,19 +17,34 @@
         "icon": "",
         "childrens": [
             {
-                "title": "Niño y Adolescente",
+                "title": "Consejería",
                 "icon": "",
-                "path": "/menores"
+                "path": "/consejeria"
             },
             {
-                "title": "Terapia de Pareja",
+                "title": "Psicoterapia",
                 "icon": "",
-                "path": "/pareja"
+                "path": "/psicoterapia"
             },
             {
-                "title": "Individual",
+                "title": "Evaluaciones",
                 "icon": "",
-                "path": "/individual"
+                "path": "/evaluacion"
+            },
+            {
+                "title": "Certificados",
+                "icon": "",
+                "path": "/certificado"
+            },
+            {
+                "title": "Sesiones Grupales",
+                "icon": "",
+                "path": "/grupal"
+            },
+            {
+                "title": "Talleres",
+                "icon": "",
+                "path": "/taller"
             }
         ]
     },

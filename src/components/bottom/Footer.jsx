@@ -1,27 +1,39 @@
-import fstyles from './Footer.module.css'
+import fStyles from './Footer.module.css';
+
+import { FacebookTwoTone, Instagram, LinkedIn } from '@mui/icons-material';
 
 export default function Footer() {
-    return (
-        <div className={fstyles.zona_bot}>
-                <div className={fstyles.redsocial}>
-                    <img src="https://img.icons8.com/plasticine/100/000000/whatsapp.png" alt="wasap"/> 
-                    <span> Pide mas información </span>
-                </div>
+	return (
+		<div className={fStyles.zona_bot}>
+			<div className={fStyles.sec_logo}>
+				<img alt='logo_completo' src='/img/00_LOGO-SIN-FONDO.png' />
+			</div>
 
-                <div className={fstyles.redsocial}>
-                    <img src="https://img.icons8.com/color/48/000000/facebook-circled.png" alt="fb"/>
-                    <span> Visítanos en facebook </span>
-                </div>
+			<div className={fStyles.sec_dir}>
+				<p>
+					Dirección: <br />
+					Av. Las Artes Norte 343 , San Borja
+					<br />
+					<br />
+					Teléfono:
+					<br />
+					345 454 33 334 44. 33
+				</p>
+			</div>
 
-                <div className={fstyles.redsocial}>
-                    <img src="https://img.icons8.com/fluent/48/000000/telegram-app.png" alt="telegram"/>
-                    <span> Únete al Telegram </span>
-                </div>
-
-                <div className={fstyles.redsocial}>
-                    <img src="https://img.icons8.com/ios-filled/344/psychology.png" alt="tienda"/>
-                    <span> Visitanos en Doctoralia </span>
-                </div>
-        </div>
-    )
+			<div className={fStyles.sec_redes}>
+				<p>
+					Atención de consultas: <br />
+					+99 433 4455
+				</p>
+				<p>
+					<br />
+					Siguenos en redes: <br />
+				</p>
+				<FacebookTwoTone />
+				<Instagram />
+				<LinkedIn />
+			</div>
+		</div>
+	);
 }

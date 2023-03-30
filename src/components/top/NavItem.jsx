@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import { ExpandMoreOutlined, ExpandLessOutlined } from '@mui/icons-material';
+import { ExpandMoreOutlined } from '@mui/icons-material';
 
 import mstyle from './Navbar.module.css';
 
@@ -45,7 +45,12 @@ export default function NavItem(props) {
 			>
 				<div className={mstyle.subcategory_title}>
 					<a href='#'>{item.title}</a>
-					{subcategoryOpened ? <ExpandLessOutlined /> : <ExpandMoreOutlined />}
+					<ExpandMoreOutlined
+						className={mstyle.subcategory_icon}
+						style={{
+							transform: `rotate(${subcategoryOpened ? '180deg' : '0deg'})`,
+						}}
+					/>
 				</div>
 
 				<div

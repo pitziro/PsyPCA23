@@ -10,7 +10,8 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* border: 10px solid seagreen; */
+    font-size: 1.15rem;
+    /* border: 10px solid blue; */
 }
 
 code {
