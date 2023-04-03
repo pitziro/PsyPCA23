@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<div className={fStyles.zona_bot}>
 			<div className={fStyles.sec_logo}>
-				<img alt='logo_completo' src='/img/00_LOGO-SIN-FONDO.png' />
+				<img alt='logo_completo' src='/img/00_LOGO-SIN-FONDO_r.png' />
 			</div>
 
 			<div className={fStyles.sec_dir}>

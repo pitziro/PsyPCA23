@@ -7,7 +7,7 @@
     },
     {
         "id": 2,
-        "title": "Nuestro Equipo",
+        "title": "Especialistas",
         "icon": "",
         "path": "/equipo"
     },
@@ -49,9 +49,21 @@
         ]
     },
     {
-        "id": 4,
-        "title": "Contacto",
+        "id": 6,
+        "title": "Blog",
         "icon": "",
-        "path": "/contacto"
+        "path": "/blog"
+    },
+    {
+        "id": 4,
+        "title": "Preguntas Frecuentes",
+        "icon": "",
+        "path": "/QandA"
+    },
+    {
+        "id": 5,
+        "title": "Clinica Comunitaria",
+        "icon": "",
+        "path": "/clinica"
     }
 ]

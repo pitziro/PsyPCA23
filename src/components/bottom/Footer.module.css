@@ -1,38 +1,40 @@
 .zona_bot {
-    width: 100dvw;
-    min-height: 250px;
-    height: max-content;
-    margin: 0 auto;
-    background-color: var(--cPaleta2);
+    
     display: flex;
-    font-size: 1rem;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
     align-items: flex-start;
-    align-content: center;
+    min-height: 175px;
+    height: max-content;
+    background-color: var(--cPaleta2);
+    font-size: 1rem;
+    justify-content: space-evenly;
+    padding-top: 25px;
     color: white;
+    flex-grow: 0;
 }
 
 
+.sec_logo{
+    margin: 0;
+}
 
 .zona_bot .sec_logo img{
-    height: 250px;
+    height: 100px;
     margin: 0 auto;
 }
 
 .sec_dir {
     height: 100%;
     display: flex;
-    flex-grow: 0.5;
-    padding-top: 40px;
+    flex-grow: 0.25;
+    /* padding-top: 20px; */
     padding-left: 15px;
 }
 
 .sec_redes {
     height: 100%;
     display: flex;
-    flex-grow: 0.5;
-    padding-top: 40px;
+    flex-grow: 0.25;
+    /* padding-top: 20px; */
     padding-left: 15px;
 }
 

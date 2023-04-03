@@ -70,8 +70,7 @@ export default function NavItem(props) {
 		return (
 			<div className={mstyle.categoryitem}>
 				<Link to={item.path} onClick={handleClick}>
-					{' '}
-					{item.title}{' '}
+					{item.title}
 				</Link>
 			</div>
 		);

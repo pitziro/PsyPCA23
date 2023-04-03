@@ -1,50 +1,37 @@
-
+import wStyles from './Welcome.module.css';
+import { WhatsApp } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 export default function Welcome() {
-    return (
-            <div className="contenidos">
-                
-                <div className="grupo_index">
-                        <div className="card-body">
-                            <h5 className="titulo-video">Video AMD RX Serie 6000</h5>
-                            <p className="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias fugiat 
-                                laudantium deserunt nulla, accusamus perferendis magni? Dicta, veniam nihil amet asperiores saepe 
-                                enim molestias ea doloremque unde eaque corporis at?</p>
-                        </div>
-                </div >
-                
-                
-                <div className="grupo_index">
-            
-                    <div className="card-body ">
-                        <h5 className="titulo-video">Video AMD Ryzen Serie 5000 </h5>
-                        <p className="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias fugiat 
-                            laudantium deserunt nulla, accusamus perferendis magni? Dicta, veniam nihil amet asperiores saepe enim 
-                            molestias ea doloremque unde eaque corporis at?</p>
-                    </div>
-                </div >
+	const linkWasap = 'https://wa.link/unpjhx';
+	return (
+		<div className={wStyles.div_welcome}>
+			<section className={wStyles.wMain}>
+				<div className={wStyles.imgContainer}> </div>
 
+				<Link to={linkWasap} target='_blank'>
+					<div className={wStyles.imgWasap}>
+						<span>¿Necesitas ayuda?</span>
+						<WhatsApp />
+					</div>
+				</Link>
+			</section>
 
-                <div className="grupo_index">
-                
-                    <div className="card-body ">
-                        <h5 className="titulo-video">Video Nvidia RTX Serie 3000 </h5>
-                        <p className="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias fugiat laudantium 
-                        deserunt nulla, accusamus perferendis magni? Dicta, veniam nihil amet asperiores saepe enim molestias ea 
-                        doloremque unde eaque corporis at?</p>
-                    </div>
-                </div >
-                
-                
-                <div className="grupo_index">
-    
-                    <div className="card-body ">
-                        <h5 className="titulo-video">Video Comparacion nuevas consolas </h5>
-                        <p className="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias fugiat laudantium 
-                        deserunt nulla, accusamus perferendis magni? Dicta, veniam nihil amet asperiores saepe enim molestias ea 
-                        doloremque unde eaque corporis at?</p>
-                    </div>
-                </div >
-            </div>
-    )
+			<section className={wStyles.wBeneficios}>
+				<p> Video Bienvenida </p>
+			</section>
+
+			<section className={wStyles.wBienvenida}>
+				<p> beneficios </p>
+			</section>
+
+			<section className={wStyles.wBienvenida}>
+				<p> Bloque Reviews </p>
+			</section>
+
+			<section className={wStyles.wBienvenida}>
+				<p> Bloque Blog </p>
+			</section>
+		</div>
+	);
 }
