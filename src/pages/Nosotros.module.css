@@ -116,21 +116,29 @@ align-content: center;
         }
                 .main_somos_obj h2{
                     margin: 0 auto;
-                    
                 }
     
                 .obj_mision{
                     display: flex;
                     flex-direction: column;
-                    width: 100dvw;
-                    padding: 0 30px 50px 30px;
+                    width: 85dvw;
+                    padding-bottom: 50px;
                 }
     
                 .obj_vision {
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     width: 100dvw;
-                    /* padding: 0 30px 0 30px; */
+                }
+
+                .obj_vision h2{
+                    padding-top: 20px;
+                }
+
+                .obj_vision p{
+                    width: 85dvw;
+                    padding: 0 25px 0 25px;
                 }
     
         .valores{

@@ -11,7 +11,7 @@ export default function Welcome() {
 
 				<Link to={linkWasap} target='_blank'>
 					<div className={wStyles.imgWasap}>
-						<span>¿Necesitas ayuda?</span>
+						<p>¿Necesitas ayuda?</p>
 						<WhatsApp />
 					</div>
 				</Link>
