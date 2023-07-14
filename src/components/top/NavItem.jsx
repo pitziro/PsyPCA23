@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import { ExpandMoreOutlined } from '@mui/icons-material';
 
@@ -14,6 +15,12 @@ export default function NavItem(props) {
 	};
 
 	const navRefSub = useRef(null);
+
+	const scrollWithOffset = (el) => {
+		const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+		const yOffset = -120;
+		window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+	};
 
 	useEffect(() => {
 		setSubcategoryOpened(false);
@@ -44,7 +51,7 @@ export default function NavItem(props) {
 				onClick={handleOpenSub}
 			>
 				<div className={mstyle.subcategory_title}>
-					<a href='#'>{item.title}</a>
+					<Link to='#'>{item.title}</Link>
 					<ExpandMoreOutlined
 						className={mstyle.subcategory_icon}
 						style={{
@@ -69,9 +76,18 @@ export default function NavItem(props) {
 	} else {
 		return (
 			<div className={mstyle.categoryitem}>
-				<Link to={item.path} onClick={handleClick}>
+				{/* <Link to={item.path} onClick={handleClick}>
 					{item.title}
-				</Link>
+				</Link> */}
+
+				<HashLink
+					smooth
+					to={item.path}
+					onClick={handleClick}
+					scroll={scrollWithOffset}
+				>
+					{item.title}
+				</HashLink>
 			</div>
 		);
 	}

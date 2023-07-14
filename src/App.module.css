@@ -1,63 +1,59 @@
 :root {
-    --cPaleta1: #333B4F;
-    --cPaleta2: #8da9c9;
-    --cPaleta3: #a39d99;
-    --cPaleta4: #515151;
-    --cFondo: white;
-    --cLetra: black;
+	--cPaleta1: #333b4f;
+	--cPaleta2: #8da9c9;
+	--cPaleta3: #a39d99;
+	--cPaleta4: #515151;
+	--cFondo: white;
+	--cLetra: black;
 }
 
 @font-face {
-    font-family: "Alga";   /*Can be any text*/
-    src: local("AlgaRegular"),
-        url("../src/assets/fonts/AlgaRegular.ttf") format("truetype");
+	font-family: 'Alga'; /*Can be any text*/
+	src: local('AlgaRegular'),
+		url('../src/assets/fonts/AlgaRegular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "AlgaBold";   /*Can be any text*/
-    src: local("AlgaBold"),
-        url("../src/assets/fonts/AlgaBold.ttf") format("truetype");
+	font-family: 'AlgaBold'; /*Can be any text*/
+	src: local('AlgaBold'),
+		url('../src/assets/fonts/AlgaBold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: "AlgaLight";   /*Can be any text*/
-    src: local("AlgaLight"),
-        url("../src/assets/fonts/AlgaLight.ttf") format("truetype");
+	font-family: 'AlgaLight'; /*Can be any text*/
+	src: local('AlgaLight'),
+		url('../src/assets/fonts/AlgaLight.ttf') format('truetype');
 }
 
 .App {
-    font-family: 'AlgaLight';
-    display: flex;
-    background-color: var(--cFondo);
-    flex-direction: column;
-    /* height: max-content; */
+	font-family: 'Alga';
+	display: flex;
+	background-color: var(--cFondo);
+	flex-direction: column;
+	/* height: max-content; */
 }
 
 .zonatop {
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    top: 0;
-    /* align-items: center; */
-    /* background-color: var(--cPaleta2); */
-    font-size: 1.2rem;
-    background-color: white;
-    z-index: 50;
-    border-bottom: 1.5px solid var(--cPaleta1);
-    flex-grow: 0;
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	/* width: 100dvw; */
+	top: 0;
+	background-color: var(--cPaleta2);
+	/* font-size: 1rem; */
+	background-color: white;
+	z-index: 50;
+	box-shadow: 0px 0px 10px var(--cPaleta1);
+	flex-grow: 0;
+	/* border-bottom: 1.5px solid var(--cPaleta1); */
 }
 
 .zonamain {
-    display: flex;
-    justify-content: center;
-    padding-top: 2vw;
-    flex-grow: 2;
-    min-height: 60vh;
-    z-index: 0;
-    /* border: 1px solid yellow */
-    ;
+	display: flex;
+	justify-content: center;
+	/* padding-top: 2vw; */
+	flex-grow: 2;
+	min-height: 60vh;
+	z-index: 0;
+	/* border: 1px solid yellow */
 }
-
-
-
-

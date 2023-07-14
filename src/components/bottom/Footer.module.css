@@ -4,6 +4,7 @@
     align-items: flex-start;
     min-height: 175px;
     height: max-content;
+    /* width: 100dvw; */
     background-color: var(--cPaleta2);
     font-size: 1rem;
     justify-content: space-evenly;

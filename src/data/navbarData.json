@@ -17,53 +17,37 @@
         "icon": "",
         "childrens": [
             {
-                "title": "Consejería",
-                "icon": "",
-                "path": "/consejeria"
-            },
-            {
                 "title": "Psicoterapia",
                 "icon": "",
-                "path": "/psicoterapia"
+                "path": "/servicios#psicoterapia",
+                "desc": ""
+            },
+            {
+                "title": "Consejería",
+                "icon": "",
+                "path": "/servicios#consejeria"
             },
             {
                 "title": "Evaluaciones",
                 "icon": "",
-                "path": "/evaluacion"
-            },
-            {
-                "title": "Certificados",
-                "icon": "",
-                "path": "/certificado"
-            },
-            {
-                "title": "Sesion Grupal",
-                "icon": "",
-                "path": "/grupal"
+                "path": "/servicios#evaluacion"
             },
             {
                 "title": "Talleres",
                 "icon": "",
-                "path": "/taller"
-            }
+                "path": "/servicios#taller"
+            },
+            {
+                "title": "Certificados",
+                "icon": "",
+                "path": "/servicios#certificado"
+            }       
         ]
-    },
-    {
-        "id": 6,
-        "title": "Blog",
-        "icon": "",
-        "path": "/blog"
     },
     {
         "id": 4,
         "title": "Preguntas Frecuentes",
         "icon": "",
         "path": "/QandA"
-    },
-    {
-        "id": 5,
-        "title": "Clinica Comunitaria",
-        "icon": "",
-        "path": "/clinica"
     }
 ]

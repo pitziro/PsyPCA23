@@ -7,19 +7,18 @@ import {
 	Spa,
 } from '@mui/icons-material';
 
-import aStyle from '../App.module.css';
 import nStyle from './Nosotros.module.css';
 
 export default function Nosotros() {
 	return (
-		<div className={aStyle.nosotrosdiv}>
+		<div className={nStyle.nosotrosdiv}>
 			<MyCarousel />
 
 			<div className={nStyle.valoresTagName}>
-				<h2> ¿QUIENES SOMOS? </h2>
+				<h1> ¿QUIENES SOMOS? </h1>
 			</div>
 
-			<div className={nStyle.main_somos_desc}>
+			<section className={nStyle.main_somos_desc}>
 				<div className={nStyle.main_somos_desc_one}>
 					<p>
 						Somos un centro dedicado a la salud mental e integral, nuestro
@@ -37,11 +36,14 @@ export default function Nosotros() {
 					</p>
 				</div>
 				<img className={nStyle.main_somos_desc_img} src='/img/logotipo16.png' />
-			</div>
+			</section>
 
-			<div className={nStyle.main_somos_obj}>
+			<section className={nStyle.main_somos_obj}>
 				<div className={nStyle.obj_mision}>
-					<h2> MISIÓN </h2>
+					<div className={nStyle.obj_title}>
+						<img alt='mision' src='/img/40_icon_mision.webp' />
+						<h2> MISIÓN </h2>
+					</div>
 					<p>
 						<br />
 						Perspectivas nace con el propósito de satisfacer y transformar la
@@ -54,7 +56,10 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.obj_vision}>
-					<h2> VISIÓN </h2>
+					<div className={nStyle.obj_title}>
+						<img alt='mision' src='/img/40_icon_vision.webp' />
+						<h2> VISIÓN </h2>
+					</div>
 					<p>
 						<br />
 						Cuidar y valorar la salud mental a nivel nacional e internacional,
@@ -64,13 +69,13 @@ export default function Nosotros() {
 						<br />
 					</p>
 				</div>
-			</div>
+			</section>
 
 			<div className={nStyle.valoresTagName}>
 				<h2> VALORES </h2>
 			</div>
 
-			<div className={nStyle.valores}>
+			<section className={nStyle.valores}>
 				<div className={nStyle.valorx}>
 					<Handshake />
 					<p>
@@ -107,7 +112,7 @@ export default function Nosotros() {
 					<Spa />
 					<p>Integridad: Honestidad y ética en cada atención que brindamos. </p>
 				</div>
-			</div>
+			</section>
 		</div>
 	);
 }

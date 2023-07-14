@@ -12,10 +12,10 @@ function MyCarousel() {
 	const [currIndex, setcurrIndex] = useState(0);
 
 	const imagenes = [
-		{ name: '01_kids_smile_r.png', desc: 'img kids' },
-		{ name: '02_pareja_joven_r.jpg', desc: 'img pareja' },
-		{ name: '03_familia_sonriendo_r.png', desc: 'img familia' },
-		{ name: '04_grupo_gente_joven_r.png', desc: 'img jovenes' },
+		{ name: '01_kids_smile_r.webp', desc: 'img kids' },
+		{ name: '02_pareja_joven_r.webp', desc: 'img pareja' },
+		{ name: '03_familia_sonriendo_r.webp', desc: 'img familia' },
+		{ name: '04_grupo_gente_joven_r.webp', desc: 'img jovenes' },
 	];
 
 	useEffect(() => {

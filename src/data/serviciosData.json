@@ -1,0 +1,59 @@
+
+[
+    {
+        "id": 1,
+        "agrupacion": "psicoterapia",
+        "title": "Individual",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "rutaimg": "/img/servicios/15_servicios_individual.webp"
+    },
+    {
+        "id": 2,
+        "agrupacion": "psicoterapia",
+        "title": "Geriatria",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "rutaimg": "/img/servicios/15_servicios_geriatria.webp"
+    },
+    {
+        "id": 3,
+        "agrupacion": "psicoterapia",
+        "title": "Pareja",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "rutaimg": "/img/servicios/15_servicios_pareja.webp"
+    },
+    {
+        "id": 4,
+        "agrupacion": "psicoterapia",
+        "title": "Familia",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "rutaimg": "/img/servicios/15_servicios_familia.webp"
+    },
+    {
+        "id": 5,
+        "agrupacion": "consejeria",
+        "title": "Consejería",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "rutaimg": "/img/servicios/15_servicios_consejeria.webp"
+    },
+    {
+        "id": 6,
+        "agrupacion": "evaluacion",
+        "title": "Evaluación",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "rutaimg": "/img/servicios/15_servicios_evaluacion.webp"
+    },
+    {
+        "id": 7,
+        "agrupacion": "taller",
+        "title": "Taller",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "rutaimg": "/img/servicios/15_servicios_talleres.webp"
+    },
+    {
+        "id": 8,
+        "agrupacion": "certificado",
+        "title": "Certificado",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "rutaimg": "/img/servicios/15_servicios_certificados.webp"
+    }
+]

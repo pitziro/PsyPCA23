@@ -1,6 +1,6 @@
 .carouselContainer {
-    width: 80vw;
-    height: 45vw;
+    width: 100%;
+    height: 35vw;
     margin: 0 auto;
     margin-bottom: 40px;
     position: relative;
@@ -13,6 +13,11 @@
     height: 100%;
     width: 100%;
 } 
+
+.carouselSlider svg{
+    font-size: 3rem;
+    } 
+        
     
 
 .carouselSlideItem {
@@ -28,7 +33,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
     left: 10px;
 }
 
@@ -42,7 +46,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem;
     right: 10px;
 }
 
