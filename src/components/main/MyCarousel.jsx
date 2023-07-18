@@ -50,7 +50,9 @@ function MyCarousel() {
 				/>
 				<div
 					className={cStyle.carouselSlideItem}
-					style={{ backgroundImage: `url(/img/${imagenes[currIndex].name})` }}
+					style={{
+						backgroundImage: `url(/img/carrusel/${imagenes[currIndex].name})`,
+					}}
 				></div>
 				<ArrowForwardIos
 					className={cStyle.rightArrowSlide}

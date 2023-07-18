@@ -1,6 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import aStyle from './App.module.css';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Footer from './components/bottom/Footer';
 import Welcome from '../src/pages/Welcome';
@@ -9,25 +7,32 @@ import Nosotros from '../src/pages/Nosotros';
 import Servicios from '../src/pages/Servicios';
 import Preguntas from '../src/pages/Preguntas';
 import Navbar from './components/top/Navbar';
+import { useEffect } from 'react';
+
+import aStyle from './App.module.css';
 
 function App() {
+	const { pathname } = useLocation();
+
+	useEffect(() => {
+		window.scrollTo({ top: 0 });
+	}, [pathname]);
+
 	return (
 		<div className={aStyle.App}>
-			<BrowserRouter>
-				<Navbar />
+			<Navbar />
 
-				<div className={aStyle.zonamain}>
-					<Routes>
-						<Route path='/' element={<Welcome />} />
-						<Route exact path='/nosotros' element={<Nosotros />} />
-						<Route exact path='/equipo' element={<Equipo />} />
-						<Route exact path='/servicios' element={<Servicios />} />
-						<Route exact path='/QandA' element={<Preguntas />} />
-					</Routes>
-				</div>
+			<div className={aStyle.zonamain}>
+				<Routes>
+					<Route exact path='/' element={<Welcome />} />
+					<Route exact path='/nosotros' element={<Nosotros />} />
+					<Route exact path='/equipo' element={<Equipo />} />
+					<Route exact path='/servicios' element={<Servicios />} />
+					<Route exact path='/QandA' element={<Preguntas />} />
+				</Routes>
+			</div>
 
-				<Footer />
-			</BrowserRouter>
+			<Footer />
 		</div>
 	);
 }
