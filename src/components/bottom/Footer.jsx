@@ -9,18 +9,6 @@ export default function Footer() {
 				<img alt='logo_completo' src='/img/00_LOGO-SIN-FONDO_r.png' />
 			</div>
 
-			<div className={fStyles.sec_dir}>
-				<p>
-					Dirección: <br />
-					Av. Las Artes Norte 343 , San Borja
-					<br />
-					<br />
-					Teléfono:
-					<br />
-					345 454 33 334 44. 33
-				</p>
-			</div>
-
 			<div className={fStyles.sec_redes}>
 				<p>
 					Atención de consultas: <br />
@@ -31,6 +19,18 @@ export default function Footer() {
 					<FacebookTwoTone />
 					<Instagram />
 					<LinkedIn />
+				</p>
+			</div>
+
+			<div className={fStyles.sec_dir}>
+				<p>
+					Dirección: <br />
+					Av. Las Artes Norte 343 , San Borja
+					<br />
+					<br />
+					Teléfono:
+					<br />
+					345 454 33 334 44. 33
 				</p>
 			</div>
 		</div>

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
 import Footer from './components/bottom/Footer';
@@ -7,7 +8,6 @@ import Nosotros from '../src/pages/Nosotros';
 import Servicios from '../src/pages/Servicios';
 import Preguntas from '../src/pages/Preguntas';
 import Navbar from './components/top/Navbar';
-import { useEffect } from 'react';
 
 import aStyle from './App.module.css';
 
