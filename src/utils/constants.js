@@ -11,4 +11,4 @@ export const CONST_LINK_INSTAGRAM =
 export const CONST_LINK_LINKEDIN =
 	'https://www.linkedin.com/company/perspectivas-centro-de-abordaje-psicol%C3%B3gico/';
 
-export const CONST_LINK_WHATSAPP = 'https://wa.link/unpjhx';
+export const CONST_LINK_WHATSAPP = 'https://wa.link/1nm3qc';
