@@ -53,6 +53,7 @@
 	}
 	.serv_card_text {
 		box-shadow: unset;
+		width: unset;
 	}
 
 	.serv_card_title {
