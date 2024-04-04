@@ -107,7 +107,7 @@
 	color: var(--cPaleta1);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 980px) {
 	.main_somos_desc {
 		width: 100vw;
 		display: flex;
