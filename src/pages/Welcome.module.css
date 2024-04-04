@@ -1,69 +1,62 @@
-
-.div_welcome{
-    width: 100%;
+.div_welcome {
+	width: 100%;
 }
 
 .wMain {
-    padding-bottom: 10px;
-    margin: 0 auto;
-    /* width: 100dvw; */
-    height: 60vw;
-    position: relative;
-    border : 1px  solid magenta;
+	padding-bottom: 10px;
+	margin: 0 auto;
+	height: 60vw;
+	max-width: 1200px;
+	/* position: relative; */
+	/* width: 100dvw; */
+	/* border: 1px solid magenta; */
 }
 
 .imgContainer {
-    /* width: 100dvw; */
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-image: url('/img/03_sesion_terapia_r.jpg');
-
+	/* width: 100dvw; */
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-image: url('/img/03_sesion_terapia_r.jpg');
 }
 
-
-
 .imgWasap {
-    display: flex;
-    position: absolute;
-    top: 5%;
-    color: white;
-    align-items: center;
-    right: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 1.5rem;
+	display: flex;
+	position: absolute;
+	top: 5%;
+	color: white;
+	align-items: center;
+	right: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1.5rem;
 }
 
 .imgWasap svg {
-    margin-left: 5px;
-    font-size: 2rem;
+	margin-left: 5px;
+	font-size: 2rem;
 }
-
 
 .wBeneficios {
-    padding: 0px 10px 20px 10px;
-    border: 1px dotted blue;
-    height: 200px;
-
+	padding: 0px 10px 20px 10px;
+	border: 1px dotted blue;
+	height: 200px;
 }
 
-.wBienvenida{
-    padding: 0px 10px 20px 10px;
-    border: 1px dotted blue;
-    height: 200px;
-
+.wBienvenida {
+	padding: 0px 10px 20px 10px;
+	border: 1px dotted blue;
+	height: 200px;
 }
-
 
 @media screen and (max-width: 700px) {
-    .imgWasap {
-        right: 10px;
-        font-size: 1.1rem;
-    }
+	.imgWasap {
+		right: 10px;
+		font-size: 1.1rem;
+	}
 
-    .imgWasap svg {
-        font-size: 1.1rem;
-    }
+	.imgWasap svg {
+		font-size: 1.1rem;
+	}
 }

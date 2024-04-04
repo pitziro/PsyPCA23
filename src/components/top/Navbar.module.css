@@ -16,7 +16,9 @@
 .topRowOne svg {
 	margin-top: 3px;
 	height: 20px;
-	padding: 0 5px 0 5px;
+	color: whitesmoke;
+
+	/* padding: 0 5px 0 5px; */
 }
 
 /* --- Barra de Navegacion --- */

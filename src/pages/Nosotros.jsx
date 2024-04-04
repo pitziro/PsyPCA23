@@ -79,38 +79,41 @@ export default function Nosotros() {
 				<div className={nStyle.valorx}>
 					<Handshake />
 					<p>
-						Respeto: por lo que hacemos, por nuestros pacientes, por nuestra
-						sociedad y las personas que la componen
+						<b>Respeto:</b> por lo que hacemos, por nuestros pacientes, por
+						nuestra sociedad y las personas que la componen
 					</p>
 				</div>
 
 				<div className={nStyle.valorx}>
 					<HealthAndSafety />
 					<p>
-						Vocación de servicio: mostrarnos siempre dispuestos a atender tus
-						necesidades y de tus seres queridos.
+						<b>Vocación de servicio:</b> mostrarnos siempre dispuestos a atender
+						tus necesidades y de tus seres queridos.
 					</p>
 				</div>
 
 				<div className={nStyle.valorx}>
 					<GppGood />
 					<p>
-						Responsabilidad: brindarte una atención de calidad, profesionalismo
-						y mejoría en tu bienestar.
+						<b>Responsabilidad:</b> brindarte una atención de calidad,
+						profesionalismo y mejoría en tu bienestar.
 					</p>
 				</div>
 
 				<div className={nStyle.valorx}>
 					<Diversity3 />
 					<p>
-						Empatía: entender tus emociones, pensamientos y perspectivas de
-						vida.
+						<b>Empatía:</b> entender tus emociones, pensamientos y perspectivas
+						de vida.
 					</p>
 				</div>
 
 				<div className={nStyle.valorx}>
 					<Spa />
-					<p>Integridad: Honestidad y ética en cada atención que brindamos. </p>
+					<p>
+						<b>Integridad:</b> Honestidad y ética en cada atención que
+						brindamos. 
+					</p>
 				</div>
 			</section>
 		</div>

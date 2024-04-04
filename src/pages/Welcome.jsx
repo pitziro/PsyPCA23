@@ -1,13 +1,8 @@
 import { useEffect, useState } from 'react';
-
-import { WhatsApp } from '@mui/icons-material';
 import { Box, Modal, Fade, Backdrop } from '@mui/material';
-import { Link } from 'react-router-dom';
 import wStyles from './Welcome.module.css';
 
 export default function Welcome() {
-	const linkWasap = 'https://wa.link/unpjhx';
-
 	const modalStyle = {
 		position: 'absolute',
 		top: '50%',
@@ -75,6 +70,7 @@ export default function Welcome() {
 				<p> beneficios </p>
 			</section>
 
+			{/*
 			<section className={wStyles.wBienvenida}>
 				<p> Bloque Reviews </p>
 			</section>
@@ -82,6 +78,7 @@ export default function Welcome() {
 			<section className={wStyles.wBienvenida}>
 				<p> Bloque Blog </p>
 			</section>
+            */}
 		</div>
 	);
 }

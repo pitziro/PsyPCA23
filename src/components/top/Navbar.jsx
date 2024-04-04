@@ -12,6 +12,13 @@ import NavItem from './NavItem';
 import Mobile from './Mobile';
 
 import myitems from '../../data/navbarData.json';
+import {
+	CONST_EMAIL_CONTACTO,
+	CONST_LINK_FACEBOOK,
+	CONST_LINK_INSTAGRAM,
+	CONST_LINK_WHATSAPP,
+	CONST_PHONE_NUMBER,
+} from '../../utils/constants';
 
 function Navbar() {
 	const [barOpened, setbarOpened] = useState(false);
@@ -21,9 +28,6 @@ function Navbar() {
 	};
 
 	const navRef = useRef(null);
-
-	const linkWasap = 'https://wa.link/unpjhx';
-	const correoContacto = 'contacto@centroperspectivas.com';
 
 	useEffect(() => {
 		const clickOutside = (evt) => {
@@ -56,11 +60,17 @@ function Navbar() {
 	return (
 		<div className={aStyle.zonatop}>
 			<div className={mstyle.topRowOne}>
-				<span className={mstyle.spanFono}>Llámanos al: +51 999 666 333 </span>
-				<span> {correoContacto} </span>
+				<span className={mstyle.spanFono}>
+					Llámanos al: {CONST_PHONE_NUMBER}{' '}
+				</span>
+				<span> {CONST_EMAIL_CONTACTO} </span>
 				<span>
-					<FacebookTwoTone />
-					<Instagram />
+					<a href={CONST_LINK_FACEBOOK} target='_blank'>
+						<FacebookTwoTone />
+					</a>
+					<a href={CONST_LINK_INSTAGRAM} target='_blank'>
+						<Instagram />
+					</a>
 				</span>
 			</div>
 
@@ -93,7 +103,11 @@ function Navbar() {
 
 				<ThemeProvider theme={buttonWhatsappTheme}>
 					<div className={mstyle.combutton}>
-						<Button variant='outlined' href={linkWasap} target='_blank'>
+						<Button
+							variant='outlined'
+							href={CONST_LINK_WHATSAPP}
+							target='_blank'
+						>
 							¿Necesitas ayuda?&nbsp;
 							<img alt='whatsapp' src='/img/50_whatstapp_icon.webp' />
 						</Button>

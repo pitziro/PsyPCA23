@@ -1,3 +1,10 @@
+import {
+	CONST_ADDRESS,
+	CONST_LINK_FACEBOOK,
+	CONST_LINK_INSTAGRAM,
+	CONST_LINK_LINKEDIN,
+	CONST_PHONE_NUMBER,
+} from '../../utils/constants';
 import fStyles from './Footer.module.css';
 
 import { FacebookTwoTone, Instagram, LinkedIn } from '@mui/icons-material';
@@ -5,32 +12,36 @@ import { FacebookTwoTone, Instagram, LinkedIn } from '@mui/icons-material';
 export default function Footer() {
 	return (
 		<div className={fStyles.zona_bot}>
-			<div className={fStyles.sec_logo}>
-				<img alt='logo_completo' src='/img/00_LOGO-SIN-FONDO_r.png' />
-			</div>
+			<img alt='logo_completo' src='/img/00_LOGO-SIN-FONDO_r.png' />
 
 			<div className={fStyles.sec_redes}>
 				<p>
 					Atención de consultas: <br />
-					+99 433 4455
+					{CONST_PHONE_NUMBER}
+					<br />
 					<br />
 					<br />
 					Siguenos en redes: <br />
-					<FacebookTwoTone />
-					<Instagram />
-					<LinkedIn />
+					<a
+						href={CONST_LINK_FACEBOOK}
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<FacebookTwoTone />
+					</a>
+					<a href={CONST_LINK_INSTAGRAM} target='_blank'>
+						<Instagram />
+					</a>
+					<a href={CONST_LINK_LINKEDIN} target='_blank'>
+						<LinkedIn />
+					</a>
 				</p>
 			</div>
 
 			<div className={fStyles.sec_dir}>
 				<p>
 					Dirección: <br />
-					Av. Las Artes Norte 343 , San Borja
-					<br />
-					<br />
-					Teléfono:
-					<br />
-					345 454 33 334 44. 33
+					{CONST_ADDRESS}
 				</p>
 			</div>
 		</div>

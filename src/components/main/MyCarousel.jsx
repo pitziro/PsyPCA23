@@ -21,7 +21,7 @@ function MyCarousel() {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			clickSlideRight();
-		}, 3000);
+		}, 3500);
 		return () => clearInterval(interval);
 	}, [currIndex]);
 
