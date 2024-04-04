@@ -1,9 +1,6 @@
 .zona_bot {
 	display: flex;
-	/* align-items: flex-start; */
-	/* min-height: 175px; */
-	/* height: max-content; */
-	/* width: 100dvw; */
+	align-items: center;
 	background-color: var(--cPaleta2);
 	font-size: 1.2rem;
 	justify-content: space-evenly;
@@ -18,24 +15,16 @@
 }
 
 .zona_bot img {
-	height: 150px;
-}
-
-.sec_dir {
-	height: 100%;
-	display: flex;
-	flex-grow: 0.25;
-	/* padding-top: 20px; */
-	padding-left: 15px;
-	text-align: center;
+	height: 220px;
 }
 
 .sec_redes {
-	height: 100%;
-	display: flex;
-	flex-grow: 0.25;
-	/* padding-top: 20px; */
-	padding-left: 15px;
+	line-height: 2rem;
+
+	& p {
+		text-align: center;
+		margin-bottom: 15px;
+	}
 }
 
 .sec_redes img {
@@ -43,6 +32,23 @@
 	margin: 2px;
 	width: 40px;
 	height: 45px;
+	/* border: 1px solid green; */
+}
+
+.sec_dir {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 15px;
+	& p {
+		margin-bottom: 10px;
+	}
+
+	& .sec_dir_map {
+		width: 400px;
+		height: 300px;
+	}
 }
 
 @media screen and (max-width: 980px) {
@@ -52,10 +58,15 @@
 		align-items: center;
 	}
 
+	.zona_bot > img {
+		height: 150px;
+	}
+
 	.sec_redes,
 	.sec_dir {
 		margin-bottom: 30px;
 		text-align: center;
+		align-items: center;
 		padding: 0;
 	}
 

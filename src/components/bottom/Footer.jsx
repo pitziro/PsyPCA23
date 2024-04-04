@@ -10,6 +10,7 @@ import fStyles from './Footer.module.css';
 import instagramSVG from '/img/svg/instagramLogo.svg';
 import facebookSVG from '/img/svg/facebookLogo.svg';
 import linkedinSVG from '/img/svg/linkedinLogo.svg';
+import MapsApi from '../../utils/MapsApi';
 
 export default function Footer() {
 	return (
@@ -20,9 +21,8 @@ export default function Footer() {
 				<p>
 					Atención de consultas: <br />
 					{CONST_PHONE_NUMBER}
-					<br />
-					<br />
-					<br />
+				</p>
+				<p>
 					Siguenos en redes: <br />
 					<a href={CONST_LINK_FACEBOOK} target='_blank'>
 						<img src={facebookSVG} alt='facebook'></img>
@@ -34,6 +34,13 @@ export default function Footer() {
 						<img src={linkedinSVG} alt='linkedin' />
 					</a>
 				</p>
+				<p>
+					Marca Registrada
+					<br />
+					RUC: 20610023810
+					<br />
+					@Lima, Perú 2022
+				</p>
 			</div>
 
 			<div className={fStyles.sec_dir}>
@@ -41,6 +48,9 @@ export default function Footer() {
 					Dirección: <br />
 					{CONST_ADDRESS}
 				</p>
+				<div className={fStyles.sec_dir_map}>
+					<MapsApi className={fStyles.sec_dir_map} />
+				</div>
 			</div>
 		</div>
 	);

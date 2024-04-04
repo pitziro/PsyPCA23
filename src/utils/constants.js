@@ -12,3 +12,8 @@ export const CONST_LINK_LINKEDIN =
 	'https://www.linkedin.com/company/perspectivas-centro-de-abordaje-psicol%C3%B3gico/';
 
 export const CONST_LINK_WHATSAPP = 'https://wa.link/1nm3qc';
+
+export const CONST_POSITION_GPS = {
+	lat: -12.123636245727539,
+	lng: -76.98722839355469,
+};
