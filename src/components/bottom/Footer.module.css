@@ -38,11 +38,11 @@
 	padding-left: 15px;
 }
 
-.sec_redes svg {
+.sec_redes img {
 	padding: 2px;
 	margin: 2px;
-	font-size: 2.5rem;
-	color: white;
+	width: 40px;
+	height: 45px;
 }
 
 @media screen and (max-width: 700px) {

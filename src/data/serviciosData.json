@@ -4,56 +4,56 @@
         "id": 1,
         "agrupacion": "psicoterapia",
         "title": "Individual",
-        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "desc": "Es un encuentro entre el terapeuta y el paciente, en un ambiente que promueve la aceptación, intimidad y apertura, donde el paciente puede expresar sus problemas y emociones personales. \n\n El objetivo, básicamente, es estimular pensamientos, sentimientos y sensaciones que tiene una persona, pero que aún no sabe cómo aplicarlos o identificarlos. Además, de aprender estrategias para afrontar y superar obstáculos, así desarrollar mejores competencias para la vida. \n\n Es un tratamiento efectivo para alteraciones psicológicas, que contribuyen en la salud mental del paciente y su bienestar. \n\n Está dirigido a Adultos, adolescentes y niños.",
         "rutaimg": "/img/servicios/15_servicios_individual.webp"
     },
     {
         "id": 2,
         "agrupacion": "psicoterapia",
         "title": "Geriatria",
-        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "desc": "Para nuestros seres queridos de tercera edad, donde se orienta a esclarecer y acompañar al consultante a sobrellevar los cambios y frustraciones propias de la edad.",
         "rutaimg": "/img/servicios/15_servicios_geriatria.webp"
     },
     {
         "id": 3,
         "agrupacion": "psicoterapia",
         "title": "Pareja",
-        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "desc": "Es un tipo de consulta de psicoterapia orientada a analizar y lidiar con los conflictos que surgen en una relación amorosa. Se basa en el reconocimiento del problema, establecimiento de nuevas alianzas, modificación de conductas/actitudes y estrategias de comunicación.\n\n ¿Cuándo acudir? cuando la relación empieza a deteriorarse y ambas partes consideran que no hay salida evidente. ",
         "rutaimg": "/img/servicios/15_servicios_pareja.webp"
     },
     {
         "id": 4,
         "agrupacion": "psicoterapia",
         "title": "Familia",
-        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "desc": "Se centra en la familia como foco de atención. El objetivo principal es restablecer el equilibrio de la familia cuando aparecen conflictos, tensiones o problemas de comunicación. También es muy útil cuando algún miembro tiene problemas que afectan la convivencia. \n\n La familia es un sistema en el que todos influyen sobre los otros, por lo tanto, todos pueden contribuir a la solución del problema.",
         "rutaimg": "/img/servicios/15_servicios_familia.webp"
     },
     {
         "id": 5,
         "agrupacion": "consejeria",
         "title": "Consejería",
-        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "desc": "La orientación y consejería psicológica es un proceso dirigido a la atención oportuna de problemas psicológicos de baja complejidad. Suele ser un primer contacto con el paciente.\n\n Los casos más comunes son: auto-control, solución de problemas, control del estrés y manejo de la crisis. ",
         "rutaimg": "/img/servicios/15_servicios_consejeria.webp"
     },
     {
         "id": 6,
         "agrupacion": "evaluacion",
         "title": "Evaluación",
-        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "desc": "Psicológica: Es un proceso que integra la aplicación de pruebas psicológicas y test proyectivos con la finalidad de explorar áreas de la personalidad o de la cognición de la persona interesada. \n\n Orientación Vocacional: tiene como finalidad brindar opciones académicas y profesionales según el perfil psicológico del entrevistado. Se compone por sesiones psicológicas y aplicación de pruebas psicológicas. \n\n Escolar: dirigido a los más pequeños, con el objetivo de explorar y analizar su conducta temprana para el ingreso al colegio ",
         "rutaimg": "/img/servicios/15_servicios_evaluacion.webp"
     },
     {
         "id": 7,
         "agrupacion": "taller",
         "title": "Taller",
-        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "desc": "Liderazgo \n Gestión de Equipos \n Comunicación Efectiva \n Empatía \n Padres de familia \n Habilidades blandas \n Relaciones interpersonales\n ",
         "rutaimg": "/img/servicios/15_servicios_talleres.webp"
     },
     {
         "id": 8,
         "agrupacion": "certificado",
         "title": "Certificado",
-        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatum eum iste obcaecati quam fugit! Nostrum sit, ducimus magnam voluptates impedit accusantium ab autem sapiente numquam alias quidem libero eos?",
+        "desc": "Psicológicos \n\n Psiquiátricos",
         "rutaimg": "/img/servicios/15_servicios_certificados.webp"
     }
 ]

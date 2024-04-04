@@ -7,7 +7,9 @@ import {
 } from '../../utils/constants';
 import fStyles from './Footer.module.css';
 
-import { FacebookTwoTone, Instagram, LinkedIn } from '@mui/icons-material';
+import instagramSVG from '/img/svg/instagramLogo.svg';
+import facebookSVG from '/img/svg/facebookLogo.svg';
+import linkedinSVG from '/img/svg/linkedinLogo.svg';
 
 export default function Footer() {
 	return (
@@ -22,18 +24,14 @@ export default function Footer() {
 					<br />
 					<br />
 					Siguenos en redes: <br />
-					<a
-						href={CONST_LINK_FACEBOOK}
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						<FacebookTwoTone />
+					<a href={CONST_LINK_FACEBOOK} target='_blank'>
+						<img src={facebookSVG} alt='facebook'></img>
 					</a>
 					<a href={CONST_LINK_INSTAGRAM} target='_blank'>
-						<Instagram />
+						<img src={instagramSVG}></img>
 					</a>
 					<a href={CONST_LINK_LINKEDIN} target='_blank'>
-						<LinkedIn />
+						<img src={linkedinSVG} alt='linkedin' />
 					</a>
 				</p>
 			</div>

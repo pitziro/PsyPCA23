@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { FacebookTwoTone, Instagram } from '@mui/icons-material';
+import instagramSVG from '/img/svg/instagramLogo.svg';
+import facebookSVG from '/img/svg/facebookLogo.svg';
 import { Button } from '@mui/material';
 
 import mstyle from './Navbar.module.css';
@@ -66,10 +67,10 @@ function Navbar() {
 				<span> {CONST_EMAIL_CONTACTO} </span>
 				<span>
 					<a href={CONST_LINK_FACEBOOK} target='_blank'>
-						<FacebookTwoTone />
+						<img src={facebookSVG} alt='fb logo' />
 					</a>
 					<a href={CONST_LINK_INSTAGRAM} target='_blank'>
-						<Instagram />
+						<img src={instagramSVG} alt='ig logo' />
 					</a>
 				</span>
 			</div>

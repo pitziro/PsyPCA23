@@ -4,21 +4,19 @@
 	align-items: center;
 	background-color: var(--cPaleta2);
 	font-size: 1.1rem;
-	height: 20px;
+	height: 25px;
 	color: white;
-}
 
-.topRowOne span {
-	margin-left: 10px;
-	margin-right: 10px;
-}
+	& span {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 
-.topRowOne svg {
-	margin-top: 3px;
-	height: 20px;
-	color: whitesmoke;
-
-	/* padding: 0 5px 0 5px; */
+	& img {
+		margin: 0 7px 0 7px;
+		height: 20px;
+		margin-top: 5px;
+	}
 }
 
 /* --- Barra de Navegacion --- */
