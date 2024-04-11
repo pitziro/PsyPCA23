@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-import { ExpandMoreOutlined } from '@mui/icons-material';
-
+import expandIcon from '../../assets/svg/expandIcon.svg';
 import mstyle from './Navbar.module.css';
 
 export default function NavItem(props) {
@@ -52,7 +51,9 @@ export default function NavItem(props) {
 			>
 				<div className={mstyle.subcategory_title}>
 					<Link to='#'>{item.title}</Link>
-					<ExpandMoreOutlined
+					<img
+						src={expandIcon}
+						alt='expand'
 						className={mstyle.subcategory_icon}
 						style={{
 							transform: `rotate(${subcategoryOpened ? '180deg' : '0deg'})`,

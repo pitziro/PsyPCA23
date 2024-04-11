@@ -1,7 +1,10 @@
 import React from 'react';
 import mStyles from './Navbar.module.css';
 
-import { Menu, Close } from '@mui/icons-material';
+import { Close } from '@mui/icons-material';
+
+import menuIcon from '../../assets/svg/menuIcon.svg';
+import crossIcon from '../../assets/svg/crossIcon.svg';
 
 function Mobile({ fClick }) {
 	let { barOpened, handleClick } = fClick;
@@ -9,9 +12,11 @@ function Mobile({ fClick }) {
 	return (
 		<div className={mStyles.mobileMenu}>
 			{!barOpened ? (
-				<Menu className={mStyles.mobileIcon} onClick={handleClick} />
+				<img src={menuIcon} alt='menu' onClick={handleClick} />
 			) : (
 				<Close onClick={handleClick} />
+
+				// <img src={crossIcon} alt='close' onClick={handleClick} />
 			)}
 		</div>
 	);

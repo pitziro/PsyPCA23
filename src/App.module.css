@@ -30,22 +30,18 @@
 	display: flex;
 	background-color: var(--cFondo);
 	flex-direction: column;
-	/* height: max-content; */
 }
 
 .zonatop {
 	display: flex;
 	flex-direction: column;
 	position: sticky;
-	/* width: 100dvw; */
 	top: 0;
 	background-color: var(--cPaleta2);
-	/* font-size: 1rem; */
 	background-color: white;
 	z-index: 50;
 	box-shadow: 0px 0px 10px var(--cPaleta1);
 	flex-grow: 0;
-	/* border-bottom: 1.5px solid var(--cPaleta1); */
 }
 
 .zonamain {

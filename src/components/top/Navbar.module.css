@@ -145,7 +145,8 @@
 	align-items: center;
 }
 
-.subcategory_title svg {
+.subcategory_title img {
+	height: 20px;
 	margin-left: 5px;
 	transition: transform 0.25s ease-in-out;
 }
@@ -175,6 +176,10 @@
 		margin-right: 2vh;
 		align-items: center;
 		justify-content: flex-end;
+	}
+
+	.mobileMenu img {
+		height: 30px;
 	}
 
 	.mobileMenu svg {
