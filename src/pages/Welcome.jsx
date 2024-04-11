@@ -18,15 +18,15 @@ export default function Welcome() {
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
 
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			handleOpen();
-		}, 3000);
+	// useEffect(() => {
+	// 	const timer = setTimeout(() => {
+	// 		handleOpen();
+	// 	}, 3000);
 
-		return () => {
-			clearInterval(timer);
-		};
-	}, []);
+	// 	return () => {
+	// 		clearInterval(timer);
+	// 	};
+	// }, []);
 
 	return (
 		<div className={wStyles.div_welcome}>
@@ -40,7 +40,7 @@ export default function Welcome() {
 					</div>
 				</Link> */}
 			</section>
-
+			{/* 
 			<Modal
 				open={open}
 				onClose={handleClose}
@@ -60,7 +60,7 @@ export default function Welcome() {
 						</p>
 					</Box>
 				</Fade>
-			</Modal>
+			</Modal> */}
 
 			<section className={wStyles.wBeneficios}>
 				<p> Video Bienvenida </p>

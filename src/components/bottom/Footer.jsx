@@ -25,10 +25,10 @@ export default function Footer() {
 				<p>
 					Siguenos en redes: <br />
 					<a href={CONST_LINK_FACEBOOK} target='_blank'>
-						<img src={facebookSVG} alt='facebook'></img>
+						<img src={facebookSVG} alt='facebook' />
 					</a>
 					<a href={CONST_LINK_INSTAGRAM} target='_blank'>
-						<img src={instagramSVG}></img>
+						<img src={instagramSVG} alt='instagram' />
 					</a>
 					<a href={CONST_LINK_LINKEDIN} target='_blank'>
 						<img src={linkedinSVG} alt='linkedin' />
