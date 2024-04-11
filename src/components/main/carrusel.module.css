@@ -1,81 +1,61 @@
 .carouselContainer {
-    width: 100%;
-    height: 35vw;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    position: relative;
-    /* z-index: 0; */
+	width: 100%;
+	height: 35vw;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	position: relative;
+	/* z-index: 0; */
 }
 
 .carouselSlider {
-/* border: 1px solid red;  */
-    position: absolute;
-    height: 100%;
-    width: 100%;
-} 
+	/* border: 1px solid red;  */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
 
-.carouselSlider svg{
-    font-size: 3rem;
-    } 
-        
-    
+.carouselSlider svg {
+	font-size: 3rem;
+}
 
 .carouselSlideItem {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	background-size: cover;
+	background-position: center;
 }
-
 
 .leftArrowSlide {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10px;
-}
-
-.leftArrowSlide:hover {
-    color: white;
-    cursor: pointer;
-
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 10px;
+	height: 55px;
 }
 
 .rightArrowSlide {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+	height: 55px;
 }
-
-.rightArrowSlide:hover {
-    cursor: pointer;
-    color: white;
-
-}
-
 
 .dotContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
 
-}
-
-.dotIndicator svg{
-    margin: 0 3px;
-    cursor: pointer;
-    font-size: 0.8rem;
+	& img {
+		height: 20px;
+	}
 }
 
 @media screen and (max-width: 720px) {
-
-    .carouselContainer {
-        padding-top: 10px;
-        width: 90vw;
-        min-height: 200px;
-    } 
-
-} 
-
+	.carouselContainer {
+		padding-top: 10px;
+		width: 90vw;
+		min-height: 200px;
+	}
+}

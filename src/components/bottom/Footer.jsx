@@ -7,9 +7,9 @@ import {
 } from '../../utils/constants';
 import fStyles from './Footer.module.css';
 
-import instagramSVG from '/img/svg/instagramLogo.svg';
-import facebookSVG from '/img/svg/facebookLogo.svg';
-import linkedinSVG from '/img/svg/linkedinLogo.svg';
+import instagramSVG from '../../assets/svg/instagramLogo.svg';
+import facebookSVG from '../../assets/svg/facebookLogo.svg';
+import linkedinSVG from '../../assets/svg/linkedinLogo.svg';
 import MapsApi from '../../utils/MapsApi';
 
 export default function Footer() {

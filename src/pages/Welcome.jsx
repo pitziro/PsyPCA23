@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Box, Modal, Fade, Backdrop } from '@mui/material';
+//import { Box, Modal, Fade, Backdrop } from '@mui/material';
 import wStyles from './Welcome.module.css';
 
 export default function Welcome() {
@@ -41,6 +41,7 @@ export default function Welcome() {
 				</Link> */}
 			</section>
 			{/* 
+            
 			<Modal
 				open={open}
 				onClose={handleClose}

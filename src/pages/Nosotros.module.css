@@ -94,6 +94,9 @@
 	width: 35%;
 	max-width: 275px;
 	margin: 0 25px 50px 25px;
+	& img {
+		height: 90px;
+	}
 }
 
 .valorx p {

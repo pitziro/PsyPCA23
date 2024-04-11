@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import instagramSVG from '/img/svg/instagramLogo.svg';
-import facebookSVG from '/img/svg/facebookLogo.svg';
+import instagramSVG from '../../assets/svg/instagramLogo.svg';
+import facebookSVG from '../../assets/svg/facebookLogo.svg';
 import { Button } from '@mui/material';
 
 import mstyle from './Navbar.module.css';

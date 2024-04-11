@@ -1,13 +1,11 @@
 import MyCarousel from '../components/main/MyCarousel';
-import {
-	Handshake,
-	Diversity3,
-	HealthAndSafety,
-	GppGood,
-	Spa,
-} from '@mui/icons-material';
 
 import nStyle from './Nosotros.module.css';
+import handshakeIcon from '../assets/svg/handshakeIcon.svg';
+import compromisoIcon from '../assets/svg/compromisoIcon.svg';
+import responsibleIcon from '../assets/svg/responsibleIcon.svg';
+import empathyIcon from '../assets/svg/empathyIcon.svg';
+import integridadIcon from '../assets/svg/integridadIcon.svg';
 
 export default function Nosotros() {
 	return (
@@ -77,7 +75,7 @@ export default function Nosotros() {
 
 			<section className={nStyle.valores}>
 				<div className={nStyle.valorx}>
-					<Handshake />
+					<img src={handshakeIcon} />
 					<p>
 						<b>Respeto:</b> por lo que hacemos, por nuestros pacientes, por
 						nuestra sociedad y las personas que la componen
@@ -85,7 +83,7 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<HealthAndSafety />
+					<img src={compromisoIcon} />
 					<p>
 						<b>Vocación de servicio:</b> mostrarnos siempre dispuestos a atender
 						tus necesidades y de tus seres queridos.
@@ -93,7 +91,7 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<GppGood />
+					<img src={responsibleIcon} />
 					<p>
 						<b>Responsabilidad:</b> brindarte una atención de calidad,
 						profesionalismo y mejoría en tu bienestar.
@@ -101,7 +99,7 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<Diversity3 />
+					<img src={empathyIcon} />
 					<p>
 						<b>Empatía:</b> entender tus emociones, pensamientos y perspectivas
 						de vida.
@@ -109,7 +107,7 @@ export default function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<Spa />
+					<img src={integridadIcon} />
 					<p>
 						<b>Integridad:</b> Honestidad y ética en cada atención que
 						brindamos. 

@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-
-import {
-	ArrowBackIos,
-	ArrowForwardIos,
-	CircleOutlined,
-	CircleRounded,
-} from '@mui/icons-material';
 import cStyle from './carrusel.module.css';
+
+import rightArrow from '../../assets/svg/rightArrow.svg';
+import leftArrow from '../../assets/svg/leftArrow.svg';
+import circlefilled from '../../assets/svg/circlefilled.svg';
+import circleempty from '../../assets/svg/circleempty.svg';
 
 function MyCarousel() {
 	const [currIndex, setcurrIndex] = useState(0);
@@ -44,7 +42,8 @@ function MyCarousel() {
 	return (
 		<div className={cStyle.carouselContainer}>
 			<div className={cStyle.carouselSlider}>
-				<ArrowBackIos
+				<img
+					src={leftArrow}
 					className={cStyle.leftArrowSlide}
 					onClick={clickSlideLeft}
 				/>
@@ -54,18 +53,19 @@ function MyCarousel() {
 						backgroundImage: `url(/img/carrusel/${imagenes[currIndex].name})`,
 					}}
 				></div>
-				<ArrowForwardIos
+				<img
+					src={rightArrow}
 					className={cStyle.rightArrowSlide}
 					onClick={clickSlideRight}
 				/>
 				<div className={cStyle.dotContainer}>
 					{imagenes.map((imagen, index) => (
-						<div
-							key={index}
-							className={cStyle.dotIndicator}
-							onClick={() => goToSlide(index)}
-						>
-							{index === currIndex ? <CircleRounded /> : <CircleOutlined />}
+						<div key={index} onClick={() => goToSlide(index)}>
+							{index === currIndex ? (
+								<img src={circlefilled} />
+							) : (
+								<img src={circleempty} />
+							)}
 						</div>
 					))}
 				</div>

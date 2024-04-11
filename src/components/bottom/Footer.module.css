@@ -70,6 +70,11 @@
 		padding: 0;
 	}
 
+	.sec_dir .sec_dir_map {
+		width: 75dvw;
+		height: 45dvw;
+	}
+
 	.sec_logo {
 		margin: 0 auto;
 	}
