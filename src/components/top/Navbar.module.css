@@ -110,7 +110,7 @@
 
 .mobileMenu {
 	display: none;
-	width: 0;
+	/* width: 0; */
 	color: white;
 }
 
@@ -176,10 +176,16 @@
 		margin-right: 2vh;
 		align-items: center;
 		justify-content: flex-end;
-	}
 
-	.mobileMenu img {
-		height: 30px;
+		& img {
+			height: 30px;
+		}
+
+		& svg {
+			font-size: 1.75rem;
+			color: var(--cPaleta1);
+			width: 30px;
+		}
 	}
 
 	.mobileMenu svg {

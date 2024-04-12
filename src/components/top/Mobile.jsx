@@ -1,8 +1,7 @@
 import React from 'react';
 import mStyles from './Navbar.module.css';
 
-import { Close } from '@mui/icons-material';
-
+import CloseMenu from '../top/CloseMenu';
 import menuIcon from '../../assets/svg/menuIcon.svg';
 import crossIcon from '../../assets/svg/crossIcon.svg';
 
@@ -14,7 +13,7 @@ function Mobile({ fClick }) {
 			{!barOpened ? (
 				<img src={menuIcon} alt='menu' onClick={handleClick} />
 			) : (
-				<Close onClick={handleClick} />
+				<CloseMenu onClick={handleClick} />
 
 				// <img src={crossIcon} alt='close' onClick={handleClick} />
 			)}

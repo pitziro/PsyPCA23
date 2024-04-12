@@ -1,15 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, lazy } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
+import Navbar from './components/top/Navbar';
 import Footer from './components/bottom/Footer';
 import Welcome from '../src/pages/Welcome';
-import Equipo from '../src/pages//Equipo';
-import Nosotros from '../src/pages/Nosotros';
-import Servicios from '../src/pages/Servicios';
-import Preguntas from '../src/pages/Preguntas';
-import Navbar from './components/top/Navbar';
+
+// import Equipo from '../src/pages/Equipo';
+// import Nosotros from '../src/pages/Nosotros';
+//import Servicios from '../src/pages/Servicios';
+//import Preguntas from '../src/pages/Preguntas';
+
+const EquipoLazy = lazy(() => import('../src/pages/Equipo'));
+const NosotrosLazy = lazy(() => import('../src/pages/Nosotros'));
+const ServiciosLazy = lazy(() => import('../src/pages/Servicios'));
+const PreguntasLazy = lazy(() => import('../src/pages/Preguntas'));
 
 import aStyle from './App.module.css';
+import { Suspense } from 'react';
 
 function App() {
 	const { pathname } = useLocation();
@@ -25,10 +32,42 @@ function App() {
 			<div className={aStyle.zonamain}>
 				<Routes>
 					<Route exact path='/' element={<Welcome />} />
-					<Route exact path='/nosotros' element={<Nosotros />} />
-					<Route exact path='/equipo' element={<Equipo />} />
-					<Route exact path='/servicios' element={<Servicios />} />
-					<Route exact path='/QandA' element={<Preguntas />} />
+					<Route
+						exact
+						path='/nosotros'
+						element={
+							<Suspense fallback='loading...'>
+								<NosotrosLazy />
+							</Suspense>
+						}
+					/>
+					<Route
+						exact
+						path='/equipo'
+						element={
+							<Suspense fallback='loading...'>
+								<EquipoLazy />
+							</Suspense>
+						}
+					/>
+					<Route
+						exact
+						path='/servicios'
+						element={
+							<Suspense fallback='loading...'>
+								<ServiciosLazy />
+							</Suspense>
+						}
+					/>
+					<Route
+						exact
+						path='/QandA'
+						element={
+							<Suspense fallback='loading...'>
+								<PreguntasLazy />
+							</Suspense>
+						}
+					/>
 				</Routes>
 			</div>
 

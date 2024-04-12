@@ -7,7 +7,7 @@ import responsibleIcon from '../assets/svg/responsibleIcon.svg';
 import empathyIcon from '../assets/svg/empathyIcon.svg';
 import integridadIcon from '../assets/svg/integridadIcon.svg';
 
-export default function Nosotros() {
+function Nosotros() {
 	return (
 		<div className={nStyle.nosotrosdiv}>
 			<MyCarousel />
@@ -117,3 +117,5 @@ export default function Nosotros() {
 		</div>
 	);
 }
+
+export default Nosotros;

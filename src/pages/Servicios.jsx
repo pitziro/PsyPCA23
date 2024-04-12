@@ -5,7 +5,7 @@ import ServiceCard from './ServiceCard';
 
 import servicios from '../data/serviciosData.json';
 
-export default function Servicios() {
+function Servicios() {
 	return (
 		<div className={sStyle.catalogo}>
 			<section id='psicoterapia' className={sStyle.cat_subtitle}>
@@ -55,3 +55,5 @@ export default function Servicios() {
 		</div>
 	);
 }
+
+export default Servicios;

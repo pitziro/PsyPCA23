@@ -2,8 +2,7 @@
 
 import Player from './Player';
 import pStyle from './Equipo.module.css';
-
-export default function Equipo() {
+function Equipo() {
 	const equipo = [
 		{
 			id: 1,
@@ -43,3 +42,5 @@ export default function Equipo() {
 		</div>
 	);
 }
+
+export default Equipo;
