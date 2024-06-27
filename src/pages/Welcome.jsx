@@ -64,11 +64,11 @@ export default function Welcome() {
 			</Modal> */}
 
 			<section className={wStyles.wBeneficios}>
-				<p> Video Bienvenida </p>
+				<p> Bloque Bienvenida </p>
 			</section>
 
 			<section className={wStyles.wBienvenida}>
-				<p> beneficios </p>
+				<p> Bloque Beneficios </p>
 			</section>
 
 			{/*

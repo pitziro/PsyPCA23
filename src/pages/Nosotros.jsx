@@ -10,7 +10,7 @@ import integridadIcon from '../assets/svg/integridadIcon.svg';
 function Nosotros() {
 	return (
 		<div className={nStyle.nosotrosdiv}>
-			<MyCarousel />
+			{/* <MyCarousel /> */}
 
 			<div className={nStyle.valoresTagName}>
 				<h1> ¿QUIENES SOMOS? </h1>

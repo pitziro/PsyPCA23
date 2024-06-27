@@ -44,7 +44,7 @@
 }
 
 #categorybar {
-	width: 50%;
+	width: 60%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -93,15 +93,27 @@
 }
 
 /* nuevo boton wasap*/
-.combutton {
-	color: var(--cPaleta1);
+.btnContainer {
+	margin: 0 auto;
 	display: flex;
-	justify-content: center;
-	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	border: 1px solid var(--cPaleta1);
+	border-radius: 7px;
 }
 
-.combutton Button {
-	letter-spacing: 0.75px;
+.combutton {
+	color: var(--cPaleta1);
+	border: none;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: rgba(0, 0, 0, 0.394) 1.95px 1.95px 2.6px;
+	text-decoration: none;
+	font-family: 'Alga';
+	font-size: 0.95rem;
+	background-color: white;
+	height: 35px;
+	padding: 0 5px;
 }
 
 .combutton img {
@@ -160,7 +172,7 @@
 
 /* ------------------------------------------------ */
 /* ------------------MOBILE ------------------------*/
-@media screen and (max-width: 980px) {
+@media screen and (width <= 980px) {
 	.combutton {
 		margin: 0 auto;
 	}
@@ -238,12 +250,12 @@
 
 /* ------------------------------------------------ */
 /* ------------------ SMALL ------------------------*/
-@media screen and (max-width: 500px) {
+@media screen and (width <= 500px) {
 	.logo_img {
 		display: none;
 	}
 
-	.combutton {
+	.btnContainer {
 		display: none;
 	}
 

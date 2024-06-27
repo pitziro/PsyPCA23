@@ -16,7 +16,7 @@ export default function NavItem(props) {
 	const navRefSub = useRef(null);
 
 	const scrollWithOffset = (el) => {
-		const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+		const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
 		const yOffset = -120;
 		window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
 	};
@@ -77,10 +77,6 @@ export default function NavItem(props) {
 	} else {
 		return (
 			<div className={mstyle.categoryitem}>
-				{/* <Link to={item.path} onClick={handleClick}>
-					{item.title}
-				</Link> */}
-
 				<HashLink
 					smooth
 					to={item.path}

@@ -14,8 +14,6 @@ function Mobile({ fClick }) {
 				<img src={menuIcon} alt='menu' onClick={handleClick} />
 			) : (
 				<CloseMenu onClick={handleClick} />
-
-				// <img src={crossIcon} alt='close' onClick={handleClick} />
 			)}
 		</div>
 	);

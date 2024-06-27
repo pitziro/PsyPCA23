@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import { createTheme, ThemeProvider } from '@mui/material/styles';
+// import { Button } from '@mui/material';
 import instagramSVG from '../../assets/svg/instagramLogo.svg';
 import facebookSVG from '../../assets/svg/facebookLogo.svg';
-import { Button } from '@mui/material';
+import whatsappColorLogoSVG from '../../assets/svg/whatsappColorLogo.svg';
 
 import mstyle from './Navbar.module.css';
 import aStyle from '../../App.module.css';
@@ -43,20 +44,24 @@ function Navbar() {
 		};
 	}, [navRef]);
 
-	const buttonWhatsappTheme = createTheme({
-		palette: {
-			primary: {
-				main: '#333B4F',
-			},
-		},
-		typography: {
-			fontFamily: 'Alga',
-			button: {
-				textTransform: 'none',
-				fontSize: '1.2rem',
-			},
-		},
-	});
+	// const buttonWhatsappTheme = createTheme({
+	// 	palette: {
+	// 		primary: {
+	// 			main: '#333B4F',
+	// 		},
+	// 	},
+	// 	typography: {
+	// 		fontFamily: 'Alga',
+	// 		button: {
+	// 			textTransform: 'none',
+	// 			fontSize: '1.2rem',
+	// 		},
+	// 	},
+	// });
+
+	const handleWAbtn = () => {
+		window.open(CONST_LINK_WHATSAPP, '_blank');
+	};
 
 	return (
 		<div className={aStyle.zonatop}>
@@ -102,18 +107,16 @@ function Navbar() {
 					))}
 				</nav>
 
-				<ThemeProvider theme={buttonWhatsappTheme}>
-					<div className={mstyle.combutton}>
-						<Button
-							variant='outlined'
-							href={CONST_LINK_WHATSAPP}
-							target='_blank'
-						>
-							¿Necesitas ayuda?&nbsp;
-							<img alt='whatsapp' src='/img/50_whatstapp_icon.webp' />
-						</Button>
-					</div>
-				</ThemeProvider>
+				<div className={mstyle.btnContainer}>
+					<button
+						className={mstyle.combutton}
+						type='button'
+						onClick={handleWAbtn}
+					>
+						¿Conversamos?&nbsp;&nbsp;
+						<img alt='whatsapp' src={whatsappColorLogoSVG} />
+					</button>
+				</div>
 
 				<Mobile fClick={{ barOpened, handleClick }} />
 			</div>
