@@ -43,21 +43,6 @@ function Navbar() {
 		};
 	}, [navRef]);
 
-	// const buttonWhatsappTheme = createTheme({
-	// 	palette: {
-	// 		primary: {
-	// 			main: '#333B4F',
-	// 		},
-	// 	},
-	// 	typography: {
-	// 		fontFamily: 'Alga',
-	// 		button: {
-	// 			textTransform: 'none',
-	// 			fontSize: '1.2rem',
-	// 		},
-	// 	},
-	// });
-
 	const handleWAbtn = () => {
 		window.open(CONST_LINK_WHATSAPP, '_blank');
 	};
