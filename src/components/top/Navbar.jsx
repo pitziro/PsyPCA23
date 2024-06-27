@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-// import { createTheme, ThemeProvider } from '@mui/material/styles';
-// import { Button } from '@mui/material';
 import instagramSVG from '../../assets/svg/instagramLogo.svg';
 import facebookSVG from '../../assets/svg/facebookLogo.svg';
 import whatsappColorLogoSVG from '../../assets/svg/whatsappColorLogo.svg';
