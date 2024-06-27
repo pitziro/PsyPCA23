@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import instagramSVG from '../../assets/svg/instagramLogo.svg';
 import facebookSVG from '../../assets/svg/facebookLogo.svg';
 import whatsappColorLogoSVG from '../../assets/svg/whatsappColorLogo.svg';
+import whatsappDarkLogoSVG from '../../assets/svg/whatsappDarkLogo.svg';
 
 import mstyle from './Navbar.module.css';
 import aStyle from '../../App.module.css';
@@ -116,6 +117,12 @@ function Navbar() {
 						¿Conversamos?&nbsp;&nbsp;
 						<img alt='whatsapp' src={whatsappColorLogoSVG} />
 					</button>
+				</div>
+
+				<div className={mstyle.iconContainer}>
+					<Link to={CONST_LINK_WHATSAPP} target='_blank'>
+						<img alt='whatsapp' src={whatsappDarkLogoSVG} />
+					</Link>
 				</div>
 
 				<Mobile fClick={{ barOpened, handleClick }} />
