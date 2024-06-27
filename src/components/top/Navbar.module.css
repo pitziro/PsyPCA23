@@ -263,10 +263,13 @@
 	}
 
 	.iconContainer {
-		display: flex;
+		display: block;
 		width: 100%;
-		justify-content: end;
-		margin-right: 20px;
+		margin-right: 10px;
+		& a {
+			display: flex;
+			justify-content: end;
+		}
 		& img {
 			height: 25px;
 		}
