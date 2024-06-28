@@ -9,19 +9,22 @@
 
 @font-face {
 	font-family: 'Alga'; /*Can be any text*/
-	src: local('AlgaRegular'),
+	src:
+		local('AlgaRegular'),
 		url('../src/assets/fonts/AlgaRegular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'AlgaBold'; /*Can be any text*/
-	src: local('AlgaBold'),
+	src:
+		local('AlgaBold'),
 		url('../src/assets/fonts/AlgaBold.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'AlgaLight'; /*Can be any text*/
-	src: local('AlgaLight'),
+	src:
+		local('AlgaLight'),
 		url('../src/assets/fonts/AlgaLight.ttf') format('truetype');
 }
 

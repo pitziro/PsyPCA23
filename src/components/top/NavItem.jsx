@@ -1,46 +1,46 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
-import expandIcon from '../../assets/svg/expandIcon.svg';
-import mstyle from './Navbar.module.css';
+import expandIcon from '../../assets/svg/expandIcon.svg'
+import mstyle from './Navbar.module.css'
 
 export default function NavItem(props) {
-	const { item, handleClick, barOpened } = props;
+	const { item, handleClick, barOpened } = props
 
-	const [subcategoryOpened, setSubcategoryOpened] = useState(false);
+	const [subcategoryOpened, setSubcategoryOpened] = useState(false)
 	const handleOpenSub = () => {
-		setSubcategoryOpened((prev) => !prev);
-	};
+		setSubcategoryOpened(prev => !prev)
+	}
 
-	const navRefSub = useRef(null);
+	const navRefSub = useRef(null)
 
-	const scrollWithOffset = (el) => {
-		const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
-		const yOffset = -120;
-		window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
-	};
-
-	useEffect(() => {
-		setSubcategoryOpened(false);
-	}, [barOpened]);
+	const scrollWithOffset = el => {
+		const yCoordinate = el.getBoundingClientRect().top + window.scrollY
+		const yOffset = -120
+		window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
+	}
 
 	useEffect(() => {
-		const clickOutside = (evt) => {
+		setSubcategoryOpened(false)
+	}, [barOpened])
+
+	useEffect(() => {
+		const clickOutside = evt => {
 			if (
 				navRefSub.current &&
 				!navRefSub.current.contains(evt.target) &&
 				!subcategoryOpened
 			) {
-				setSubcategoryOpened(false);
+				setSubcategoryOpened(false)
 			}
-		};
-		document.addEventListener('mousedown', clickOutside);
+		}
+		document.addEventListener('mousedown', clickOutside)
 
 		return () => {
-			document.removeEventListener('mousedown', clickOutside);
-		};
-	}, [navRefSub]);
+			document.removeEventListener('mousedown', clickOutside)
+		}
+	}, [navRefSub])
 
 	if (item.childrens) {
 		return (
@@ -50,10 +50,10 @@ export default function NavItem(props) {
 				onClick={handleOpenSub}
 			>
 				<div className={mstyle.subcategory_title}>
-					<Link to='#'>{item.title}</Link>
+					<Link to="#">{item.title}</Link>
 					<img
 						src={expandIcon}
-						alt='expand'
+						alt="expand"
 						className={mstyle.subcategory_icon}
 						style={{
 							transform: `rotate(${subcategoryOpened ? '180deg' : '0deg'})`,
@@ -73,7 +73,7 @@ export default function NavItem(props) {
 					))}
 				</div>
 			</div>
-		);
+		)
 	} else {
 		return (
 			<div className={mstyle.categoryitem}>
@@ -86,6 +86,6 @@ export default function NavItem(props) {
 					{item.title}
 				</HashLink>
 			</div>
-		);
+		)
 	}
 }

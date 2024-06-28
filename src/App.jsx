@@ -1,29 +1,24 @@
-import { useEffect, lazy } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { useEffect, lazy } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 
-import Navbar from './components/top/Navbar';
-import Footer from './components/bottom/Footer';
-import Welcome from '../src/pages/Welcome';
+import Navbar from './components/top/Navbar'
+import Footer from './components/bottom/Footer'
+import Welcome from '../src/pages/Welcome'
 
-// import Equipo from '../src/pages/Equipo';
-// import Nosotros from '../src/pages/Nosotros';
-//import Servicios from '../src/pages/Servicios';
-//import Preguntas from '../src/pages/Preguntas';
+const EquipoLazy = lazy(() => import('../src/pages/Equipo'))
+const NosotrosLazy = lazy(() => import('../src/pages/Nosotros'))
+const ServiciosLazy = lazy(() => import('../src/pages/Servicios'))
+const PreguntasLazy = lazy(() => import('../src/pages/Preguntas'))
 
-const EquipoLazy = lazy(() => import('../src/pages/Equipo'));
-const NosotrosLazy = lazy(() => import('../src/pages/Nosotros'));
-const ServiciosLazy = lazy(() => import('../src/pages/Servicios'));
-const PreguntasLazy = lazy(() => import('../src/pages/Preguntas'));
-
-import aStyle from './App.module.css';
-import { Suspense } from 'react';
+import aStyle from './App.module.css'
+import { Suspense } from 'react'
 
 function App() {
-	const { pathname } = useLocation();
+	const { pathname } = useLocation()
 
 	useEffect(() => {
-		window.scrollTo({ top: 0 });
-	}, [pathname]);
+		window.scrollTo({ top: 0 })
+	}, [pathname])
 
 	return (
 		<div className={aStyle.App}>
@@ -31,39 +26,39 @@ function App() {
 
 			<div className={aStyle.zonamain}>
 				<Routes>
-					<Route exact path='/' element={<Welcome />} />
+					<Route exact path="/" element={<Welcome />} />
 					<Route
 						exact
-						path='/nosotros'
+						path="/nosotros"
 						element={
-							<Suspense fallback='loading...'>
+							<Suspense fallback="loading...">
 								<NosotrosLazy />
 							</Suspense>
 						}
 					/>
 					<Route
 						exact
-						path='/equipo'
+						path="/equipo"
 						element={
-							<Suspense fallback='loading...'>
+							<Suspense fallback="loading...">
 								<EquipoLazy />
 							</Suspense>
 						}
 					/>
 					<Route
 						exact
-						path='/servicios'
+						path="/servicios"
 						element={
-							<Suspense fallback='loading...'>
+							<Suspense fallback="loading...">
 								<ServiciosLazy />
 							</Suspense>
 						}
 					/>
 					<Route
 						exact
-						path='/QandA'
+						path="/QandA"
 						element={
-							<Suspense fallback='loading...'>
+							<Suspense fallback="loading...">
 								<PreguntasLazy />
 							</Suspense>
 						}
@@ -73,7 +68,7 @@ function App() {
 
 			<Footer />
 		</div>
-	);
+	)
 }
 
-export default App;
+export default App

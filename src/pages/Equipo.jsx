@@ -1,7 +1,7 @@
 //TODO: crear un JSON Para los doctores
 
-import Player from './Player';
-import pStyle from './Equipo.module.css';
+import Player from './Player'
+import pStyle from './Equipo.module.css'
 function Equipo() {
 	const equipo = [
 		{
@@ -10,7 +10,7 @@ function Equipo() {
 			ruta: '/img/team/20_equipo_santiago.webp',
 			desc: `Licenciado de la Universidad Peruana de Ciencias Aplicadas (UPC) en el 2018.  Máster en Psicología Clínica y de la Salud por la universidad CEU San Pablo – España. Posgrado en Psicología Cognitivo Conductual y TREC en la Universidad Continental. Posgrado en Terapia de Pareja y Familia por el Institute of Medicine and Psychology y la Universidad de Piura. Ponente y tallerista de habilidades socioemocionales en niños, adolescentes y adultos; como también con cargos administrativos y gerenciales.
             Experiencia clínica durante más de 5 años en práctica privada y en instituciones públicas y privadas a nivel nacional.
-            Fundador de “Perspectivas – Centro de Abordaje Psicológico”; centro dedicado a la prevención, promoción e intervención de la salud mental e integral.`,
+            Fundador de “Perspectivas - Centro de Abordaje Psicológico”; centro dedicado a la prevención, promoción e intervención de la salud mental e integral.`,
 		},
 		{
 			id: 4,
@@ -32,15 +32,15 @@ function Equipo() {
 			ruta: '/img/team/20_equipo_Sharon.webp',
 			desc: `Psicóloga especializada en la creación y ejecución de proyectos de salud mental. Terapeuta de adolescentes, jóvenes, parejas y padres de familia. Licenciada en Psicología Clínica por la Universidad de Ciencias Aplicadas (UPC). Maestría en Psicología de la Salud y Estilos de Vida de la UPC. Certificación en Terapia de Aceptación y Compromiso (ACT).  Especializada en modificación de conducta y en trabajo con adolescentes.  Diplomado en Programación Neurolingüistica: Desarrollo de Cambio y Aprendizaje.`,
 		},
-	];
+	]
 
 	return (
 		<div className={pStyle.p_team}>
-			{equipo.map((player) => (
+			{equipo.map(player => (
 				<Player key={player.id} player={player} />
 			))}
 		</div>
-	);
+	)
 }
 
-export default Equipo;
+export default Equipo

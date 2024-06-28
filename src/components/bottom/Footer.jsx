@@ -4,18 +4,18 @@ import {
 	CONST_LINK_INSTAGRAM,
 	CONST_LINK_LINKEDIN,
 	CONST_PHONE_NUMBER,
-} from '../../utils/constants';
-import fStyles from './Footer.module.css';
+} from '../../utils/constants'
+import fStyles from './Footer.module.css'
 
-import instagramSVG from '../../assets/svg/instagramLogo.svg';
-import facebookSVG from '../../assets/svg/facebookLogo.svg';
-import linkedinSVG from '../../assets/svg/linkedinLogo.svg';
-import MapsApi from '../../utils/MapsApi';
+import instagramSVG from '../../assets/svg/instagramLogo.svg'
+import facebookSVG from '../../assets/svg/facebookLogo.svg'
+import linkedinSVG from '../../assets/svg/linkedinLogo.svg'
+import MapsApi from '../../utils/MapsApi'
 
 export default function Footer() {
 	return (
 		<div className={fStyles.zona_bot}>
-			<img alt='logo_completo' src='/img/00_LOGO-SIN-FONDO_r.png' />
+			<img alt="logo_completo" src="/img/00_LOGO-SIN-FONDO_r.png" />
 
 			<div className={fStyles.sec_redes}>
 				<p>
@@ -24,14 +24,14 @@ export default function Footer() {
 				</p>
 				<p>
 					Siguenos en redes: <br />
-					<a href={CONST_LINK_FACEBOOK} target='_blank'>
-						<img src={facebookSVG} alt='facebook' />
+					<a href={CONST_LINK_FACEBOOK} target="_blank" rel="noreferrer">
+						<img src={facebookSVG} alt="facebook" />
 					</a>
-					<a href={CONST_LINK_INSTAGRAM} target='_blank'>
-						<img src={instagramSVG} alt='instagram' />
+					<a href={CONST_LINK_INSTAGRAM} target="_blank" rel="noreferrer">
+						<img src={instagramSVG} alt="instagram" />
 					</a>
-					<a href={CONST_LINK_LINKEDIN} target='_blank'>
-						<img src={linkedinSVG} alt='linkedin' />
+					<a href={CONST_LINK_LINKEDIN} target="_blank" rel="noreferrer">
+						<img src={linkedinSVG} alt="linkedin" />
 					</a>
 				</p>
 				<p>
@@ -53,5 +53,5 @@ export default function Footer() {
 				</div>
 			</div>
 		</div>
-	);
+	)
 }

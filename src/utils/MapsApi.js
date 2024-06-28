@@ -1,10 +1,5 @@
-import {
-	APIProvider,
-	Map,
-	AdvancedMarker,
-	InfoWindow,
-} from '@vis.gl/react-google-maps';
-import { CONST_POSITION_GPS } from './constants';
+import { APIProvider, Map, AdvancedMarker } from '@vis.gl/react-google-maps'
+import { CONST_POSITION_GPS } from './constants'
 
 function MapsApi() {
 	return (
@@ -19,7 +14,7 @@ function MapsApi() {
 				<AdvancedMarker position={CONST_POSITION_GPS} />
 			</Map>
 		</APIProvider>
-	);
+	)
 }
 
-export default MapsApi;
+export default MapsApi

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 //import { Box, Modal, Fade, Backdrop } from '@mui/material';
-import wStyles from './Welcome.module.css';
+import wStyles from './Welcome.module.css'
 
 export default function Welcome() {
 	const modalStyle = {
@@ -12,11 +12,11 @@ export default function Welcome() {
 		bgcolor: 'white',
 		boxShadow: 24,
 		p: 4,
-	};
+	}
 
-	const [open, setOpen] = useState(false);
-	const handleOpen = () => setOpen(true);
-	const handleClose = () => setOpen(false);
+	const [open, setOpen] = useState(false)
+	const handleOpen = () => setOpen(true)
+	const handleClose = () => setOpen(false)
 
 	// useEffect(() => {
 	// 	const timer = setTimeout(() => {
@@ -81,5 +81,5 @@ export default function Welcome() {
 			</section>
             */}
 		</div>
-	);
+	)
 }

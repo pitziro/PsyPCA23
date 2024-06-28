@@ -56,7 +56,8 @@
 		flex-direction: column-reverse;
 		align-items: center;
 		margin: 55px 0;
-		box-shadow: rgba(90, 134, 185, 0.25) 0px 30px 60px -12px,
+		box-shadow:
+			rgba(90, 134, 185, 0.25) 0px 30px 60px -12px,
 			rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 	}
 	.serv_card_text {
