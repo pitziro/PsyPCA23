@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function ReviewsApi() {
 	const placeId = import.meta.env.VITE_GOOGLE_PLACE_ID

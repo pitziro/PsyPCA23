@@ -21,20 +21,17 @@
 
 .p_card img {
 	border-radius: 50%;
-	/* aspect-ratio: auto 1/1; */
-	/* width: 200px; */
 	height: 300px;
 }
 
 .p_card > .desc {
 	padding: 0 20px 30px;
 	width: 550px;
-	font-size: 1.25rem;
-	/* text-align: justify; */
-	line-height: 2rem;
+	font-size: 1.2rem;
+	line-height: 1.7rem;
 }
 
-@media screen and (max <= 700px) {
+@media screen and (width <= 700px) {
 	.p_card > .desc {
 		width: 80vw;
 	}
