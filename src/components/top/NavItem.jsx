@@ -29,18 +29,13 @@ export default function NavItem(props) {
 		}
 	}, [location])
 
-	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
 	useEffect(() => {
 		setSubcategoryOpened(false)
 	}, [sideBarOpened])
 
 	useEffect(() => {
 		const clickOutside = evt => {
-			if (
-				navRefSub.current &&
-				!navRefSub.current.contains(evt.target) &&
-				!subcategoryOpened
-			) {
+			if (navRefSub.current && !navRefSub.current.contains(evt.target)) {
 				setSubcategoryOpened(false)
 			}
 		}
@@ -53,7 +48,6 @@ export default function NavItem(props) {
 
 	if (item.childrens) {
 		return (
-			// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 			<div
 				ref={navRefSub}
 				className={mstyle.categoryitem}
@@ -81,11 +75,11 @@ export default function NavItem(props) {
 					}
 				>
 					{item.childrens.map((child, index) => (
-						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 						<NavItem
 							key={index}
 							item={child}
 							handleSideClick={handleSideClick}
+							sideBarOpened
 						/>
 					))}
 				</div>

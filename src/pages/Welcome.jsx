@@ -1,5 +1,6 @@
 // import { useEffect, useState } from 'react'
 //import { Box, Modal, Fade, Backdrop } from '@mui/material';
+import { Helmet } from 'react-helmet'
 import wStyles from './Welcome.module.css'
 
 export default function Welcome() {
@@ -29,18 +30,28 @@ export default function Welcome() {
 	// }, []);
 
 	return (
-		<div className={wStyles.div_welcome}>
-			<section className={wStyles.wMain}>
-				<div className={wStyles.imgContainer}> </div>
+		<>
+			<Helmet>
+				<title> Perspectivas | CAP </title>
+				<meta name="description" content="Encontrando tu nuevo enfoque" />
+				<meta
+					name="keywords"
+					content="psicologos, psicólogos, psicologia, salud mental, terapia, act, aceptacion y compromiso"
+				/>
+			</Helmet>
 
-				{/* <Link to={linkWasap} target='_blank'>
+			<div className={wStyles.div_welcome}>
+				<section className={wStyles.wMain}>
+					<div className={wStyles.imgContainer}> </div>
+
+					{/* <Link to={linkWasap} target='_blank'>
 					<div className={wStyles.imgWasap}>
 						<p>¿Necesitas ayuda?</p>
 						<WhatsApp />
 					</div>
 				</Link> */}
-			</section>
-			{/* 
+				</section>
+				{/* 
             
 			<Modal
 				open={open}
@@ -63,15 +74,15 @@ export default function Welcome() {
 				</Fade>
 			</Modal> */}
 
-			<section className={wStyles.wBeneficios}>
-				<p> Bloque Bienvenida </p>
-			</section>
+				<section className={wStyles.wBeneficios}>
+					<p> Bloque Bienvenida </p>
+				</section>
 
-			<section className={wStyles.wBienvenida}>
-				<p> Bloque Beneficios </p>
-			</section>
+				<section className={wStyles.wBienvenida}>
+					<p> Bloque Beneficios </p>
+				</section>
 
-			{/*
+				{/*
 			<section className={wStyles.wBienvenida}>
 				<p> Bloque Reviews </p>
 			</section>
@@ -80,6 +91,7 @@ export default function Welcome() {
 				<p> Bloque Blog </p>
 			</section>
             */}
-		</div>
+			</div>
+		</>
 	)
 }

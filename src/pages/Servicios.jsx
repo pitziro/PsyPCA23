@@ -1,10 +1,19 @@
 import sStyle from './Servicios.module.css'
 import ServiceCard from './ServiceCard'
 import servicios from '../data/serviciosData.json'
+import { Helmet } from 'react-helmet'
 
 function Servicios() {
 	return (
 		<div className={sStyle.catalogo}>
+			<Helmet>
+				<title> Perspectivas | Servicios </title>
+				<meta
+					name="description"
+					content="Servicios de terapida psicologica para cada necesidad "
+				/>
+			</Helmet>
+
 			<section id="psicoterapia" className={sStyle.cat_subtitle}>
 				<h3> Psicoterapia </h3>
 				{servicios

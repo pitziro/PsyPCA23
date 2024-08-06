@@ -2,6 +2,7 @@
 
 import Player from './Player'
 import pStyle from './Equipo.module.css'
+import { Helmet } from 'react-helmet'
 function Equipo() {
 	const equipo = [
 		{
@@ -32,6 +33,14 @@ function Equipo() {
 
 	return (
 		<div className={pStyle.p_team}>
+			<Helmet>
+				<title> Perspectivas | Staff Psicologico </title>
+				<meta
+					name="description"
+					content="Personal especializado para darte una nueva perspectiva de las cosas."
+				/>
+			</Helmet>
+
 			{equipo.map(player => (
 				<Player key={player.id} player={player} />
 			))}

@@ -25,9 +25,9 @@ function Navbar() {
 	const navRef = useRef(null)
 
 	const [sideBarOpened, setSideBarOpened] = useState(false)
+
 	const handleSideClick = () => {
 		setSideBarOpened(prev => !prev)
-		console.log(`sideClic # ${Math.random().toFixed(2)}`)
 	}
 
 	const handleWAbtn = () => {
@@ -35,16 +35,16 @@ function Navbar() {
 	}
 
 	useEffect(() => {
-		const clickOutsideSideBar = evt => {
+		const clickOutsideBar = evt => {
 			if (navRef.current && !navRef.current.contains(evt.target)) {
 				setSideBarOpened(false)
 			}
 		}
-		document.addEventListener('mousedown', clickOutsideSideBar)
+		document.addEventListener('mousedown', clickOutsideBar)
 		return () => {
-			document.removeEventListener('mousedown', clickOutsideSideBar)
+			document.removeEventListener('mousedown', clickOutsideBar)
 		}
-	}, [])
+	}, [navRef])
 
 	return (
 		<div className={aStyle.zonatop}>
@@ -79,7 +79,6 @@ function Navbar() {
 						/>
 					</Link>
 				</section>
-
 				<nav
 					ref={navRef}
 					id={mstyle.categorybar}
@@ -92,7 +91,6 @@ function Navbar() {
 						/>
 					))}
 				</nav>
-
 				<div className={mstyle.btnContainer}>
 					<button
 						className={mstyle.combutton}
@@ -104,6 +102,7 @@ function Navbar() {
 					</button>
 				</div>
 
+				{/*small screen menu button*/}
 				<div className={mstyle.iconContainer}>
 					<Link to={CONST_LINK_WHATSAPP} target="_blank">
 						<img alt="whatsapp" src={whatsappDarkLogoSVG} />
