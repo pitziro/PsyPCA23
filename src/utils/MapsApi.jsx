@@ -1,3 +1,4 @@
+// biome-ignore lint/suspicious/noShadowRestrictedNames: <explanation>
 import { APIProvider, Map, AdvancedMarker } from '@vis.gl/react-google-maps'
 import { CONST_POSITION_GPS } from './constants'
 

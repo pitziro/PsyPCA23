@@ -1,19 +1,21 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
 import expandIcon from '../../assets/svg/expandIcon.svg'
 import mstyle from './Navbar.module.css'
 
 export default function NavItem(props) {
-	const { item, handleClick, barOpened } = props
+	const { item, handleSideClick, sideBarOpened } = props
 
 	const [subcategoryOpened, setSubcategoryOpened] = useState(false)
 	const handleOpenSub = () => {
 		setSubcategoryOpened(prev => !prev)
+		console.log('subcategory')
 	}
 
 	const navRefSub = useRef(null)
+	const location = useLocation()
 
 	const scrollWithOffset = el => {
 		const yCoordinate = el.getBoundingClientRect().top + window.scrollY
@@ -22,8 +24,15 @@ export default function NavItem(props) {
 	}
 
 	useEffect(() => {
+		if (location.hash === '') {
+			window.scrollTo({ top: 0, behavior: 'smooth' })
+		}
+	}, [location])
+
+	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
+	useEffect(() => {
 		setSubcategoryOpened(false)
-	}, [barOpened])
+	}, [sideBarOpened])
 
 	useEffect(() => {
 		const clickOutside = evt => {
@@ -44,13 +53,16 @@ export default function NavItem(props) {
 
 	if (item.childrens) {
 		return (
+			// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 			<div
 				ref={navRefSub}
 				className={mstyle.categoryitem}
 				onClick={handleOpenSub}
 			>
 				<div className={mstyle.subcategory_title}>
-					<Link to="#">{item.title}</Link>
+					<span to="#" style={{ cursor: 'pointer', userSelect: 'none' }}>
+						{item.title}
+					</span>
 					<img
 						src={expandIcon}
 						alt="expand"
@@ -69,23 +81,26 @@ export default function NavItem(props) {
 					}
 				>
 					{item.childrens.map((child, index) => (
-						<NavItem key={index} item={child} handleClick={handleClick} />
+						// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+						<NavItem
+							key={index}
+							item={child}
+							handleSideClick={handleSideClick}
+						/>
 					))}
 				</div>
 			</div>
 		)
-	} else {
-		return (
-			<div className={mstyle.categoryitem}>
-				<HashLink
-					smooth
-					to={item.path}
-					onClick={handleClick}
-					scroll={scrollWithOffset}
-				>
-					{item.title}
-				</HashLink>
-			</div>
-		)
 	}
+	return (
+		<div className={mstyle.categoryitem}>
+			<HashLink
+				to={item.path}
+				onClick={handleSideClick}
+				scroll={scrollWithOffset}
+			>
+				{item.title}
+			</HashLink>
+		</div>
+	)
 }

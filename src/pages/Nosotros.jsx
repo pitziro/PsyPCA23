@@ -1,4 +1,4 @@
-import MyCarousel from '../components/main/MyCarousel'
+// import MyCarousel from '../components/main/MyCarousel'
 
 import nStyle from './Nosotros.module.css'
 import handshakeIcon from '../assets/svg/handshakeIcon.svg'
@@ -37,6 +37,7 @@ function Nosotros() {
 				<img
 					className={nStyle.main_somos_desc_img}
 					src="/img/logotipo16.png"
+					alt="logo"
 				/>
 			</section>
 
@@ -79,7 +80,7 @@ function Nosotros() {
 
 			<section className={nStyle.valores}>
 				<div className={nStyle.valorx}>
-					<img src={handshakeIcon} />
+					<img src={handshakeIcon} alt="respeto" />
 					<p>
 						<b>Respeto:</b> por lo que hacemos, por nuestros pacientes,
 						por nuestra sociedad y las personas que la componen
@@ -87,7 +88,7 @@ function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<img src={compromisoIcon} />
+					<img src={compromisoIcon} alt="compromiso" />
 					<p>
 						<b>Vocación de servicio:</b> mostrarnos siempre dispuestos a
 						atender tus necesidades y de tus seres queridos.
@@ -95,7 +96,7 @@ function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<img src={responsibleIcon} />
+					<img src={responsibleIcon} alt="responsabilidad" />
 					<p>
 						<b>Responsabilidad:</b> brindarte una atención de calidad,
 						profesionalismo y mejoría en tu bienestar.
@@ -103,7 +104,7 @@ function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<img src={empathyIcon} />
+					<img src={empathyIcon} alt="empatia" />
 					<p>
 						<b>Empatía:</b> entender tus emociones, pensamientos y
 						perspectivas de vida.
@@ -111,10 +112,10 @@ function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<img src={integridadIcon} />
+					<img src={integridadIcon} alt="integridad" />
 					<p>
 						<b>Integridad:</b> Honestidad y ética en cada atención que
-						brindamos. 
+						brindamos.
 					</p>
 				</div>
 			</section>

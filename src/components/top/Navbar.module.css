@@ -202,12 +202,16 @@
 
 		& img {
 			height: 30px;
+
+			& .imgHidden {
+				display: none;
+			}
 		}
 
 		& svg {
-			font-size: 1.75rem;
 			color: var(--cPaleta1);
-			width: 30px;
+			width: 25px;
+			height: 25px;
 		}
 	}
 
@@ -223,7 +227,7 @@
 		justify-content: flex-start;
 		width: unset;
 		position: fixed;
-		top: 100px;
+		top: 110px;
 		right: -100%;
 		min-height: max-content;
 		background-color: rgba(255, 255, 255, 0.85);
@@ -284,7 +288,7 @@
 	}
 
 	#categorybar {
-		top: 85px;
+		top: 90px;
 	}
 
 	.subcategory_container > .categoryitem {

@@ -1,19 +1,17 @@
-import React from 'react'
 import mStyles from './Navbar.module.css'
 
-import CloseMenu from '../top/CloseMenu'
 import menuIcon from '../../assets/svg/menuIcon.svg'
-import crossIcon from '../../assets/svg/crossIcon.svg'
+import CloseMenu from '../top/CloseMenu'
 
 function Mobile({ fClick }) {
-	let { barOpened, handleClick } = fClick
+	const { sideBarOpened, handleSideClick } = fClick
 
 	return (
 		<div className={mStyles.mobileMenu}>
-			{!barOpened ? (
-				<img src={menuIcon} alt="menu" onClick={handleClick} />
+			{!sideBarOpened ? (
+				<img src={menuIcon} alt="menu" onClick={handleSideClick} />
 			) : (
-				<CloseMenu onClick={handleClick} />
+				<CloseMenu onClick={handleSideClick} />
 			)}
 		</div>
 	)

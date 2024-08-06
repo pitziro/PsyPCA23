@@ -7,7 +7,9 @@
       "dev": "vite",
       "build": "vite build",
       "preview": "vite preview",
-      "prettier:fix": "prettier --write 'src/**/*.{js,jsx,css,html,json,md}'"
+      "prettier:fix": "prettier --write 'src/**/*.{js,jsx,css,html,json,md}'",
+      "prettier:check": "prettier --check 'src/**/*.{js,jsx,css,html,json,md}'",
+      "eslint": "eslint ."
    },
    "dependencies": {
       "@emotion/react": "^11.10.6",
@@ -16,7 +18,8 @@
       "react": "^18.2.0",
       "react-dom": "^18.2.0",
       "react-router-dom": "^6.9.0",
-      "react-router-hash-link": "^2.4.3"
+      "react-router-hash-link": "^2.4.3",
+      "react-toastify": "^10.0.5"
    },
    "devDependencies": {
       "@types/react": "^18.0.28",

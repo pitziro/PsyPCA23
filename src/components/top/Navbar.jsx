@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 import instagramSVG from '../../assets/svg/instagramLogo.svg'
@@ -22,30 +22,29 @@ import {
 } from '../../utils/constants'
 
 function Navbar() {
-	const [barOpened, setbarOpened] = useState(false)
-
-	const handleClick = () => {
-		setbarOpened(prev => !prev)
-	}
-
 	const navRef = useRef(null)
 
-	useEffect(() => {
-		const clickOutside = evt => {
-			if (navRef.current && !navRef.current.contains(evt.target)) {
-				setbarOpened(false)
-			}
-		}
-		document.addEventListener('mousedown', clickOutside)
-
-		return () => {
-			document.removeEventListener('mousedown', clickOutside)
-		}
-	}, [navRef])
+	const [sideBarOpened, setSideBarOpened] = useState(false)
+	const handleSideClick = () => {
+		setSideBarOpened(prev => !prev)
+		console.log(`sideClic # ${Math.random().toFixed(2)}`)
+	}
 
 	const handleWAbtn = () => {
 		window.open(CONST_LINK_WHATSAPP, '_blank')
 	}
+
+	useEffect(() => {
+		const clickOutsideSideBar = evt => {
+			if (navRef.current && !navRef.current.contains(evt.target)) {
+				setSideBarOpened(false)
+			}
+		}
+		document.addEventListener('mousedown', clickOutsideSideBar)
+		return () => {
+			document.removeEventListener('mousedown', clickOutsideSideBar)
+		}
+	}, [])
 
 	return (
 		<div className={aStyle.zonatop}>
@@ -84,12 +83,12 @@ function Navbar() {
 				<nav
 					ref={navRef}
 					id={mstyle.categorybar}
-					className={barOpened ? `${mstyle.show}` : ''}
+					className={sideBarOpened ? `${mstyle.show}` : ''}
 				>
 					{myitems.map(item => (
 						<NavItem
 							key={item.id}
-							{...{ item, handleClick, barOpened }}
+							{...{ item, handleSideClick, sideBarOpened }}
 						/>
 					))}
 				</nav>
@@ -111,7 +110,7 @@ function Navbar() {
 					</Link>
 				</div>
 
-				<Mobile fClick={{ barOpened, handleClick }} />
+				<Mobile fClick={{ sideBarOpened, handleSideClick }} />
 			</div>
 		</div>
 	)

@@ -10,7 +10,7 @@ import fStyles from './Footer.module.css'
 import instagramSVG from '../../assets/svg/instagramLogo.svg'
 import facebookSVG from '../../assets/svg/facebookLogo.svg'
 import linkedinSVG from '../../assets/svg/linkedinLogo.svg'
-import MapsApi from '../../utils/MapsApi'
+// import MapsApi from '../../utils/MapsApi'
 
 export default function Footer() {
 	return (
@@ -49,7 +49,7 @@ export default function Footer() {
 					{CONST_ADDRESS}
 				</p>
 				<div className={fStyles.sec_dir_map}>
-					<MapsApi className={fStyles.sec_dir_map} />
+					{/* <MapsApi className={fStyles.sec_dir_map} /> */}
 				</div>
 			</div>
 		</div>

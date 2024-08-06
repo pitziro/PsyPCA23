@@ -1,25 +1,18 @@
-import { useEffect, lazy } from 'react'
+import { useEffect, lazy, Suspense } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 
 import Navbar from './components/top/Navbar'
 import Footer from './components/bottom/Footer'
 import Welcome from '../src/pages/Welcome'
 
+import aStyle from './App.module.css'
+
 const EquipoLazy = lazy(() => import('../src/pages/Equipo'))
 const NosotrosLazy = lazy(() => import('../src/pages/Nosotros'))
 const ServiciosLazy = lazy(() => import('../src/pages/Servicios'))
 const PreguntasLazy = lazy(() => import('../src/pages/Preguntas'))
 
-import aStyle from './App.module.css'
-import { Suspense } from 'react'
-
 function App() {
-	const { pathname } = useLocation()
-
-	useEffect(() => {
-		window.scrollTo({ top: 0 })
-	}, [pathname])
-
 	return (
 		<div className={aStyle.App}>
 			<Navbar />
