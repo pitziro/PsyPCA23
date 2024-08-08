@@ -11,7 +11,11 @@ export default function NavItem(props) {
 	const [subcategoryOpened, setSubcategoryOpened] = useState(false)
 	const handleOpenSub = () => {
 		setSubcategoryOpened(prev => !prev)
-		console.log('subcategory')
+	}
+
+	const handleHashClick = () => {
+		handleOpenSub()
+		handleSideClick()
 	}
 
 	const navRefSub = useRef(null)
@@ -30,31 +34,28 @@ export default function NavItem(props) {
 	}, [location])
 
 	useEffect(() => {
-		setSubcategoryOpened(false)
-	}, [sideBarOpened])
-
-	useEffect(() => {
 		const clickOutside = evt => {
 			if (navRefSub.current && !navRefSub.current.contains(evt.target)) {
 				setSubcategoryOpened(false)
 			}
 		}
-		document.addEventListener('mousedown', clickOutside)
+		document.addEventListener('click', clickOutside)
 
 		return () => {
-			document.removeEventListener('mousedown', clickOutside)
+			document.removeEventListener('click', clickOutside)
 		}
-	}, [navRefSub])
+	}, [navRefSub, sideBarOpened])
 
 	if (item.childrens) {
 		return (
 			<div
+				id={item.id}
 				ref={navRefSub}
 				className={mstyle.categoryitem}
 				onClick={handleOpenSub}
 			>
 				<div className={mstyle.subcategory_title}>
-					<span to="#" style={{ cursor: 'pointer', userSelect: 'none' }}>
+					<span style={{ cursor: 'pointer', userSelect: 'none' }}>
 						{item.title}
 					</span>
 					<img
@@ -90,7 +91,7 @@ export default function NavItem(props) {
 		<div className={mstyle.categoryitem}>
 			<HashLink
 				to={item.path}
-				onClick={handleSideClick}
+				onClick={handleHashClick}
 				scroll={scrollWithOffset}
 			>
 				{item.title}

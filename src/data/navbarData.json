@@ -1,53 +1,53 @@
 [
-	{
-		"id": 1,
-		"title": "Nosotros",
-		"icon": "",
-		"path": "/nosotros"
-	},
-	{
-		"id": 2,
-		"title": "Especialistas",
-		"icon": "",
-		"path": "/equipo"
-	},
-	{
-		"id": 3,
-		"title": "Servicios",
-		"icon": "",
-		"childrens": [
-			{
-				"title": "Psicoterapia",
-				"icon": "",
-				"path": "/servicios#psicoterapia",
-				"desc": ""
-			},
-			{
-				"title": "Consejería",
-				"icon": "",
-				"path": "/servicios#consejeria"
-			},
-			{
-				"title": "Evaluaciones",
-				"icon": "",
-				"path": "/servicios#evaluacion"
-			},
-			{
-				"title": "Talleres",
-				"icon": "",
-				"path": "/servicios#taller"
-			},
-			{
-				"title": "Certificados",
-				"icon": "",
-				"path": "/servicios#certificado"
-			}
-		]
-	},
-	{
-		"id": 4,
-		"title": "Preguntas Frecuentes",
-		"icon": "",
-		"path": "/QandA"
-	}
+   {
+      "id": "us",
+      "title": "Nosotros",
+      "icon": "",
+      "path": "/nosotros"
+   },
+   {
+      "id": "team",
+      "title": "Especialistas",
+      "icon": "",
+      "path": "/equipo"
+   },
+   {
+      "id": "serv",
+      "title": "Servicios",
+      "icon": "",
+      "childrens": [
+         {
+            "title": "Psicoterapia",
+            "icon": "",
+            "path": "/servicios#psicoterapia",
+            "desc": ""
+         },
+         {
+            "title": "Consejería",
+            "icon": "",
+            "path": "/servicios#consejeria"
+         },
+         {
+            "title": "Evaluaciones",
+            "icon": "",
+            "path": "/servicios#evaluacion"
+         },
+         {
+            "title": "Talleres",
+            "icon": "",
+            "path": "/servicios#taller"
+         },
+         {
+            "title": "Certificados",
+            "icon": "",
+            "path": "/servicios#certificado"
+         }
+      ]
+   },
+   {
+      "id": "QnA",
+      "title": "Preguntas Frecuentes",
+      "icon": "",
+      "path": "/QandA"
+   }
 ]
