@@ -44,7 +44,7 @@ export default function NavItem(props) {
 		return () => {
 			document.removeEventListener('click', clickOutside)
 		}
-	}, [navRefSub, sideBarOpened])
+	}, [navRefSub, sideBarOpened]) // a revisar
 
 	if (item.childrens) {
 		return (

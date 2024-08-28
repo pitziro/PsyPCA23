@@ -1,37 +1,20 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import NavItem from './NavItem'
+import Mobile from './Mobile'
+import Upperline from './Upperline'
+import WAComponent from './WAComponent'
 
-import instagramSVG from '../../assets/svg/instagramLogo.svg'
-import facebookSVG from '../../assets/svg/facebookLogo.svg'
-import whatsappColorLogoSVG from '../../assets/svg/whatsappColorLogo.svg'
-import whatsappDarkLogoSVG from '../../assets/svg/whatsappDarkLogo.svg'
-
+import myitems from '../../data/navbarData.json'
 import mstyle from './Navbar.module.css'
 import aStyle from '../../App.module.css'
 
-import NavItem from './NavItem'
-import Mobile from './Mobile'
-
-import myitems from '../../data/navbarData.json'
-import {
-	CONST_EMAIL_CONTACTO,
-	CONST_LINK_FACEBOOK,
-	CONST_LINK_INSTAGRAM,
-	CONST_LINK_WHATSAPP,
-	CONST_PHONE_NUMBER,
-} from '../../utils/constants'
-
 function Navbar() {
 	const navRef = useRef(null)
-
 	const [sideBarOpened, setSideBarOpened] = useState(false)
 
 	const handleSideClick = () => {
 		setSideBarOpened(prev => !prev)
-	}
-
-	const handleWAbtn = () => {
-		window.open(CONST_LINK_WHATSAPP, '_blank')
 	}
 
 	useEffect(() => {
@@ -48,20 +31,7 @@ function Navbar() {
 
 	return (
 		<div className={aStyle.zonatop}>
-			<div className={mstyle.topRowOne}>
-				<span className={mstyle.spanFono}>
-					Llámanos al: {CONST_PHONE_NUMBER}{' '}
-				</span>
-				<span> {CONST_EMAIL_CONTACTO} </span>
-				<span>
-					<a href={CONST_LINK_FACEBOOK} target="_blank" rel="noreferrer">
-						<img src={facebookSVG} alt="fb logo" />
-					</a>
-					<a href={CONST_LINK_INSTAGRAM} target="_blank" rel="noreferrer">
-						<img src={instagramSVG} alt="ig logo" />
-					</a>
-				</span>
-			</div>
+			<Upperline />
 
 			<div className={mstyle.topRowTwo}>
 				<section className={mstyle.top_logo}>
@@ -79,6 +49,7 @@ function Navbar() {
 						/>
 					</Link>
 				</section>
+
 				<nav
 					ref={navRef}
 					id={mstyle.categorybar}
@@ -91,23 +62,8 @@ function Navbar() {
 						/>
 					))}
 				</nav>
-				<div className={mstyle.btnContainer}>
-					<button
-						className={mstyle.combutton}
-						type="button"
-						onClick={handleWAbtn}
-					>
-						¿Conversamos?&nbsp;&nbsp;
-						<img alt="whatsapp" src={whatsappColorLogoSVG} />
-					</button>
-				</div>
 
-				{/*small screen menu button*/}
-				<div className={mstyle.iconContainer}>
-					<Link to={CONST_LINK_WHATSAPP} target="_blank">
-						<img alt="whatsapp" src={whatsappDarkLogoSVG} />
-					</Link>
-				</div>
+				<WAComponent />
 
 				<Mobile fClick={{ sideBarOpened, handleSideClick }} />
 			</div>

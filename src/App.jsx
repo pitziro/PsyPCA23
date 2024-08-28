@@ -1,10 +1,10 @@
-import { useEffect, lazy, Suspense } from 'react'
+import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 
 import Navbar from './components/top/Navbar'
 import Footer from './components/bottom/Footer'
 import Welcome from '../src/pages/Welcome'
-
 import aStyle from './App.module.css'
 
 const EquipoLazy = lazy(() => import('../src/pages/Equipo'))
@@ -14,53 +14,49 @@ const PreguntasLazy = lazy(() => import('../src/pages/Preguntas'))
 
 function App() {
 	return (
-		<div className={aStyle.App}>
-			<Navbar />
-
-			<div className={aStyle.zonamain}>
-				<Routes>
-					<Route exact path="/" element={<Welcome />} />
-					<Route
-						exact
-						path="/nosotros"
-						element={
-							<Suspense fallback="loading...">
-								<NosotrosLazy />
-							</Suspense>
-						}
-					/>
-					<Route
-						exact
-						path="/equipo"
-						element={
-							<Suspense fallback="loading...">
-								<EquipoLazy />
-							</Suspense>
-						}
-					/>
-					<Route
-						exact
-						path="/servicios"
-						element={
-							<Suspense fallback="loading...">
-								<ServiciosLazy />
-							</Suspense>
-						}
-					/>
-					<Route
-						exact
-						path="/QandA"
-						element={
-							<Suspense fallback="loading...">
-								<PreguntasLazy />
-							</Suspense>
-						}
-					/>
-				</Routes>
+		<HelmetProvider>
+			<div className={aStyle.App}>
+				<Navbar />
+				<div className={aStyle.zonamain}>
+					<Routes>
+						<Route path="/" element={<Welcome />} />
+						<Route
+							path="/nosotros"
+							element={
+								<Suspense fallback="loading...">
+									<NosotrosLazy />
+								</Suspense>
+							}
+						/>
+						<Route
+							path="/equipo"
+							element={
+								<Suspense fallback="loading...">
+									<EquipoLazy />
+								</Suspense>
+							}
+						/>
+						<Route
+							path="/servicios"
+							element={
+								<Suspense fallback="loading...">
+									<ServiciosLazy />
+								</Suspense>
+							}
+						/>
+						<Route
+							path="/QandA"
+							element={
+								<Suspense fallback="loading...">
+									<PreguntasLazy />
+								</Suspense>
+							}
+						/>
+					</Routes>
+				</div>
+				<Footer />
 			</div>
-
-			<Footer />
-		</div>
+		</HelmetProvider>
 	)
 }
 

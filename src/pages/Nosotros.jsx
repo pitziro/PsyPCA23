@@ -6,15 +6,15 @@ import compromisoIcon from '../assets/svg/compromisoIcon.svg'
 import responsibleIcon from '../assets/svg/responsibleIcon.svg'
 import empathyIcon from '../assets/svg/empathyIcon.svg'
 import integridadIcon from '../assets/svg/integridadIcon.svg'
-import { Helmet } from 'react-helmet'
+import SeoHelmet from '../components/seo/seo'
 
 function Nosotros() {
 	return (
 		<div>
-			<Helmet>
-				<title> Perspectivas | Nosotros </title>
-				<meta name="description" content="Encontrando tu nuevo enfoque" />
-			</Helmet>
+			<SeoHelmet
+				title="Perspectivas | Nosotros"
+				descContent="Conoce al mejor equipo profesional para apoyarte en todo momento"
+			/>
 
 			<div className={nStyle.nosotrosdiv}></div>
 			{/* <MyCarousel /> */}

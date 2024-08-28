@@ -1,7 +1,7 @@
 // import { useEffect, useState } from 'react'
-//import { Box, Modal, Fade, Backdrop } from '@mui/material';
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 import wStyles from './Welcome.module.css'
+import SeoHelmet from '../components/seo/seo'
 
 export default function Welcome() {
 	// const modalStyle = {
@@ -29,16 +29,14 @@ export default function Welcome() {
 	// 	};
 	// }, []);
 
+	console.log('Main Div Rendered')
+
 	return (
 		<>
-			<Helmet>
-				<title> Perspectivas | CAP </title>
-				<meta name="description" content="Encontrando tu nuevo enfoque" />
-				<meta
-					name="keywords"
-					content="psicologos, psicólogos, psicologia, salud mental, terapia, act, aceptacion y compromiso"
-				/>
-			</Helmet>
+			<SeoHelmet
+				title="Perspectivas | CAP"
+				descContent="Encontrando tu nuevo enfoque"
+			/>
 
 			<div className={wStyles.div_welcome}>
 				<section className={wStyles.wMain}>

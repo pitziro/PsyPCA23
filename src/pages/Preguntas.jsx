@@ -1,12 +1,12 @@
-import { Helmet } from 'react-helmet'
+import SeoHelmet from '../components/seo/seo'
 
 export default function Preguntas() {
 	return (
 		<>
-			<Helmet>
-				<title> Perspectivas | Q & A </title>
-				<meta name="description" content="Encontrando tu nuevo enfoque" />
-			</Helmet>
+			<SeoHelmet
+				title="Perspectivas | Q & A"
+				descContent="Preguntas sobre nuestro servicio y los profesionales "
+			/>
 
 			<h2>Preguntas esta en construccion</h2>
 		</>
