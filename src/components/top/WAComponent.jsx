@@ -4,6 +4,7 @@ import whatsappDarkLogoSVG from '../../assets/svg/whatsappDarkLogo.svg'
 
 import { CONST_LINK_WHATSAPP } from '../../utils/constants'
 import { Link } from 'react-router-dom'
+import { memo } from 'react'
 
 const WAComponent = () => {
 	const handleWAbtn = () => {
@@ -34,4 +35,4 @@ const WAComponent = () => {
 	)
 }
 
-export default WAComponent
+export default memo(WAComponent)

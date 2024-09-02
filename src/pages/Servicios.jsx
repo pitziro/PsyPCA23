@@ -1,7 +1,6 @@
 import sStyle from './Servicios.module.css'
 import ServiceCard from './ServiceCard'
 import servicios from '../data/serviciosData.json'
-import { Helmet } from 'react-helmet-async'
 import SeoHelmet from '../components/seo/seo'
 
 function Servicios() {

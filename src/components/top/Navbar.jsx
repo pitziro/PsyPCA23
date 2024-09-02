@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import useWindowSize from '../../utils/useWindowSize.js'
 import NavItem from './NavItem'
 import Mobile from './Mobile'
 import Upperline from './Upperline'
@@ -13,21 +14,32 @@ function Navbar() {
 	const navRef = useRef(null)
 	const [sideBarOpened, setSideBarOpened] = useState(false)
 
+	// const { width } = useWindowSize()
+
 	const handleSideClick = () => {
 		setSideBarOpened(prev => !prev)
 	}
 
 	useEffect(() => {
 		const clickOutsideBar = evt => {
-			if (navRef.current && !navRef.current.contains(evt.target)) {
+			if (
+				sideBarOpened &&
+				navRef.current &&
+				!navRef.current.contains(evt.target)
+			) {
 				setSideBarOpened(false)
+				console.log('clickedOut Navbar')
 			}
+
+			console.log(evt.target)
+			console.log('sideBarOpened: ', sideBarOpened)
+			console.log('navref', navRef.current)
 		}
-		document.addEventListener('mousedown', clickOutsideBar)
+		document.addEventListener('click', clickOutsideBar, true)
 		return () => {
-			document.removeEventListener('mousedown', clickOutsideBar)
+			document.removeEventListener('click', clickOutsideBar, true)
 		}
-	}, [navRef])
+	}, [navRef, sideBarOpened])
 
 	return (
 		<div className={aStyle.zonatop}>
@@ -58,7 +70,9 @@ function Navbar() {
 					{myitems.map(item => (
 						<NavItem
 							key={item.id}
-							{...{ item, handleSideClick, sideBarOpened }}
+							item={item}
+							handleSideClick={handleSideClick}
+							sideBarOpened={sideBarOpened}
 						/>
 					))}
 				</nav>

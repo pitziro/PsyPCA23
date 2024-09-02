@@ -5,6 +5,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import Navbar from './components/top/Navbar'
 import Footer from './components/bottom/Footer'
 import Welcome from '../src/pages/Welcome'
+import Spinner from './components/visuals/Spinner'
 import aStyle from './App.module.css'
 
 const EquipoLazy = lazy(() => import('../src/pages/Equipo'))
@@ -18,41 +19,15 @@ function App() {
 			<div className={aStyle.App}>
 				<Navbar />
 				<div className={aStyle.zonamain}>
-					<Routes>
-						<Route path="/" element={<Welcome />} />
-						<Route
-							path="/nosotros"
-							element={
-								<Suspense fallback="loading...">
-									<NosotrosLazy />
-								</Suspense>
-							}
-						/>
-						<Route
-							path="/equipo"
-							element={
-								<Suspense fallback="loading...">
-									<EquipoLazy />
-								</Suspense>
-							}
-						/>
-						<Route
-							path="/servicios"
-							element={
-								<Suspense fallback="loading...">
-									<ServiciosLazy />
-								</Suspense>
-							}
-						/>
-						<Route
-							path="/QandA"
-							element={
-								<Suspense fallback="loading...">
-									<PreguntasLazy />
-								</Suspense>
-							}
-						/>
-					</Routes>
+					<Suspense fallback={<Spinner />}>
+						<Routes>
+							<Route path="/" element={<Welcome />} />
+							<Route path="/nosotros" element={<NosotrosLazy />} />
+							<Route path="/equipo" element={<EquipoLazy />} />
+							<Route path="/servicios" element={<ServiciosLazy />} />
+							<Route path="/QandA" element={<PreguntasLazy />} />
+						</Routes>
+					</Suspense>
 				</div>
 				<Footer />
 			</div>

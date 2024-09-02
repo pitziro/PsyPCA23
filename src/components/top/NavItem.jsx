@@ -19,7 +19,6 @@ export default function NavItem(props) {
 	}
 
 	const navRefSub = useRef(null)
-	const location = useLocation()
 
 	const scrollWithOffset = el => {
 		const yCoordinate = el.getBoundingClientRect().top + window.scrollY
@@ -27,6 +26,9 @@ export default function NavItem(props) {
 		window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
 	}
 
+	// console.log(navRefSub)
+
+	const location = useLocation()
 	useEffect(() => {
 		if (location.hash === '') {
 			window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -34,17 +36,22 @@ export default function NavItem(props) {
 	}, [location])
 
 	useEffect(() => {
-		const clickOutside = evt => {
-			if (navRefSub.current && !navRefSub.current.contains(evt.target)) {
+		const clickOutsideItem = evt => {
+			if (
+				subcategoryOpened &&
+				navRefSub.current &&
+				!navRefSub.current.contains(evt.target)
+			) {
 				setSubcategoryOpened(false)
+				console.log('clickedOut#2')
 			}
 		}
-		document.addEventListener('click', clickOutside)
+		document.addEventListener('click', clickOutsideItem)
 
 		return () => {
-			document.removeEventListener('click', clickOutside)
+			document.removeEventListener('click', clickOutsideItem)
 		}
-	}, [navRefSub, sideBarOpened]) // a revisar
+	}, [navRefSub, subcategoryOpened]) // a revisar
 
 	if (item.childrens) {
 		return (
@@ -80,7 +87,7 @@ export default function NavItem(props) {
 							key={index}
 							item={child}
 							handleSideClick={handleSideClick}
-							sideBarOpened
+							// sideBarOpened
 						/>
 					))}
 				</div>
