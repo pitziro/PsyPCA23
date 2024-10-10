@@ -12,10 +12,22 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	font-size: 1.15rem;
 	/* border: 5px solid blue; */
-	/* height: 90vh; */
+	height: max-content;
+	overflow-y: auto;
 }
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	display: none;
+}
+
+html,
+body {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }

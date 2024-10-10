@@ -1,0 +1,52 @@
+[
+	{
+		"id": 1,
+		"pregunta": "¿Por qué debería escoger Perspectivas?",
+		"respuesta": "Dentro del staff de Perspectivas vas a encontrar a diferentes especialistas con varios enfoques terapéuticos; sin embargo, todos nuestros profesionales cuentan con un enfoque centrado en el paciente, por lo que haremos lo posible por incorporar las herramientas que sean necesarias para brindarte ayuda en resolver tu motivo de consulta."
+	},
+	{
+		"id": 2,
+		"pregunta": "¿Qué tipos de terapia ofrecen en el centro?",
+		"respuesta": "Ofrecemos una amplia gama de terapias, incluyendo terapia cognitivo-conductual (TCC), terapia familiar, terapia de pareja, terapia psicodinámica, terapia de aceptación y compromiso, terapia breve estratégica y terapia dialectico conductual. También personalizamos el enfoque según las necesidades individuales del paciente."
+	},
+	{
+		"id": 3,
+		"pregunta": "¿Cómo sé si necesito ver a un psicólogo o a un psiquiatra?",
+		"respuesta": "Si estás lidiando con problemas emocionales o psicológicos que afectan tu bienestar diario, un psicólogo puede ser el primer punto de contacto. Si esos problemas incluyen síntomas severos como insomnio crónico, cambios en el apetito o pensamientos suicidas, podrías necesitar una evaluación psiquiátrica para ver si el tratamiento con medicación es necesario."
+	},
+	{
+		"id": 4,
+		"pregunta": "¿Cuánto dura cada sesión de terapia y cuántas necesito?",
+		"respuesta": "Las sesiones suelen durar entre 50 y 60 minutos. La cantidad de sesiones varía según la complejidad del problema y el progreso del paciente. Algunos pueden requerir solo unas pocas sesiones, mientras que otros pueden necesitar un tratamiento a más largo plazo."
+	},
+	{
+		"id": 5,
+		"pregunta": "¿Es confidencial lo que hablo con el psicoterapeuta o el psiquiatra?",
+		"respuesta": "Sí, todas las sesiones son completamente confidenciales. Solo en casos donde haya riesgo inminente para la seguridad de la persona o de terceros se puede compartir información, pero siempre se le informará antes de hacerlo."
+	},
+	{
+		"id": 6,
+		"pregunta": "¿Puedo tomar medicación y hacer terapia al mismo tiempo?",
+		"respuesta": "Absolutamente. De hecho, muchos estudios muestran que una combinación de medicación y terapia psicológica puede ser muy efectiva para tratar trastornos como la depresión, la ansiedad y otros problemas de salud mental. Tu psiquiatra y psicólogo trabajarán juntos para coordinar el mejor plan de tratamiento para ti."
+	},
+	{
+		"id": 7,
+		"pregunta": "¿Cuánto cuesta una sesión de psicoterapia o psiquiatría?",
+		"respuesta": "El costo puede variar según el tipo de servicio y la duración de la sesión. Ofrecemos diferentes paquetes y tarifas para hacer accesibles nuestros servicios. Te recomendamos consultar nuestra lista de precios o contactarte al WhatsApp para información específica."
+	},
+	{
+		"id": 8,
+		"pregunta": "¿Cómo puedo agendar una cita y qué necesito llevar a la primera sesión?",
+		"respuesta": "Puedes agendar una cita llamando o escribiendo a nuestro centro. Para la primera sesión, no necesitas traer nada en particular, pero es útil si tienes un historial médico o psicológico previo que quieras compartir con el profesional."
+	},
+	{
+		"id": 9,
+		"pregunta": "¿Cuánto tiempo tarda en ver resultados la psicoterapia?",
+		"respuesta": "El tiempo para ver resultados varía según cada persona y sus circunstancias. Algunas personas sienten mejoras después de unas pocas sesiones, mientras que para otras puede llevar más tiempo. Lo importante es comprometerse con el proceso y trabajar activamente con el terapeuta."
+	},
+	{
+		"id": 10,
+		"pregunta": "¿Qué hago si no siento mejoría durante la terapia?",
+		"respuesta": "Es importante compartir tus preocupaciones con tu terapeuta si sientes que no estás viendo progresos. La terapia es un proceso colaborativo, y tu terapeuta puede ajustar el enfoque o explorar diferentes técnicas para asegurarse de que el tratamiento sea lo más efectivo posible."
+	}
+]

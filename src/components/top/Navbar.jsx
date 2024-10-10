@@ -1,6 +1,4 @@
 import { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
-import useWindowSize from '../../utils/useWindowSize.js'
 import NavItem from './NavItem'
 import Mobile from './Mobile'
 import Upperline from './Upperline'
@@ -9,12 +7,10 @@ import WAComponent from './WAComponent'
 import myitems from '../../data/navbarData.json'
 import mstyle from './Navbar.module.css'
 import aStyle from '../../App.module.css'
-
+import NavLogo from './NavLogo.jsx'
 function Navbar() {
 	const navRef = useRef(null)
 	const [sideBarOpened, setSideBarOpened] = useState(false)
-
-	// const { width } = useWindowSize()
 
 	const handleSideClick = () => {
 		setSideBarOpened(prev => !prev)
@@ -22,6 +18,7 @@ function Navbar() {
 
 	useEffect(() => {
 		const clickOutsideBar = evt => {
+			console.log('---- Ejecutnado clickOutsideBar')
 			if (
 				sideBarOpened &&
 				navRef.current &&
@@ -30,10 +27,9 @@ function Navbar() {
 				setSideBarOpened(false)
 				console.log('clickedOut Navbar')
 			}
-
-			console.log(evt.target)
-			console.log('sideBarOpened: ', sideBarOpened)
-			console.log('navref', navRef.current)
+			// console.log(evt.target)
+			console.log('(1) sideBarOpened: ', sideBarOpened)
+			// console.log('navref', navRef.current)
 		}
 		document.addEventListener('click', clickOutsideBar, true)
 		return () => {
@@ -41,26 +37,15 @@ function Navbar() {
 		}
 	}, [navRef, sideBarOpened])
 
+	// al agregar la dependencia sideBarOpened, no funciona el cambio de icono de movil.
+	// al quitarla.. no funciona el clickoutside en movil
+
 	return (
 		<div className={aStyle.zonatop}>
 			<Upperline />
 
 			<div className={mstyle.topRowTwo}>
-				<section className={mstyle.top_logo}>
-					<Link to="/">
-						<img
-							className={mstyle.logo_img}
-							src="/img/logotipo16.png"
-							title="Home"
-							alt="Home"
-						/>
-						<img
-							className={mstyle.logo_letras}
-							src="/img/nombre-sin-fondo.png"
-							alt="logo_nombre"
-						/>
-					</Link>
-				</section>
+				<NavLogo />
 
 				<nav
 					ref={navRef}

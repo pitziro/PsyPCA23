@@ -9,6 +9,9 @@ export default function NavItem(props) {
 	const { item, handleSideClick, sideBarOpened } = props
 
 	const [subcategoryOpened, setSubcategoryOpened] = useState(false)
+
+	const location = useLocation()
+
 	const handleOpenSub = () => {
 		setSubcategoryOpened(prev => !prev)
 	}
@@ -21,18 +24,34 @@ export default function NavItem(props) {
 	const navRefSub = useRef(null)
 
 	const scrollWithOffset = el => {
-		const yCoordinate = el.getBoundingClientRect().top + window.scrollY
 		const yOffset = -120
-		window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' })
+		const y = el.getBoundingClientRect().top + window.scrollY + yOffset
+		window.scrollTo({ top: y, behavior: 'smooth' })
 	}
 
-	// console.log(navRefSub)
-
-	const location = useLocation()
 	useEffect(() => {
-		if (location.hash === '') {
+		const hash = location.hash
+
+		if (hash === '') {
 			window.scrollTo({ top: 0, behavior: 'smooth' })
 		}
+		// else {
+		// 	const checkElementToScroll = () => {
+		// 		const targetElement = document.getElementById(hash.slice(1))
+		// 		if (targetElement) {
+		// 			scrollWithOffset(targetElement)
+		// 			return true
+		// 		}
+		// 		return false
+		// 	}
+
+		// 	const intervaltoScroll = setInterval(() => {
+		// 		const elementDoExist = checkElementToScroll()
+		// 		elementDoExist && clearInterval(intervaltoScroll)
+		// 	}, 100)
+
+		// 	return () => clearInterval(intervaltoScroll)
+		// }
 	}, [location])
 
 	useEffect(() => {
@@ -43,7 +62,6 @@ export default function NavItem(props) {
 				!navRefSub.current.contains(evt.target)
 			) {
 				setSubcategoryOpened(false)
-				console.log('clickedOut#2')
 			}
 		}
 		document.addEventListener('click', clickOutsideItem)
@@ -99,7 +117,7 @@ export default function NavItem(props) {
 			<HashLink
 				to={item.path}
 				onClick={handleHashClick}
-				scroll={scrollWithOffset}
+				scroll={el => scrollWithOffset(el)}
 			>
 				{item.title}
 			</HashLink>

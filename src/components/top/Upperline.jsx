@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import mstyle from './Navbar.module.css'
 import instagramSVG from '../../assets/svg/instagramLogo.svg'
 import facebookSVG from '../../assets/svg/facebookLogo.svg'
@@ -10,6 +11,7 @@ import {
 } from '../../utils/constants'
 
 function Upperline() {
+	console.log('rendered: upperline')
 	return (
 		<div className={mstyle.topRowOne}>
 			<span className={mstyle.spanFono}>
@@ -28,4 +30,4 @@ function Upperline() {
 	)
 }
 
-export default Upperline
+export default memo(Upperline)
