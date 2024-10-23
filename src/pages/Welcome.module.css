@@ -1,61 +1,158 @@
-.div_welcome {
-	width: 100%;
-}
-
 .wMain {
 	padding-bottom: 10px;
 	margin: 0 auto;
-	height: 60vw;
-	max-width: 1200px;
-	/* position: relative; */
-	/* width: 100dvw; */
-	/* border: 1px solid magenta; */
+	height: max-content;
+	/* max-width: 1200px; */
+	/* position: relative;
+	width: 100dvw; */
+	/* border: 2px solid magenta; */
 }
 
-.imgContainer {
-	height: 100%;
-	background-size: cover;
-	background-position: center;
-	background-image: url('/img/03_sesion_terapia_r.webp');
+.wEquipo {
+	padding: 0px 10px 20px 10px;
+	height: max-content;
 }
 
-.imgWasap {
+.introContainer {
 	display: flex;
-	position: absolute;
-	top: 5%;
+	padding: 20px 50px 20px 25px;
+
+	.introContent {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.introTitle {
+		margin: 10px 0;
+		font-size: 1.5rem;
+	}
+	.introDesc {
+		margin: 10px 0 20px 0;
+	}
+	a {
+		width: max-content;
+		text-align: center;
+	}
+	img {
+		width: 100%;
+		max-width: 300px;
+		height: auto;
+		border-radius: 50%;
+		object-fit: cover;
+		overflow: hidden;
+		aspect-ratio: 1/1;
+	}
+
+	.valuesBtn {
+		background-color: var(--cPaleta0);
+		color: white;
+		margin-top: 20px;
+		padding: 0.55rem 1.5rem;
+		border: none;
+		border-radius: 25px;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+
+.wSectionTitle {
+	background-color: var(--cPaleta2);
+	font-size: 1.7rem;
+	text-align: center;
+	line-height: 4rem;
+	font-weight: 600;
 	color: white;
+}
+
+/* ----  Agenda --- */
+.agendaContainer {
+	min-height: 550px;
+	display: flex;
+	flex-direction: column;
+
+	.agendaContent {
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		flex-grow: 1;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 25px 0 25px 0;
+	}
+
+	.agendaItem {
+		width: 270px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 20px;
+		border: 2px solid var(--cPaleta1);
+		border-radius: 25px;
+		padding: 15px 0 15px 0;
+		margin: 20px;
+		box-shadow: 7px 7px 7px 0px rgba(1, 61, 96, 1);
+	}
+
+	.agendaIcon {
+		height: 55px;
+	}
+
+	.agendaSubtitle {
+		font-size: 1.15rem;
+		font-weight: 660;
+	}
+	.agendaDesc {
+		padding-inline: 10px;
+	}
+}
+
+.benefitContainer {
+	min-height: 250px;
+	display: flex;
 	align-items: center;
-	right: 50px;
-	background-color: rgba(0, 0, 0, 0.5);
-	padding-left: 5px;
-	padding-right: 5px;
-	font-size: 1.5rem;
-}
+	flex-wrap: wrap;
+	margin-block: 25px;
 
-.imgWasap svg {
-	margin-left: 5px;
-	font-size: 2rem;
-}
-
-.wBeneficios {
-	padding: 0px 10px 20px 10px;
-	border: 1px dotted blue;
-	height: 200px;
-}
-
-.wBienvenida {
-	padding: 0px 10px 20px 10px;
-	border: 1px dotted blue;
-	height: 200px;
-}
-
-@media screen and (max-width: 980px) {
-	.imgWasap {
-		right: 10px;
-		font-size: 1.1rem;
+	.benefitContent {
+		display: flex;
+		margin: 25px auto;
+		gap: 10px;
+		flex-direction: column;
 	}
 
-	.imgWasap svg {
-		font-size: 1.1rem;
+	.benefitImg {
+		height: 85px;
+	}
+	.benefitDesc {
+		max-width: 150px;
+		font-size: 1.3rem;
+		font-weight: 600;
+		text-wrap: pretty;
+		text-align: center;
 	}
 }
+
+@media screen and (width <= 800px) {
+	.introContainer {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+
+		.introContent {
+			align-items: center;
+		}
+		.introDesc,
+		.introTitle {
+			text-align: center;
+		}
+	}
+}
+
+/* @media screen and (width <= 980px) {
+	.agendaContent {
+		margin: 0 auto;
+		flex-direction: column;
+		align-items: start;
+	}
+} */

@@ -24,7 +24,7 @@ export default function NavItem(props) {
 	const navRefSub = useRef(null)
 
 	const scrollWithOffset = el => {
-		const yOffset = -120
+		const yOffset = -200
 		const y = el.getBoundingClientRect().top + window.scrollY + yOffset
 		window.scrollTo({ top: y, behavior: 'smooth' })
 	}
@@ -35,23 +35,6 @@ export default function NavItem(props) {
 		if (hash === '') {
 			window.scrollTo({ top: 0, behavior: 'smooth' })
 		}
-		// else {
-		// 	const checkElementToScroll = () => {
-		// 		const targetElement = document.getElementById(hash.slice(1))
-		// 		if (targetElement) {
-		// 			scrollWithOffset(targetElement)
-		// 			return true
-		// 		}
-		// 		return false
-		// 	}
-
-		// 	const intervaltoScroll = setInterval(() => {
-		// 		const elementDoExist = checkElementToScroll()
-		// 		elementDoExist && clearInterval(intervaltoScroll)
-		// 	}, 100)
-
-		// 	return () => clearInterval(intervaltoScroll)
-		// }
 	}, [location])
 
 	useEffect(() => {

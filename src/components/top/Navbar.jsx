@@ -2,12 +2,10 @@ import { useState, useEffect, useRef } from 'react'
 import NavItem from './NavItem'
 import Mobile from './Mobile'
 import Upperline from './Upperline'
-import WAComponent from './WAComponent'
 
 import myitems from '../../data/navbarData.json'
 import mstyle from './Navbar.module.css'
 import aStyle from '../../App.module.css'
-import NavLogo from './NavLogo.jsx'
 function Navbar() {
 	const navRef = useRef(null)
 	const [sideBarOpened, setSideBarOpened] = useState(false)
@@ -18,18 +16,13 @@ function Navbar() {
 
 	useEffect(() => {
 		const clickOutsideBar = evt => {
-			console.log('---- Ejecutnado clickOutsideBar')
 			if (
 				sideBarOpened &&
 				navRef.current &&
 				!navRef.current.contains(evt.target)
 			) {
 				setSideBarOpened(false)
-				console.log('clickedOut Navbar')
 			}
-			// console.log(evt.target)
-			console.log('(1) sideBarOpened: ', sideBarOpened)
-			// console.log('navref', navRef.current)
 		}
 		document.addEventListener('click', clickOutsideBar, true)
 		return () => {
@@ -45,8 +38,6 @@ function Navbar() {
 			<Upperline />
 
 			<div className={mstyle.topRowTwo}>
-				<NavLogo />
-
 				<nav
 					ref={navRef}
 					id={mstyle.categorybar}
@@ -61,8 +52,6 @@ function Navbar() {
 						/>
 					))}
 				</nav>
-
-				<WAComponent />
 
 				<Mobile fClick={{ sideBarOpened, handleSideClick }} />
 			</div>

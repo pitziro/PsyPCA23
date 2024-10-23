@@ -3,7 +3,7 @@
 }
 
 .nosotrosdiv p {
-	font-size: 1.5rem;
+	/* font-size: 1.5rem; */
 }
 
 .main_somos_desc {
@@ -106,7 +106,7 @@
 }
 
 .valorx svg {
-	font-size: 5.5rem;
+	/* font-size: 5.5rem; */
 	color: var(--cPaleta1);
 }
 

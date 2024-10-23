@@ -1,4 +1,5 @@
 :root {
+	--cPaleta0: #013d60;
 	--cPaleta1: #333b4f;
 	--cPaleta2: #8da9c9;
 	--cPaleta3: #a39d99;
@@ -8,28 +9,17 @@
 }
 
 @font-face {
-	font-family: 'Alga'; /*Can be any text*/
-	src:
-		local('AlgaRegular'),
-		url('../src/assets/fonts/AlgaRegular.ttf') format('truetype');
+	font-family: 'Poppins';
+	src: url('../src/assets/fonts/Poppins-Regular.otf') format('truetype');
 }
 
 @font-face {
-	font-family: 'AlgaBold'; /*Can be any text*/
-	src:
-		local('AlgaBold'),
-		url('../src/assets/fonts/AlgaBold.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: 'AlgaLight'; /*Can be any text*/
-	src:
-		local('AlgaLight'),
-		url('../src/assets/fonts/AlgaLight.ttf') format('truetype');
+	font-family: 'Poppins-Bold';
+	src: url('../src/assets/fonts/Poppins-Bold.otf') format('truetype');
 }
 
 .App {
-	font-family: 'Alga';
+	font-family: 'Poppins';
 	display: flex;
 	background-color: var(--cFondo);
 	flex-direction: column;
@@ -50,9 +40,9 @@
 .zonamain {
 	display: flex;
 	justify-content: center;
-	/* padding-top: 2vw; */
 	flex-grow: 2;
 	min-height: 60vh;
 	z-index: 0;
+	/* padding-top: 2vw; */
 	/* border: 1px solid yellow */
 }

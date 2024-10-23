@@ -1,36 +1,11 @@
-// import { useEffect, useState } from 'react'
-import { Helmet } from 'react-helmet-async'
 import wStyles from './Welcome.module.css'
 import SeoHelmet from '../components/seo/seo'
+import Carousel from '../components/main/Carousel'
+import IntroTeam from '../components/main/IntroTeam'
+import ScheduleTutorial from '../components/main/ScheduleTutorial'
+import Benefits from '../components/main/Benefits'
 
 export default function Welcome() {
-	// const modalStyle = {
-	// 	position: 'absolute',
-	// 	top: '50%',
-	// 	left: '50%',
-	// 	transform: 'translate(-50%, -50%)',
-	// 	width: 400,
-	// 	bgcolor: 'white',
-	// 	boxShadow: 24,
-	// 	p: 4,
-	// }
-
-	// const [open, setOpen] = useState(false)
-	// const handleOpen = () => setOpen(true)
-	// const handleClose = () => setOpen(false)
-
-	// useEffect(() => {
-	// 	const timer = setTimeout(() => {
-	// 		handleOpen();
-	// 	}, 3000);
-
-	// 	return () => {
-	// 		clearInterval(timer);
-	// 	};
-	// }, []);
-
-	console.log('Main Div Rendered')
-
 	return (
 		<>
 			<SeoHelmet
@@ -40,55 +15,20 @@ export default function Welcome() {
 
 			<div className={wStyles.div_welcome}>
 				<section className={wStyles.wMain}>
-					<div className={wStyles.imgContainer}> </div>
-
-					{/* <Link to={linkWasap} target='_blank'>
-					<div className={wStyles.imgWasap}>
-						<p>¿Necesitas ayuda?</p>
-						<WhatsApp />
-					</div>
-				</Link> */}
+					<Carousel />
 				</section>
-				{/* 
-            
-			<Modal
-				open={open}
-				onClose={handleClose}
-				closeAfterTransition
-				slots={{ backdrop: Backdrop }}
-				slotProps={{
-					backdrop: {
-						timeout: 500,
-					},
-				}}
-			>
-				<Fade in={open}>
-					<Box sx={modalStyle}>
-						<h3>Text in a modal</h3>
-						<p>
-							Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-						</p>
-					</Box>
-				</Fade>
-			</Modal> */}
+
+				<section className={wStyles.wEquipo}>
+					<IntroTeam />
+				</section>
+
+				<section className={wStyles.wAgenda}>
+					<ScheduleTutorial />
+				</section>
 
 				<section className={wStyles.wBeneficios}>
-					<p> Bloque Bienvenida </p>
+					<Benefits />
 				</section>
-
-				<section className={wStyles.wBienvenida}>
-					<p> Bloque Beneficios </p>
-				</section>
-
-				{/*
-			<section className={wStyles.wBienvenida}>
-				<p> Bloque Reviews </p>
-			</section>
-
-			<section className={wStyles.wBienvenida}>
-				<p> Bloque Blog </p>
-			</section>
-            */}
 			</div>
 		</>
 	)

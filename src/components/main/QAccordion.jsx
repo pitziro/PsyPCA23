@@ -6,7 +6,6 @@ const QAccordion = ({ questions }) => {
 
 	const onQuestionClick = index => {
 		setActiveIndex(index === activeIndex ? null : index)
-		console.log(activeIndex)
 	}
 
 	return (

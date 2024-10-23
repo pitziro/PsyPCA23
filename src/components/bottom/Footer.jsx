@@ -1,15 +1,15 @@
 import {
 	CONST_ADDRESS,
-	CONST_LINK_FACEBOOK,
 	CONST_LINK_INSTAGRAM,
-	CONST_LINK_LINKEDIN,
 	CONST_PHONE_NUMBER,
+	CONST_LINK_TIKTOK,
 } from '../../utils/constants'
 import fStyles from './Footer.module.css'
 
 import instagramSVG from '../../assets/svg/instagramLogo.svg'
-import facebookSVG from '../../assets/svg/facebookLogo.svg'
-import linkedinSVG from '../../assets/svg/linkedinLogo.svg'
+import tiktokSVG from '../../assets/svg/tiktoklogo-whitebg.svg'
+// import facebookSVG from '../../assets/svg/facebookLogo.svg'
+// import linkedinSVG from '../../assets/svg/linkedinLogo.svg'
 // import MapsApi from '../../utils/MapsApi'
 
 export default function Footer() {
@@ -24,14 +24,14 @@ export default function Footer() {
 				</p>
 				<p>
 					Siguenos en redes: <br />
-					<a href={CONST_LINK_FACEBOOK} target="_blank" rel="noreferrer">
+					{/* <a href={CONST_LINK_FACEBOOK} target="_blank" rel="noreferrer">
 						<img src={facebookSVG} alt="facebook" />
-					</a>
+					</a> */}
 					<a href={CONST_LINK_INSTAGRAM} target="_blank" rel="noreferrer">
 						<img src={instagramSVG} alt="instagram" />
 					</a>
-					<a href={CONST_LINK_LINKEDIN} target="_blank" rel="noreferrer">
-						<img src={linkedinSVG} alt="linkedin" />
+					<a href={CONST_LINK_TIKTOK} target="_blank" rel="noreferrer">
+						<img src={tiktokSVG} alt="tiktok" />
 					</a>
 				</p>
 				<p>
@@ -48,9 +48,9 @@ export default function Footer() {
 					Dirección: <br />
 					{CONST_ADDRESS}
 				</p>
-				<div className={fStyles.sec_dir_map}>
-					{/* <MapsApi className={fStyles.sec_dir_map} /> */}
-				</div>
+				{/* <div className={fStyles.sec_dir_map}>
+					<MapsApi className={fStyles.sec_dir_map} />
+				</div> */}
 			</div>
 		</div>
 	)
