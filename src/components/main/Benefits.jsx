@@ -1,5 +1,9 @@
 import wBenefit from '../../pages/Welcome.module.css'
 
+import services from '/../src/assets/svg/services.svg'
+import quality from '/../src/assets/svg/quality.svg'
+import efficiency from '/../src/assets/svg/efficiency.svg'
+
 const Benefits = () => {
 	return (
 		<>
@@ -10,7 +14,7 @@ const Benefits = () => {
 			<div className={wBenefit.benefitContainer}>
 				<div className={wBenefit.benefitContent}>
 					<img
-						src="/../src/assets/svg/quality.svg"
+						src={quality}
 						alt="benefits"
 						className={wBenefit.benefitImg}
 					/>
@@ -19,7 +23,7 @@ const Benefits = () => {
 
 				<div className={wBenefit.benefitContent}>
 					<img
-						src="/../src/assets/svg/efficiency.svg"
+						src={efficiency}
 						alt="benefits"
 						className={wBenefit.benefitImg}
 					/>
@@ -28,7 +32,7 @@ const Benefits = () => {
 
 				<div className={wBenefit.benefitContent}>
 					<img
-						src="/../src/assets/svg/services.svg"
+						src={services}
 						alt="benefits"
 						className={wBenefit.benefitImg}
 					/>

@@ -1,4 +1,9 @@
 import wAgenda from '../../pages/Welcome.module.css'
+
+import calendarSVG from '/../src/assets/svg/calendar.svg'
+import confirmedSVG from '/../src/assets/svg/confirmed.svg'
+import pickOneSVG from '/../src/assets/svg/pickone.svg'
+
 const ScheduleTutorial = () => {
 	return (
 		<div className={wAgenda.agendaContainer}>
@@ -7,7 +12,7 @@ const ScheduleTutorial = () => {
 			<div className={wAgenda.agendaContent}>
 				<div className={wAgenda.agendaItem}>
 					<img
-						src="/../src/assets/svg/pickone.svg"
+						src={pickOneSVG}
 						alt="escoge"
 						className={wAgenda.agendaIcon}
 					/>
@@ -22,7 +27,7 @@ const ScheduleTutorial = () => {
 
 				<div className={wAgenda.agendaItem}>
 					<img
-						src="/../src/assets/svg/calendar.svg"
+						src={calendarSVG}
 						alt="escoge"
 						className={wAgenda.agendaIcon}
 					/>
@@ -35,7 +40,7 @@ const ScheduleTutorial = () => {
 
 				<div className={wAgenda.agendaItem}>
 					<img
-						src="/../src/assets/svg/confirmed.svg"
+						src={confirmedSVG}
 						alt="escoge"
 						className={wAgenda.agendaIcon}
 					/>
