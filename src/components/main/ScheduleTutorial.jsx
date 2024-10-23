@@ -1,8 +1,8 @@
 import wAgenda from '../../pages/Welcome.module.css'
 
-import calendarSVG from '/../src/assets/svg/calendar.svg'
-import confirmedSVG from '/../src/assets/svg/confirmed.svg'
-import pickOneSVG from '/../src/assets/svg/pickone.svg'
+import calendarSVG from '../../../src/assets/svg/calendar.svg'
+import confirmedSVG from '../../../src/assets/svg/confirmed.svg'
+import pickOneSVG from '../../../src/assets/svg/pickone.svg'
 
 const ScheduleTutorial = () => {
 	return (

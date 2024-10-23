@@ -1,8 +1,8 @@
 import wBenefit from '../../pages/Welcome.module.css'
 
-import services from '/../src/assets/svg/services.svg'
-import quality from '/../src/assets/svg/quality.svg'
-import efficiency from '/../src/assets/svg/efficiency.svg'
+import services from '../../../src/assets/svg/services.svg'
+import quality from '../../../src/assets/svg/services.svg'
+import efficiency from '../../../src/assets/svg/services.svg'
 
 const Benefits = () => {
 	return (
