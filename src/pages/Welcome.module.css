@@ -124,15 +124,6 @@
 }
 
 @media screen and (width <= 800px) {
-	.wSectionTitle {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 1.5rem;
-		line-height: 2.25rem;
-		min-height: 85px;
-	}
-
 	.introContainer {
 		flex-direction: column-reverse;
 		justify-content: center;
@@ -144,6 +135,14 @@
 		.introDesc,
 		.introTitle {
 			text-align: center;
+		}
+	}
+	.benefitContainer {
+		.benefitImg {
+			height: 75px;
+		}
+		.benefitDesc {
+			font-size: 1rem;
 		}
 	}
 }

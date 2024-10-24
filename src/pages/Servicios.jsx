@@ -12,7 +12,7 @@ function Servicios() {
 			/>
 
 			<section id="psicoterapia" className={sStyle.cat_subtitle}>
-				<h3> Psicoterapia </h3>
+				<p className={sStyle.serviceCat}> Psicoterapia </p>
 				{servicios
 					.filter(s => s.agrupacion === 'psicoterapia')
 					.map(x => (
@@ -21,7 +21,7 @@ function Servicios() {
 			</section>
 
 			<section id="consejeria" className={sStyle.cat_subtitle}>
-				<h3> Consejería </h3>
+				<p className={sStyle.serviceCat}> Consejería </p>
 				{servicios
 					.filter(s => s.agrupacion === 'consejeria')
 					.map(x => (
@@ -30,7 +30,7 @@ function Servicios() {
 			</section>
 
 			<section id="evaluacion" className={sStyle.cat_subtitle}>
-				<h3> Evaluación </h3>
+				<p className={sStyle.serviceCat}> Evaluación </p>
 				{servicios
 					.filter(s => s.agrupacion === 'evaluacion')
 					.map(x => (
@@ -39,7 +39,7 @@ function Servicios() {
 			</section>
 
 			<section id="taller" className={sStyle.cat_subtitle}>
-				<h3> Talleres </h3>
+				<p className={sStyle.serviceCat}> Talleres </p>
 				{servicios
 					.filter(s => s.agrupacion === 'taller')
 					.map(x => (
@@ -48,7 +48,7 @@ function Servicios() {
 			</section>
 
 			<section id="certificado" className={sStyle.cat_subtitle}>
-				<h3> Certificados </h3>
+				<p className={sStyle.serviceCat}> Certificados </p>
 				{servicios
 					.filter(s => s.agrupacion === 'certificado')
 					.map(x => (

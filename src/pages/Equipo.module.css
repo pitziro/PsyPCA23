@@ -78,6 +78,9 @@
 	.pIntroText {
 		width: auto;
 		margin: 0;
+		.pIntroTitle {
+			font-size: 1.5rem;
+		}
 	}
 
 	.p_card > .desc {

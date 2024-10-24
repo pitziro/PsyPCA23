@@ -8,6 +8,21 @@
 
 	--cFondo: #ffffff;
 	--cLetra: black;
+
+	/* variables para estandares*/
+	--section-title-line-height: 4rem;
+	--section-title-font-size: 1.7rem;
+
+	--button-font-size: 1rem;
+}
+
+@media (width <= 800px) {
+	:root {
+		--section-title-line-height: 2rem;
+		--section-title-font-size: 1.25rem;
+
+		--button-font-size: 0.9rem;
+	}
 }
 
 @font-face {
@@ -64,13 +79,15 @@ a:visited {
 	font-weight: 600;
 	text-decoration: none;
 	transition: background-color 0.3s;
+	font-size: var(--button-font-size);
 }
 
 .standardSectionTitle {
 	background-color: var(--cPaleta2);
-	font-size: 1.7rem;
 	text-align: center;
-	line-height: 4rem;
+	line-height: var(--section-title-line-height);
+	font-size: var(--section-title-font-size);
+	padding-block: 10px;
 	font-weight: 600;
 	color: white;
 }

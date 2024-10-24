@@ -5,9 +5,9 @@
 	padding-top: 40px;
 	width: 95%;
 }
-.cat_subtitle {
-	/* border: 1px solid purple; */
-	width: 90%;
+
+.serviceCat {
+	composes: standardSectionTitle from '../App.module.css';
 }
 
 .cat_subtitle h3 {

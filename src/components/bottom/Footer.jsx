@@ -1,16 +1,15 @@
 import {
 	CONST_ADDRESS,
 	CONST_LINK_INSTAGRAM,
-	CONST_PHONE_NUMBER,
 	CONST_LINK_TIKTOK,
+	CONST_PHONE_NUMBER,
 } from '../../utils/constants'
-import fStyles from './Footer.module.css'
 
-import instagramSVG from '../../assets/svg/instagramLogo.svg'
+import instagramSVG from '../../assets/svg/iglogo-whitebg.svg'
 import tiktokSVG from '../../assets/svg/tiktoklogo-whitebg.svg'
-// import facebookSVG from '../../assets/svg/facebookLogo.svg'
-// import linkedinSVG from '../../assets/svg/linkedinLogo.svg'
 // import MapsApi from '../../utils/MapsApi'
+
+import fStyles from './Footer.module.css'
 
 export default function Footer() {
 	return (
@@ -24,9 +23,6 @@ export default function Footer() {
 				</p>
 				<p>
 					Siguenos en redes: <br />
-					{/* <a href={CONST_LINK_FACEBOOK} target="_blank" rel="noreferrer">
-						<img src={facebookSVG} alt="facebook" />
-					</a> */}
 					<a href={CONST_LINK_INSTAGRAM} target="_blank" rel="noreferrer">
 						<img src={instagramSVG} alt="instagram" />
 					</a>
