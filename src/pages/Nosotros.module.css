@@ -1,19 +1,14 @@
-.nosotrosdiv {
-	padding-top: 15px;
-}
-
-.nosotrosdiv p {
-	/* font-size: 1.5rem; */
+.nSubtitles {
+	composes: standardSectionTitle from '../App.module.css';
 }
 
 .main_somos_desc {
 	display: flex;
+	/* width: 90%; */
 	height: max-content;
 	align-items: center;
-	justify-content: center;
-	margin: 35px 0 35px 0;
-	padding: 15px 0 15px 0;
-	background-color: var(--cPaleta2);
+	justify-content: space-around;
+	padding: 15px 25px;
 }
 
 .main_somos_desc_one {
@@ -21,58 +16,47 @@
 	padding: 10px;
 	display: flex;
 	width: 60%;
-	color: white;
-}
-
-.main_somos_desc_one p {
-	padding: 0 25px 0 25px;
 }
 
 .main_somos_desc_img {
-	width: 25vw;
-	min-width: 100px;
-	margin-left: 25px;
+	width: auto;
+	height: 40dvh;
+	min-height: 200px;
+	max-height: 350px;
+	object-fit: cover;
+	border-radius: 25px;
 }
 
 .main_somos_obj {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	/* align-items: first baseline; */
 	padding: 50px;
 	margin-bottom: 50px;
-}
 
-.main_somos_obj img {
-	height: 50px;
-	margin-right: 30px;
+	img {
+		height: 55px;
+	}
 }
 
 .obj_mision {
 	width: 50%;
-	height: 100%;
-	padding: 50px 25px 0;
-	height: max-content;
+	padding: 50px 25px;
+	background-color: var(--cPaleta0);
+	color: white;
 }
 
 .obj_vision {
-	color: white;
-	width: 50%;
-	padding: 50px 25px 0;
-	background-color: var(--cPaleta1);
+	composes: obj_mision;
+	background-color: var(--cPaleta5);
+	color: unset;
 }
 
 .obj_title {
-	display: inline-flex;
-	align-items: center;
-}
-
-.valoresTagName {
 	display: flex;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	padding: 20px 0 20px 0;
-	justify-content: center;
+	justify-self: center;
+	align-items: center;
+	gap: 10px;
 }
 
 .valores {
@@ -110,33 +94,30 @@
 	color: var(--cPaleta1);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (width <= 980px) {
 	.main_somos_desc {
-		width: 100vw;
 		display: flex;
 		flex-direction: column-reverse;
-		padding-top: 20px;
+		align-items: center;
+		margin-block: 15px;
 	}
 
 	.main_somos_desc_one {
-		margin-bottom: 10px;
 		padding: 0;
-		padding-bottom: 10px;
-		width: 75dvw;
+		width: 80dvw;
+		text-wrap: pretty;
 	}
 
 	.main_somos_desc_img {
-		width: 25vw;
 		min-width: 150px;
-		margin-left: 25px;
 	}
 
 	.main_somos_obj {
-		width: 100vw;
+		/* width: 100vw; */
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		height: auto;
+		height: max-content;
 		padding: 0;
 	}
 
@@ -174,5 +155,11 @@
 		width: 70vw;
 		min-width: 180px;
 		max-width: 275px;
+	}
+}
+
+@media screen and (width <= 550px) {
+	.main_somos_desc_img {
+		height: 25dvh;
 	}
 }

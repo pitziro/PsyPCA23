@@ -1,12 +1,12 @@
-// import MyCarousel from '../components/main/MyCarousel'
+import SeoHelmet from '../components/seo/seo'
 
 import nStyle from './Nosotros.module.css'
+
 import handshakeIcon from '../assets/svg/handshakeIcon.svg'
 import compromisoIcon from '../assets/svg/compromisoIcon.svg'
 import responsibleIcon from '../assets/svg/responsibleIcon.svg'
 import empathyIcon from '../assets/svg/empathyIcon.svg'
 import integridadIcon from '../assets/svg/integridadIcon.svg'
-import SeoHelmet from '../components/seo/seo'
 
 function Nosotros() {
 	return (
@@ -16,11 +16,8 @@ function Nosotros() {
 				descContent="Conoce al mejor equipo profesional para apoyarte en todo momento"
 			/>
 
-			<div className={nStyle.nosotrosdiv}></div>
-			{/* <MyCarousel /> */}
-
-			<div className={nStyle.valoresTagName}>
-				<h1> ¿QUIENES SOMOS? </h1>
+			<div className={nStyle.nSubtitles}>
+				<p> ¿QUIENES SOMOS? </p>
 			</div>
 
 			<section className={nStyle.main_somos_desc}>
@@ -43,7 +40,7 @@ function Nosotros() {
 				</div>
 				<img
 					className={nStyle.main_somos_desc_img}
-					src="/img/logotipo16.png"
+					src="/img/stock/05_nosotros.webp"
 					alt="logo"
 				/>
 			</section>
@@ -51,7 +48,7 @@ function Nosotros() {
 			<section className={nStyle.main_somos_obj}>
 				<div className={nStyle.obj_mision}>
 					<div className={nStyle.obj_title}>
-						<img alt="mision" src="/img/40_icon_mision.webp" />
+						<img alt="mision" src="/img/icons/41_icon_mission.webp" />
 						<h2> MISIÓN </h2>
 					</div>
 					<p>
@@ -67,7 +64,7 @@ function Nosotros() {
 
 				<div className={nStyle.obj_vision}>
 					<div className={nStyle.obj_title}>
-						<img alt="mision" src="/img/40_icon_vision.webp" />
+						<img alt="mision" src="/img/icons/41_icon_vision.webp" />
 						<h2> VISIÓN </h2>
 					</div>
 					<p>
@@ -81,8 +78,8 @@ function Nosotros() {
 				</div>
 			</section>
 
-			<div className={nStyle.valoresTagName}>
-				<h2> VALORES </h2>
+			<div className={nStyle.nSubtitles}>
+				<p> VALORES </p>
 			</div>
 
 			<section className={nStyle.valores}>

@@ -1,9 +1,9 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-import carStyle from './carousel.module.css'
 import { CONST_IMG_CAROUSEL as slides } from '../../utils/constants'
-import { Link } from 'react-router-dom'
+import carStyle from './carousel.module.css'
 
 const Carrousel = () => {
 	const [currSlide, setCurrSlide] = useState(0)

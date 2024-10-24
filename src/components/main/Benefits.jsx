@@ -1,14 +1,14 @@
 import wBenefit from '../../pages/Welcome.module.css'
 
 import services from '../../../src/assets/svg/services.svg'
-import quality from '../../../src/assets/svg/services.svg'
-import efficiency from '../../../src/assets/svg/services.svg'
+import quality from '../../../src/assets/svg/quality.svg'
+import efficiency from '../../../src/assets/svg/efficiency.svg'
 
 const Benefits = () => {
 	return (
 		<>
 			<p className={wBenefit.wSectionTitle}>
-				¿Qué beneficios tiene hacer terapia?
+				¿Qué beneficios tiene hacer terapia en Perspectivas?
 			</p>
 
 			<div className={wBenefit.benefitContainer}>
