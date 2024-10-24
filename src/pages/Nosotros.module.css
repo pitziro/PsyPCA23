@@ -143,10 +143,6 @@
 		padding-bottom: 50px;
 	}
 
-	.valores {
-		width: 100vw;
-	}
-
 	.valorx {
 		display: flex;
 		flex-direction: column;
@@ -161,5 +157,6 @@
 @media screen and (width <= 550px) {
 	.main_somos_desc_img {
 		height: 25dvh;
+		margin-bottom: 15px;
 	}
 }

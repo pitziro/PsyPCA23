@@ -11,7 +11,7 @@
 
 .introContainer {
 	display: flex;
-	padding: 20px 50px 20px 25px;
+	padding: 20px 25px 20px 25px;
 	justify-content: space-around;
 	gap: 30px;
 
