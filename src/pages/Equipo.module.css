@@ -178,10 +178,17 @@
 		margin-bottom: 50px;
 	}
 	.p_cardContent {
-		width: 70%;
+		width: 90%;
 
 		.p_cardTitle {
 			text-align: center;
 		}
+	}
+	.p_cardBtns {
+		margin-top: 20px;
+	}
+
+	.playButton {
+		display: none;
 	}
 }
