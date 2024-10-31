@@ -1,49 +1,67 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import vpStyles from '../../pages/Equipo.module.css'
-
+import playbtnSVG from '../../assets/svg/playbtn.svg'
 export const VideoPlayer = () => {
 	const videoUrl =
 		'https://res.cloudinary.com/dcnim91yg/video/upload/v1729748479/Presentacio%CC%81n_de_todos_compress_b2qxfw.mp4'
 
 	const videoRef = useRef(null)
-	const [userPaused, setUserPaused] = useState(false)
+	const [isPlaying, setIsPlaying] = useState(false)
+	const [userInitiated, setUserInitiated] = useState(false)
+
+	const handlePlayButtonClick = () => {
+		videoRef.current.play()
+		setIsPlaying(true)
+		setUserInitiated(true)
+	}
 
 	useEffect(() => {
 		const videoElement = videoRef.current
 
-		const videoObserver = new IntersectionObserver(
-			entries => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting && !userPaused) {
-						videoElement.play()
-					} else {
-						videoElement.pause()
-					}
-				})
-			},
-			{ threshold: 0.4 }
-		)
+		const handleVideoVisibility = entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting && isPlaying) {
+					videoElement.play().catch(error => {
+						console.log(error)
+					})
+				} else {
+					videoElement.pause()
+					setIsPlaying(false)
+				}
+			})
+		}
+
+		// Observa el video
+		const observer = new IntersectionObserver(handleVideoVisibility, {
+			threshold: 0.5,
+		})
 
 		if (videoElement) {
-			videoObserver.observe(videoElement)
+			observer.observe(videoElement)
 		}
 
 		return () => {
 			if (videoElement) {
-				videoObserver.unobserve(videoElement)
+				observer.unobserve(videoElement)
 			}
 		}
-	}, [userPaused])
+	}, [isPlaying])
 
 	return (
 		<div className={vpStyles.videoContainer}>
+			{!isPlaying && !userInitiated && (
+				<img
+					src={playbtnSVG}
+					className={vpStyles.playButton}
+					onClick={handlePlayButtonClick}
+				/>
+			)}
 			<video
 				ref={videoRef}
 				className={vpStyles.videoContent}
 				controls
 				autoPlay={false}
-				onPlay={() => setUserPaused(false)}
-				onPause={() => setUserPaused(true)}
+				controlsList="nofullscreen"
 			>
 				<source src={videoUrl} type="video/mp4" />
 			</video>

@@ -9,6 +9,7 @@
 }
 
 .videoContainer {
+	position: relative;
 	width: 300px;
 	height: 500px;
 	overflow: hidden;
@@ -22,6 +23,18 @@
 	height: 100%;
 	object-fit: cover; /* Crops the video to fill the container */
 	display: block;
+}
+
+.playButton {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 50%;
+	width: 70px;
+	cursor: pointer;
+	z-index: 1;
 }
 
 .pIntroText {
