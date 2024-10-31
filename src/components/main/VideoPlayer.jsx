@@ -15,6 +15,16 @@ export const VideoPlayer = () => {
 		setUserInitiated(true)
 	}
 
+	const handleVideoClick = () => {
+		if (isPlaying) {
+			videoRef.current.pause()
+			setIsPlaying(false)
+		} else {
+			videoRef.current.play()
+			setIsPlaying(true)
+		}
+	}
+
 	useEffect(() => {
 		const videoElement = videoRef.current
 
@@ -62,6 +72,7 @@ export const VideoPlayer = () => {
 				controls
 				autoPlay={false}
 				controlsList="nofullscreen"
+				onClick={handleVideoClick}
 			>
 				<source src={videoUrl} type="video/mp4" />
 			</video>
