@@ -20,11 +20,11 @@
 }
 
 #categorybar {
-	/* width: 75%; */
+	width: 90%;
 	display: flex;
-	align-items: center;
+	/* align-items: center; */
 	gap: 25px;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .categoryitem {
@@ -64,27 +64,32 @@
 }
 
 /* nuevo boton wasap*/
-.btnContainer {
+/* .btnContainer {
 	margin: 0 auto;
+	width: 10%;
 	display: flex;
-	border: 1px solid var(--cPaleta1);
+	justify-items: right;
 	border-radius: 7px;
-}
+} */
 
 .combutton {
+	all: unset;
 	color: var(--cPaleta1);
-	border: none;
+	font-size: 0.9rem;
 	border-radius: 5px;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
-	justify-content: center;
 	box-shadow: rgba(0, 0, 0, 0.394) 1.95px 1.95px 2.6px;
-	background-color: white;
-	height: 35px;
+	border: 1px solid var(--cPaleta1);
+	margin-right: 15px;
+
+	height: 30px;
 	padding: 0 5px;
 
 	&:hover {
 		cursor: pointer;
+		background-color: var(--cPaleta2);
+		color: var(--cFondo);
 	}
 }
 
@@ -151,9 +156,10 @@
 	}
 
 	.btnContainer {
+		display: inline-flex;
+		justify-content: flex-end;
 		width: 100%;
 		border: none;
-		justify-content: end;
 		margin-right: 20px;
 	}
 

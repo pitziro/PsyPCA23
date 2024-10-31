@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import NavItem from './NavItem'
 import Mobile from './Mobile'
 import Upperline from './Upperline'
+import WAComponent from './WAComponent'
 
 import myitems from '../../data/navbarData.json'
 import mstyle from './Navbar.module.css'
@@ -52,7 +53,7 @@ function Navbar() {
 						/>
 					))}
 				</nav>
-
+				<WAComponent />
 				<Mobile fClick={{ sideBarOpened, handleSideClick }} />
 			</div>
 		</div>

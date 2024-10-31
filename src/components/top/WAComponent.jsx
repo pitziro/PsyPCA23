@@ -21,7 +21,7 @@ const WAComponent = () => {
 					type="button"
 					onClick={handleWAbtn}
 				>
-					¿Conversamos?&nbsp;&nbsp;
+					&nbsp;Escríbenos&nbsp;
 					<img alt="whatsapp" src={whatsappColorLogoSVG} />
 				</button>
 			</div>

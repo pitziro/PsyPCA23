@@ -1,9 +1,9 @@
-import Player from './Player'
-import pStyle from './Equipo.module.css'
-
-import equipo from '../data/especialistas.json'
-import SeoHelmet from '../components/seo/seo'
 import { VideoPlayer } from '../components/main/VideoPlayer'
+import pStyle from './Equipo.module.css'
+import Player from './Player'
+
+import SeoHelmet from '../components/seo/seo'
+import equipo from '../data/especialistas.json'
 
 function Equipo() {
 	return (
@@ -25,6 +25,8 @@ function Equipo() {
 					</p>
 				</div>
 			</section>
+
+			<section className={pStyle.p_especialistas}> Especialistas</section>
 
 			<section className={pStyle.p_team}>
 				{equipo.map(player => (
