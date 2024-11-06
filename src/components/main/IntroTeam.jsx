@@ -20,7 +20,11 @@ const IntroTeam = () => {
 				</Link>
 			</div>
 
-			<img alt="team" src="/img/team/20_landing_equipo.webp" />
+			<img
+				alt="team"
+				src="/img/team/20_landing_equipo.webp"
+				loading="lazy"
+			/>
 		</div>
 	)
 }

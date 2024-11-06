@@ -3,10 +3,10 @@
 	text-align: center;
 
 	img {
-		min-height: 55px;
 		height: 100px;
 		margin: 15px 0 10px 0;
 		cursor: pointer;
+		aspect-ratio: 32/9;
 	}
 }
 
@@ -22,7 +22,6 @@
 #categorybar {
 	width: 90%;
 	display: flex;
-	/* align-items: center; */
 	gap: 25px;
 	justify-content: space-evenly;
 }

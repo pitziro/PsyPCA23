@@ -48,7 +48,11 @@ function Nosotros() {
 			<section className={nStyle.main_somos_obj}>
 				<div className={nStyle.obj_mision}>
 					<div className={nStyle.obj_title}>
-						<img alt="mision" src="/img/icons/41_icon_mission.webp" />
+						<img
+							alt="mision"
+							src="/img/icons/41_icon_mission.webp"
+							loading="lazy"
+						/>
 						<h2> MISIÓN </h2>
 					</div>
 					<p>
@@ -64,7 +68,11 @@ function Nosotros() {
 
 				<div className={nStyle.obj_vision}>
 					<div className={nStyle.obj_title}>
-						<img alt="mision" src="/img/icons/41_icon_vision.webp" />
+						<img
+							alt="mision"
+							src="/img/icons/41_icon_vision.webp"
+							loading="lazy"
+						/>
 						<h2> VISIÓN </h2>
 					</div>
 					<p>
@@ -84,7 +92,7 @@ function Nosotros() {
 
 			<section className={nStyle.valores}>
 				<div className={nStyle.valorx}>
-					<img src={handshakeIcon} alt="respeto" />
+					<img src={handshakeIcon} alt="respeto" loading="lazy" />
 					<p>
 						<b>Respeto:</b> por lo que hacemos, por nuestros pacientes,
 						por nuestra sociedad y las personas que la componen
@@ -92,7 +100,7 @@ function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<img src={compromisoIcon} alt="compromiso" />
+					<img src={compromisoIcon} alt="compromiso" loading="lazy" />
 					<p>
 						<b>Vocación de servicio:</b> mostrarnos siempre dispuestos a
 						atender tus necesidades y de tus seres queridos.
@@ -100,7 +108,11 @@ function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<img src={responsibleIcon} alt="responsabilidad" />
+					<img
+						src={responsibleIcon}
+						alt="responsabilidad"
+						loading="lazy"
+					/>
 					<p>
 						<b>Responsabilidad:</b> brindarte una atención de calidad,
 						profesionalismo y mejoría en tu bienestar.
@@ -108,7 +120,7 @@ function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<img src={empathyIcon} alt="empatia" />
+					<img src={empathyIcon} alt="empatia" loading="lazy" />
 					<p>
 						<b>Empatía:</b> entender tus emociones, pensamientos y
 						perspectivas de vida.
@@ -116,7 +128,7 @@ function Nosotros() {
 				</div>
 
 				<div className={nStyle.valorx}>
-					<img src={integridadIcon} alt="integridad" />
+					<img src={integridadIcon} alt="integridad" loading="lazy" />
 					<p>
 						<b>Integridad:</b> Honestidad y ética en cada atención que
 						brindamos.

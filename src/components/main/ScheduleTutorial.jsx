@@ -15,6 +15,7 @@ const ScheduleTutorial = () => {
 						src={pickOneSVG}
 						alt="escoge"
 						className={wAgenda.agendaIcon}
+						loading="lazy"
 					/>
 					<span className={wAgenda.agendaSubtitle}>
 						Elige tu psicólogo
@@ -30,6 +31,7 @@ const ScheduleTutorial = () => {
 						src={calendarSVG}
 						alt="escoge"
 						className={wAgenda.agendaIcon}
+						loading="lazy"
 					/>
 					<p className={wAgenda.agendaSubtitle}>Reserva tu cita</p>
 					<p className={wAgenda.agendaDesc}>
@@ -43,6 +45,7 @@ const ScheduleTutorial = () => {
 						src={confirmedSVG}
 						alt="escoge"
 						className={wAgenda.agendaIcon}
+						loading="lazy"
 					/>
 					<p className={wAgenda.agendaSubtitle}> Confirma tu cita</p>
 					<p className={wAgenda.agendaDesc}>

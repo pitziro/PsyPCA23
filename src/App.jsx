@@ -6,6 +6,7 @@ import Navbar from './components/top/Navbar'
 import Footer from './components/bottom/Footer'
 import Welcome from '../src/pages/Welcome'
 import Spinner from './components/visuals/Spinner'
+import 'unfonts.css'
 import aStyle from './App.module.css'
 
 const EquipoLazy = lazy(() => import('../src/pages/Equipo'))

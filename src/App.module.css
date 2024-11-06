@@ -25,18 +25,8 @@
 	}
 }
 
-@font-face {
-	font-family: 'Poppins';
-	src: url('../src/assets/fonts/Poppins-Regular.otf') format('truetype');
-}
-
-@font-face {
-	font-family: 'Poppins-Bold';
-	src: url('../src/assets/fonts/Poppins-Bold.otf') format('truetype');
-}
-
 .App {
-	font-family: 'Poppins';
+	font-family: 'Poppins', 'Arial', 'sans-serif';
 	display: flex;
 	background-color: var(--cFondo);
 	flex-direction: column;

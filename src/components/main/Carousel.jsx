@@ -31,10 +31,10 @@ const Carrousel = () => {
 							`${index === currSlide ? 'active' : ''}`
 						}
 					>
-						{/* Background Image */}
 						<img
 							src={slide.imgUrl}
 							alt="imgCar1"
+							loading="lazy"
 							className={carStyle.carouselImage}
 						/>
 

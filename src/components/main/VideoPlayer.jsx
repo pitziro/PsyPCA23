@@ -32,7 +32,7 @@ export const VideoPlayer = () => {
 			entries.forEach(entry => {
 				if (entry.isIntersecting && isPlaying) {
 					videoElement.play().catch(error => {
-						console.log(error)
+						// console.log(error)
 					})
 				} else {
 					videoElement.pause()

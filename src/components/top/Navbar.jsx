@@ -7,6 +7,7 @@ import WAComponent from './WAComponent'
 import myitems from '../../data/navbarData.json'
 import mstyle from './Navbar.module.css'
 import aStyle from '../../App.module.css'
+
 function Navbar() {
 	const navRef = useRef(null)
 	const [sideBarOpened, setSideBarOpened] = useState(false)

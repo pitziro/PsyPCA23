@@ -11,7 +11,7 @@ const WAComponent = () => {
 		window.open(CONST_LINK_WHATSAPP, '_blank')
 	}
 
-	console.log('WA Comp rendered')
+	// console.log('WA Comp rendered')
 
 	return (
 		<>

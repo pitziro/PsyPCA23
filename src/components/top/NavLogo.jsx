@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import mstyle from './Navbar.module.css'
 import { memo } from 'react'
 const NavLogo = () => {
-	console.log('navlogo rendered.')
+	// console.log('navlogo rendered.')
 	return (
 		<section className={mstyle.top_logo}>
 			<Link to="/">
