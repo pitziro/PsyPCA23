@@ -7,7 +7,7 @@ export default defineConfig({
 		react(),
 		Unfonts({
 			custom: {
-				display: 'swap',
+				// display: 'swap',
 				families: {
 					Poppins: {
 						src: './src/assets/fonts/Poppins-Regular.otf',

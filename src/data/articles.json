@@ -1,0 +1,29 @@
+[
+	{
+		"id": 3,
+		"date": "Julio 2024",
+		"author": "Juan",
+		"title": "Desmintiendo la Bipolaridad",
+		"path": "/articles/bipolaridad",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptas.",
+		"img": "img/articles/bipolar_.webp"
+	},
+	{
+		"id": 2,
+		"date": "Mayo 2024",
+		"author": "Pepe",
+		"title": "Desmintiendo la Depresión",
+		"path": "/articles/depresion",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptas.",
+		"img": "img/articles/depression_.webp"
+	},
+	{
+		"id": 1,
+		"date": "Marzo 2024",
+		"author": "Martin",
+		"title": "Evaluemos el Apego",
+		"path": "/articles/apego",
+		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptas.",
+		"img": "img/articles/loveAtt_.webp"
+	}
+]
