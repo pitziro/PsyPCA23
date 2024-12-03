@@ -10,12 +10,12 @@ export default defineConfig({
 				// display: 'swap',
 				families: {
 					Poppins: {
-						src: './src/assets/fonts/Poppins-Regular.otf',
-						transform(font) {
-							if (font.basename === 'Poppins-Bold') font.weight = 700
+						src: './src/assets/fonts/Poppins-Variable.woff2',
+						// transform(font) {
+						// 	if (font.basename === 'Poppins-Bold') font.weight = 700
 
-							return font
-						},
+						// 	return font
+						// },
 					},
 				},
 			},
