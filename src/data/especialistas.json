@@ -2,45 +2,49 @@
 	{
 		"id": 1,
 		"nombre": "Santiago Sarmiento",
-		"especialidad": "Psicologo Clinico",
+		"especialidad": "Psicologo Clinico - C.Ps.P N° 37718",
 		"rutaImg": "img/team/20_equipo_santiago.webp",
-		"educacion": "Máster en Psicología Clínica y de Salud en Universidad San Pablo - España",
-		"tecnica": "Psicoterapia Breve Estratégica, Formación Intensiva en Terapia de Pareja y Familia, Especialización en Terapia Racional Emotiva Conductual",
-		"horario": "Lunes a Viernes: 9 am a 9 pm",
+		"educacion": "Licenciado en Psicología Clínica UPC \n Máster en Ps. Clínica y de la Salud - España",
+		"tecnica": "Psicoterapia Breve Estratégica \n Terapia Racional Emotiva Conductual \n Terapia de Pareja y Familia",
+		"audiencia": "Adolescentes, adultos, parejas, familia",
+		"horario": "Lunes a Viernes: 9 am a 9 pm \n Sábados de 10am a 5pm",
 		"modalidad": "Presencial y Virtual",
 		"waUrl": "https://wa.link/i7l1bw"
 	},
 	{
 		"id": 2,
 		"nombre": "Stephany Sarmiento",
-		"especialidad": "Psicologo Clinico",
+		"especialidad": "Psicóloga Clínica - C.Ps.P N° 37546",
 		"rutaImg": "img/team/20_equipo_tepy.webp",
-		"educacion": "Máster en Psicología Clínica y de Salud en Universidad San Pablo - España",
-		"tecnica": "Psicoterapia Breve Estratégica, Formación Intensiva en Terapia de Pareja y Familia, Especialización en Terapia Racional Emotiva Conductual",
-		"horario": "Lunes a Viernes: 9 am a 9 pm",
+		"educacion": "Licenciada en psicología clínica UPC \n Máster en Ps. Clínica y de la Salud – España",
+		"tecnica": "Psicoterapia Cognitivo Conductual \n Emergencia Pediátrica",
+		"audiencia": "Niños, adolescentes, adultos, parejas, familia",
+		"horario": "Lunes a Viernes: 9 am a 9 pm \n Sábados de 10am a 5pm ",
 		"modalidad": "Presencial y Virtual",
 		"waUrl": "https://wa.link/j3eg0r"
 	},
 	{
 		"id": 3,
 		"nombre": "Kiara Díaz",
-		"especialidad": "Psicologo Clinico",
+		"especialidad": "Psicóloga Educativa - C.Ps.P N° 44430",
 		"rutaImg": "img/team/20_equipo_Kiara.webp",
-		"educacion": "Máster en Psicología Clínica y de Salud en Universidad San Pablo - España",
-		"tecnica": "Psicoterapia Breve Estratégica, Formación Intensiva en Terapia de Pareja y Familia, Especialización en Terapia Racional Emotiva Conductual",
-		"horario": "Lunes a Viernes: 9 am a 9 pm",
-		"modalidad": "Presencial y Virtual",
-		"waUrl": "https://wa.link/8zoni7"
+		"educacion": "Licenciada por la USMP",
+		"tecnica": "Terapia Dialéctica Comportamental \n Terapia Cognitivo Conductual",
+		"audiencia": "Niños, adolescentes, adultos, parejas, familia",
+		"horario": "Lunes a Viernes de 8pm a 10pm \n Sábados de 8am a 12pm",
+		"modalidad": "Virtual",
+		"waUrl": "https://wa.link/zggk5b"
 	},
 	{
 		"id": 4,
 		"nombre": "Sharon Sosa",
-		"especialidad": "Psicologo Clinico",
+		"especialidad": "Psicóloga Clínica - C.Ps.P N° 38647",
 		"rutaImg": "img/team/20_equipo_Sharon.webp",
-		"educacion": "Máster en Psicología Clínica y de Salud en Universidad San Pablo - España",
-		"tecnica": "Psicoterapia Breve Estratégica, Formación Intensiva en Terapia de Pareja y Familia, Especialización en Terapia Racional Emotiva Conductual",
-		"horario": "Lunes a Viernes: 9 am a 9 pm",
+		"educacion": "Licenciada en psicología clínica UPC \n Maestría en Ps. Salud y Estilos de Vida - UPC",
+		"tecnica": "Terapia de Aceptación y Compromiso (ACT) \n Programación Neurolingüística",
+		"audiencia": "Adolescentes, adultos, parejas, familia",
+		"horario": "Lunes a Viernes de 9am a 9pm \n Sábados de 10am a 5pm ",
 		"modalidad": "Presencial y Virtual",
-		"waUrl": "https://wa.link/zggk5b"
+		"waUrl": "https://wa.link/8zoni7"
 	}
 ]

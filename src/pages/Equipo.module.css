@@ -124,30 +124,43 @@
 .p_cardContent {
 	width: 400px;
 	font-size: 0.95rem;
+
 	.p_cardTitle {
 		margin-block: 25px 15px;
 		.p_cardTitleName {
 			font-size: 1.25rem;
 			font-weight: 600;
 		}
-		.p_cardSubTitle {
-			color: gray;
-			font-size: 0.95rem;
-		}
 	}
+
+	.p_cardDetails {
+		gap: 15px;
+	}
+
 	.p_cardContentSection {
-		display: inline-flex;
+		display: flex;
 		align-items: center;
 		gap: 5px;
+
 		img {
 			height: 30px;
 			margin: 10px;
 		}
+
+		.p_cardSubTitle {
+			font-size: 0.83rem;
+			white-space: pre-line;
+			margin-block: 3px;
+		}
+	}
+
+	.p_cardDetails > :not(:last-child) {
+		border-bottom: 1px solid var(--cPaleta5);
 	}
 }
+
 .p_cardBtns {
-	margin: 0 auto;
-	width: 50%;
+	margin: 10px auto;
 	text-align: center;
 	.p_cardBtn {
 		composes: standardBlueBtn from '../App.module.css';
