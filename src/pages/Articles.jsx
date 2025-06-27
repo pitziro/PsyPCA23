@@ -19,7 +19,7 @@ const Articles = () => {
 					<h2> Visita nuestros artículos </h2>
 
 					<section className={styles.articlesContainer}>
-						{articles.map(article => (
+						{[...articles].reverse().map(article => (
 							<article key={article.id} className={styles.article}>
 								<img
 									className={styles.cardImg}

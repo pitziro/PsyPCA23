@@ -14,8 +14,8 @@ const WAComponent = () => {
 	// console.log('WA Comp rendered')
 
 	return (
-		<>
-			<div className={mstyle.btnContainer}>
+		<div className={mstyle.btnContainer}>
+			<div>
 				<button
 					className={mstyle.combutton}
 					type="button"
@@ -31,7 +31,7 @@ const WAComponent = () => {
 					<img alt="whatsapp" src={whatsappDarkLogoSVG} />
 				</Link>
 			</div>
-		</>
+		</div>
 	)
 }
 

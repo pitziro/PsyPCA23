@@ -2,28 +2,31 @@
 	{
 		"id": 3,
 		"date": "Julio 2024",
-		"author": "Juan",
+		"author": "Santiago Sarmiento",
 		"title": "Desmintiendo la Bipolaridad",
 		"path": "/articles/bipolaridad",
-		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptas.",
-		"img": "img/articles/bipolar_.webp"
+		"desc": "¿Alguna vez te has preguntado si todo lo que sabes sobre la bipolaridad es realmente cierto? En nuestro nuevo artículo “Desmintiendo la bipolaridad”, rompemos mitos comunes y explicamos la realidad detrás del diagnóstico. Una lectura esencial para entender sin prejuicios lo que realmente significa vivir con este trastorno.",
+		"img": "img/articles/bipolar_.webp",
+		"slug": "bipolaridad"
 	},
 	{
 		"id": 2,
-		"date": "Mayo 2024",
-		"author": "Pepe",
+		"date": "Setiembre 2024",
+		"author": "Stephany Sarmiento",
 		"title": "Desmintiendo la Depresión",
 		"path": "/articles/depresion",
-		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptas.",
-		"img": "img/articles/depression_.webp"
+		"desc": "¿Crees que la depresión es solo estar triste o tener días malos? En el artículo “Desmintiendo la depresión”, desarmamos creencias erróneas y revelamos lo que realmente implica este trastorno. Infórmate, comprende y sé parte del cambio hacia una salud mental sin estigmas.",
+		"img": "img/articles/depression_.webp",
+		"slug": "depresion"
 	},
 	{
 		"id": 1,
-		"date": "Marzo 2024",
-		"author": "Martin",
+		"date": "Enero 2025",
+		"author": "Santiago Sarmiento",
 		"title": "Evaluemos el Apego",
 		"path": "/articles/apego",
-		"desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, voluptas.",
-		"img": "img/articles/loveAtt_.webp"
+		"desc": "¿Sabes cómo tu estilo de apego influye en tus relaciones y emociones? En el artículo “Evaluemos el apego”, te invitamos a explorar cómo se forma el vínculo afectivo y cómo impacta en tu vida adulta. Una lectura que te ayudará a conocerte mejor y fortalecer tus relaciones desde la raíz",
+		"img": "img/articles/loveAtt_.webp",
+		"slug": "apego"
 	}
 ]

@@ -49,7 +49,7 @@ const Apego = () => {
 
 				<section className={styles.articleCards}>
 					{/* APEGO #1 */}
-					<card className={styles.cardFlex}>
+					<div className={styles.cardFlex}>
 						<p className={styles.cardTitle}> Apego Seguro </p>
 
 						<div className={styles.cardApego}>
@@ -79,10 +79,10 @@ const Apego = () => {
 							una relación, pueden parecer distantes o fríos, lo que
 							puede frustrar a sus parejas.
 						</p>
-					</card>
+					</div>
 
 					{/* APEGO #2 */}
-					<card className={styles.cardFlex}>
+					<div className={styles.cardFlex}>
 						<p className={styles.cardTitle}> Apego Ansioso </p>
 
 						<div className={styles.cardApego}>
@@ -113,10 +113,10 @@ const Apego = () => {
 							interpretar la distancia o el silencio de su pareja como
 							falta de interés.
 						</p>
-					</card>
+					</div>
 
 					{/* APEGO #3 */}
-					<card className={styles.cardFlex}>
+					<div className={styles.cardFlex}>
 						<p className={styles.cardTitle}> Apego Evitativo </p>
 
 						<div className={styles.cardApego}>
@@ -146,10 +146,10 @@ const Apego = () => {
 							una relación, pueden parecer distantes o fríos, lo que
 							puede frustrar a sus parejas.
 						</p>
-					</card>
+					</div>
 
 					{/* APEGO #4 */}
-					<card className={styles.cardFlex}>
+					<div className={styles.cardFlex}>
 						<p className={styles.cardTitle}> Apego Desorganizado </p>
 
 						<div className={styles.cardApego}>
@@ -179,7 +179,7 @@ const Apego = () => {
 							sus patrones y trabajar en terapia puede ayudarlos a sanar
 							y a formar vínculos más saludables.
 						</p>
-					</card>
+					</div>
 				</section>
 
 				<p className={styles.subtitle}>

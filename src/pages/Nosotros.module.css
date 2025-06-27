@@ -62,7 +62,9 @@
 
 .valores {
 	display: flex;
+	margin: 0 auto;
 	height: max-content;
+	max-width: calc(var(--max-user-width) * 0.8);
 	padding: 50px 20px 50px 20px;
 	gap: 50px;
 	flex-wrap: wrap;

@@ -1,6 +1,7 @@
 .topRowOne {
 	background-color: var(--cPaleta0);
 	text-align: center;
+	width: 100vw;
 
 	img {
 		height: 100px;
@@ -13,17 +14,35 @@
 /* --- Barra de Navegacion --- */
 /* --- ------------------- --- */
 .topRowTwo {
-	display: inline-flex;
-	align-items: center;
-	justify-content: space-around;
+	display: flex;
 	height: 50px;
+	width: 75%;
+	max-width: var(--max-user-width);
+	/* border: 1px solid blueviolet; */
+	box-shadow: 0 10px 6px -6px var(--cPaleta1);
+	position: relative;
+	overflow: visible;
 }
 
+/* .topRowTwo::after {
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: -5%;
+	width: 110%;
+	height: 2px;
+	background: transparent;
+	box-shadow: 0 8px 10px var(--cPaleta1);
+	z-index: -5;
+} */
+
 #categorybar {
-	width: 90%;
+	width: 80%;
 	display: flex;
 	gap: 25px;
-	justify-content: space-evenly;
+	justify-content: space-around;
+	align-items: center;
+	/* border: 2px dashed green; */
 }
 
 .categoryitem {
@@ -62,14 +81,13 @@
 	left: 2px;
 }
 
-/* nuevo boton wasap*/
-/* .btnContainer {
-	margin: 0 auto;
-	width: 10%;
-	display: flex;
-	justify-items: right;
-	border-radius: 7px;
-} */
+/* nuevo boton wasap */
+.btnContainer {
+	flex-grow: 1;
+	justify-items: end;
+	align-content: center;
+	/* border: 3px solid red; */
+}
 
 .combutton {
 	all: unset;
@@ -157,6 +175,7 @@
 	.btnContainer {
 		display: inline-flex;
 		justify-content: flex-end;
+		align-items: center;
 		width: 100%;
 		border: none;
 		margin-right: 20px;

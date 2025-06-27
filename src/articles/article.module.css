@@ -48,7 +48,7 @@
 .articleCards {
 	display: flex;
 	align-items: center;
-	text-align:;
+	/* text-align:; */
 	flex-wrap: wrap;
 	gap: 25px;
 	justify-content: space-evenly;

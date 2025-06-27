@@ -32,7 +32,7 @@
 		"tecnica": "Terapia Dialéctica Comportamental \n Terapia Cognitivo Conductual",
 		"audiencia": "Niños, adolescentes, adultos, parejas, familia",
 		"horario": "Lunes a Viernes de 8pm a 10pm \n Sábados de 8am a 12pm",
-		"modalidad": "Virtual",
+		"modalidad": "Presencial y Virtual",
 		"waUrl": "https://wa.link/zggk5b"
 	},
 	{
@@ -44,7 +44,31 @@
 		"tecnica": "Terapia de Aceptación y Compromiso (ACT) \n Programación Neurolingüística",
 		"audiencia": "Adolescentes, adultos, parejas, familia",
 		"horario": "Lunes a Viernes de 9am a 9pm \n Sábados de 10am a 5pm ",
-		"modalidad": "Presencial y Virtual",
+		"modalidad": "Virtual",
 		"waUrl": "https://wa.link/8zoni7"
+	},
+	{
+		"id": 5,
+		"nombre": "Daniela Venegas",
+		"especialidad": "Psicóloga Clínica - C.Ps.P N° 46944",
+		"rutaImg": "img/team/20_equipo_Daniela.webp",
+		"educacion": "Licenciada en Psicología UNIFE",
+		"tecnica": "Arteterapeuta para niños y adolescentes \n Disciplina Positiva para niños y familias \n Emociones, conducta y aprendizaje de niños y adolescentes \n TREC - Terapia Racional Emotiva Conductual",
+		"audiencia": "Niños, adolescentes, adultos, parejas, familia",
+		"horario": "Lun - Mie - Vie de 2:30pm a 8:30pm \n Sábados de 10am a 12pm ",
+		"modalidad": "Presencial y Virtual",
+		"waUrl": ""
+	},
+	{
+		"id": 6,
+		"nombre": "Danae Sanchez",
+		"especialidad": "Médico Psiquiatra \n C.M.P N° 66976 / Rne 43636",
+		"rutaImg": "img/team/20_equipo_Danae.webp",
+		"educacion": "Médico Especialista en Psiquiatría \n Universidad Ricardo Palma",
+		"tecnica": "Análisis Transaccional \n EMDR",
+		"audiencia": "Adultos, jóvenes y adultos mayores",
+		"horario": "Miercoles de 5pm a 8pm ",
+		"modalidad": "Presencial y Virtual",
+		"waUrl": ""
 	}
 ]
