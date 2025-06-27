@@ -91,7 +91,10 @@ export default function ArticleDetail() {
 						Artículos
 					</a>
 					<span className={styles.breadcrumbSeparator}>/</span>
-					<span className={styles.breadcrumbItem}>Bipolaridad</span>
+					<span className={styles.breadcrumbItem}>
+						{' '}
+						{articleData.title}
+					</span>
 				</nav>
 			</section>
 			<ArticleComponent />

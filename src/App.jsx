@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
+import { Analytics } from '@vercel/analytics/react'
 
 import Navbar from './components/top/Navbar'
 import Footer from './components/bottom/Footer'
@@ -43,6 +44,7 @@ function App() {
 				</div>
 				<Footer />
 			</div>
+			<Analytics />
 		</HelmetProvider>
 	)
 }

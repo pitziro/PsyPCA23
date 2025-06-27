@@ -54,7 +54,9 @@ const Apego = () => {
 
 						<div className={styles.cardApego}>
 							<div>
-								<strong>Cómo se ve?</strong>
+								<p>
+									<strong>Cómo se ve?</strong>
+								</p>
 								<p className={styles.articleParragraph}>
 									Las personas con apego seguro suelen sentirse cómodas
 									al confiar en los demás y permiten que otros confíen
@@ -87,7 +89,9 @@ const Apego = () => {
 
 						<div className={styles.cardApego}>
 							<div>
-								<strong>Cómo se ve?</strong>
+								<p>
+									<strong>Cómo se ve?</strong>
+								</p>
 								<p className={styles.articleParragraph}>
 									Las personas con apego ansioso tienden a preocuparse
 									mucho por sus relaciones, temiendo ser abandonadas o
@@ -121,7 +125,9 @@ const Apego = () => {
 
 						<div className={styles.cardApego}>
 							<div>
-								<strong>Cómo se ve?</strong>
+								<p>
+									<strong>Cómo se ve?</strong>
+								</p>
 								<p className={styles.articleParragraph}>
 									Las personas con apego evitativo prefieren ser
 									autosuficientes y pueden evitar la cercanía
@@ -154,7 +160,9 @@ const Apego = () => {
 
 						<div className={styles.cardApego}>
 							<div>
-								<strong>Cómo se ve?</strong>
+								<p>
+									<strong>Cómo se ve?</strong>
+								</p>
 								<p className={styles.articleParragraph}>
 									Las personas con apego desorganizado experimentan una
 									mezcla de comportamientos de apego ansioso y

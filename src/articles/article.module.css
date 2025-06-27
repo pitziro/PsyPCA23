@@ -86,8 +86,16 @@
 		flex-direction: column-reverse;
 	}
 
+	.cardFlex {
+		width: 100%;
+	}
+
 	.articleCards {
 		display: block;
+	}
+
+	p {
+		padding-inline: 10px;
 	}
 }
 

@@ -16,7 +16,7 @@
 .topRowTwo {
 	display: flex;
 	height: 50px;
-	width: 75%;
+	width: 85%;
 	max-width: var(--max-user-width);
 	/* border: 1px solid blueviolet; */
 	box-shadow: 0 10px 6px -6px var(--cPaleta1);
