@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://centroperspectivas.com</loc>
+    <lastmod>2025-07-03T01:06:37.102Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1</priority>
+  </url>
+<url>
+    <loc>https://centroperspectivas.com/equipo</loc>
+    <lastmod>2025-07-03T01:06:37.102Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
+    <loc>https://centroperspectivas.com/servicios</loc>
+    <lastmod>2025-07-03T01:06:37.102Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+<url>
+    <loc>https://centroperspectivas.com/articles</loc>
+    <lastmod>2025-07-03T01:06:37.102Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+<url>
+    <loc>https://centroperspectivas.com/QandA</loc>
+    <lastmod>2025-07-03T01:06:37.102Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
