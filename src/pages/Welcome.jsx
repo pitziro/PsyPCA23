@@ -10,7 +10,7 @@ export default function Welcome() {
 		<>
 			<SeoHelmet
 				title="Perspectivas | CAP"
-				descContent="Encontrando tu nuevo enfoque"
+				descContent="Centro Perspectivas: Terapia psicológica personalizada para ansiedad, depresión y orientación familiar. Conoce a nuestro equipo de especialistas y reserva tu cita online."
 			/>
 
 			<div className={wStyles.div_welcome}>

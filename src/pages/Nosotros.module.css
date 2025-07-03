@@ -25,6 +25,7 @@
 	max-height: 350px;
 	object-fit: cover;
 	border-radius: 25px;
+	aspect-ratio: 6/4;
 }
 
 .main_somos_obj {

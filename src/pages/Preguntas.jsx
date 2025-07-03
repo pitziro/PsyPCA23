@@ -8,7 +8,7 @@ export default function Preguntas() {
 		<>
 			<SeoHelmet
 				title="Perspectivas | Q & A"
-				descContent="Preguntas sobre nuestro servicio y los profesionales "
+				descContent="¿Tienes alguna pregunta? Revisa las principales dudas sobre nuestro servicio y los profesionales "
 			/>
 
 			<div className={qaStyle.qaContainer}>

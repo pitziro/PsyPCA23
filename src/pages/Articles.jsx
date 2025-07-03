@@ -12,7 +12,7 @@ const Articles = () => {
 		<>
 			<SeoHelmet
 				title="Perspectivas | Articulos"
-				descContent="Conoce los artículos más importantes de Perspectivas"
+				descContent="Conoce algunos de los artículos más importantes de Perspectivas, elaborado por nuestros propios especialistas"
 			/>
 			{showArticleList && (
 				<div className={styles.articleList}>

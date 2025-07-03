@@ -8,7 +8,7 @@ function Servicios() {
 		<section className={sStyle.catalogo}>
 			<SeoHelmet
 				title="Perspectivas | Servicios"
-				descContent="Servicios de terapida psicologica para cada necesidad"
+				descContent="Conoce todos nuestros servicios de terapia psicologica para cada necesidad"
 			/>
 
 			<div id="psicoterapia" className={sStyle.subCatService}>

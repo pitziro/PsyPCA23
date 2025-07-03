@@ -10,7 +10,7 @@ function Equipo() {
 		<div>
 			<SeoHelmet
 				title="Perspectivas | Especialistas"
-				descContent="Personal especializado para darte una nueva perspectiva de las cosas."
+				descContent="Conoce a nuestro personal especializado para darte una nueva perspectiva de las cosas."
 			/>
 			<section className={pStyle.pIntro}>
 				<VideoPlayer />
