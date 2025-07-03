@@ -20,38 +20,36 @@ const Carrousel = () => {
 		setCurrSlide(index)
 	}
 
-	// Get current slide
-	const currentSlide = slides[currSlide]
-
 	return (
 		<div className={carStyle.carousel}>
 			<div className={carStyle.carouselContainer}>
-				{/* Only render the current slide */}
-				<div className={`${carStyle.carouselSlide} ${carStyle.active}`}>
-					<img
-						src={currentSlide.imgUrl}
-						alt="imgCar1"
-						loading="eager"
-						fetchpriority="high"
-						className={carStyle.carouselImage}
-					/>
+				{slides.map((slide, index) => (
+					<div
+						key={index}
+						className={
+							carStyle.carouselSlide +
+							`${index === currSlide ? 'active' : ''}`
+						}
+					>
+						<img
+							src={slide.imgUrl}
+							alt="imgCar1"
+							loading="eager"
+							className={carStyle.carouselImage}
+						/>
 
-					{/* Content Overlay */}
-					<div className={carStyle.carouselContent}>
-						<h3 className={carStyle.carouselTitle}>
-							{currentSlide.imgTitle}
-						</h3>
-						<p className={carStyle.carouselDesc}>
-							{currentSlide.imgDesc}
-						</p>
-						<Link
-							to={currentSlide.linkTo}
-							className={carStyle.carouselBtn}
-						>
-							{currentSlide.btnText}
-						</Link>
+						{/* Content Overlay */}
+						<div className={carStyle.carouselContent}>
+							<h3 className={carStyle.carouselTitle}>
+								{slide.imgTitle}
+							</h3>
+							<p className={carStyle.carouselDesc}>{slide.imgDesc}</p>
+							<Link to={slide.linkTo} className={carStyle.carouselBtn}>
+								{slide.btnText}
+							</Link>
+						</div>
 					</div>
-				</div>
+				))}
 			</div>
 
 			{/* Navigation Arrows */}
@@ -80,31 +78,6 @@ const Carrousel = () => {
 						aria-label={`Go to slide ${index + 1}`}
 					/>
 				))}
-			</div>
-
-			<div style={{ display: 'none' }}>
-				{/* Preload next slide */}
-				{slides[currSlide === slides.length - 1 ? 0 : currSlide + 1] && (
-					<img
-						src={
-							slides[currSlide === slides.length - 1 ? 0 : currSlide + 1]
-								.imgUrl
-						}
-						loading="lazy"
-						fetchpriority="low"
-					/>
-				)}
-				{/* Preload previous slide */}
-				{slides[currSlide === 0 ? slides.length - 1 : currSlide - 1] && (
-					<img
-						src={
-							slides[currSlide === 0 ? slides.length - 1 : currSlide - 1]
-								.imgUrl
-						}
-						loading="lazy"
-						fetchpriority="low"
-					/>
-				)}
 			</div>
 		</div>
 	)
