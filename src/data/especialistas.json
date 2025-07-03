@@ -15,7 +15,7 @@
 		"id": 2,
 		"nombre": "Stephany Sarmiento",
 		"especialidad": "Psicóloga Clínica - C.Ps.P N° 37546",
-		"rutaImg": "img/team/20_equipo_tepy.webp",
+		"rutaImg": "img/team/20_equipo_Stephany.webp",
 		"educacion": "Licenciada en psicología clínica UPC \n Máster en Ps. Clínica y de la Salud – España",
 		"tecnica": "Psicoterapia Cognitivo Conductual \n Emergencia Pediátrica",
 		"audiencia": "Niños, adolescentes, adultos, parejas, familia",
@@ -70,5 +70,29 @@
 		"horario": "Miercoles de 5pm a 8pm ",
 		"modalidad": "Presencial y Virtual",
 		"waUrl": "https://wa.link/b201ib"
+	},
+	{
+		"id": 7,
+		"nombre": "Alonso Zavala",
+		"especialidad": "",
+		"rutaImg": "img/team/20_equipo_Alonso.webp",
+		"educacion": "Interno de Psicología",
+		"tecnica": "Consejerías psicológicas",
+		"audiencia": "Niños, adolescentes y adultos",
+		"horario": "Jueves y Sábados de 2pm a 8pm",
+		"modalidad": "Presencial y Virtual",
+		"waUrl": "http://wa.link/5p6kgt"
+	},
+	{
+		"id": 8,
+		"nombre": "Zarith Vega",
+		"especialidad": "",
+		"rutaImg": "img/team/20_equipo_Zarith.webp",
+		"educacion": "Egresada de la Universidad Peruana de Ciencias Aplicadas",
+		"tecnica": "Consejerías psicológicas",
+		"audiencia": "Niños, adolescentes y adultos",
+		"horario": "Viernes y Sábados de 2pm a 8pm",
+		"modalidad": "Presencial y Virtual",
+		"waUrl": "http://wa.link/hq12ir"
 	}
 ]

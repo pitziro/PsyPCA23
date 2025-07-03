@@ -35,6 +35,7 @@ const Carrousel = () => {
 							src={slide.imgUrl}
 							alt="imgCar1"
 							loading="eager"
+							fetchpriority="high"
 							className={carStyle.carouselImage}
 						/>
 
