@@ -32,7 +32,9 @@ const Carrousel = () => {
 						}
 					>
 						<img
-							src={slide.imgUrl}
+							src={slide.imgUrl.sizeL}
+							srcSet={`${slide.imgUrl.sizeS} 1100w, ${slide.imgUrl.sizeL} 3000w`}
+							sizes="(max-width: 900px) 100vw, 100vw"
 							alt="imgCar1"
 							loading="eager"
 							fetchpriority="high"

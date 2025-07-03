@@ -22,7 +22,10 @@ export const CONST_POSITION_GPS = {
 
 export const CONST_IMG_CAROUSEL = [
 	{
-		imgUrl: '/img/carrusel/01_landing_somos.webp',
+		imgUrl: {
+			sizeL: '/img/carrusel/01_landing_somos.webp',
+			sizeS: '/img/carrusel/01_landing_somos_m.webp',
+		},
 		imgTitle: '¿Quiénes somos?',
 		imgDesc:
 			'Descubre quiénes somos, nuestra misión y cómo trabajamos para brindarte el mejor apoyo. Haz clic para saber más sobre nuestra historia y valores.',
@@ -30,7 +33,10 @@ export const CONST_IMG_CAROUSEL = [
 		linkTo: '/nosotros',
 	},
 	{
-		imgUrl: '/img/carrusel/01_landing_servicios.webp',
+		imgUrl: {
+			sizeL: '/img/carrusel/01_landing_servicios.webp',
+			sizeS: '/img/carrusel/01_landing_servicios_m.webp',
+		},
 		imgTitle: 'Nuestros Servicios',
 		imgDesc:
 			'Descubre nuestras terapias personalizadas diseñadas para tu bienestar emocional. Ofrecemos apoyo en manejo de ansiedad, depresión, orientación familiar y más. Haz clic aquí para conocer cómo podemos ayudarte.',
@@ -38,7 +44,10 @@ export const CONST_IMG_CAROUSEL = [
 		linkTo: '/servicios',
 	},
 	{
-		imgUrl: '/img/carrusel/01_landing_especialistas.webp',
+		imgUrl: {
+			sizeL: '/img/carrusel/01_landing_especialistas.webp',
+			sizeS: '/img/carrusel/01_landing_especialistas_m.webp',
+		},
 		imgTitle: 'Especialistas',
 		imgDesc:
 			'Conoce al equipo que te acompañará en cada paso. Haz clic para ver sus perfiles y descubrir quién será tu guía en este proceso.',

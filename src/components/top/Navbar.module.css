@@ -112,6 +112,7 @@
 
 .combutton img {
 	height: 20px;
+	aspect-ratio: 1;
 }
 
 .iconContainer {
@@ -156,6 +157,7 @@
 	height: 20px;
 	margin-left: 5px;
 	transition: transform 0.25s ease-in-out;
+	aspect-ratio: 1;
 }
 
 .opened {
